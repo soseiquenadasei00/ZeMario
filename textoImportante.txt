@@ -1,0 +1,43 @@
+PROJETO ZELDA-MARIO
+
+Sera um jogo estilo mario com caracteristicas do zelda. 
+
+Inimigos 
+{
+   - 3 tipos
+   - Movimentação diferente 
+   - Vida diferente (1,2 e 3 hits pra morrer)
+}
+Timer de jogo 
+2 fases 
+
+Personagem 
+{
+  - 3 vidas 
+  - Atacar 
+  - movimentação 
+}
+Cenario 
+{
+
+  -Colecionaveis (escondidos em bloco)
+  -Blocos caem (se passar por cima)
+  -Picos que matam
+  -Construção 
+  {
+  - Linear e mundo aberto
+  - Não ser limitado ao ecrã
+  }
+}
+Colisões 
+{
+- Tipos de colisões
+}
+Camera 
+{ 
+  -movimentação da camera
+}
+
+
+ --CENAS A FAZER--
+
