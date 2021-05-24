@@ -31,7 +31,7 @@ namespace IPCA.MonoGame
 
                     // Load texture here, and send it to the sprite object
                     Texture2D texture = game.Content.Load<Texture2D>(imageFilename);
-                    Sprite sprite = new Sprite(imageFilename, texture, new Vector2(x, y), true);
+                    Sprite sprite = new Sprite(imageFilename, texture, new Vector2(x/128, y/128), true);
                     
                     _sprites.Add(sprite);
                     sprite.AddRectangleBody(game.Services.GetService<World>(), 

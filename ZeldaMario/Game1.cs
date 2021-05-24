@@ -18,19 +18,19 @@ namespace ZeldaMario
             _graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
             IsMouseVisible = true;
-            _world = new World(new Vector2(0, 0f));
+            _world = new World(new Vector2(0, -9f));
             Services.AddService(_world);
         }
 
         protected override void Initialize()
         {
-            _graphics.PreferredBackBufferHeight = 1024;
+            _graphics.PreferredBackBufferHeight = 800;
             _graphics.PreferredBackBufferWidth = 800;
             _graphics.ApplyChanges();
 
             Debug.SetGraphicsDevice(GraphicsDevice);
 
-            new Camera(GraphicsDevice, height: 10f);
+            new Camera(GraphicsDevice, height: 15f);
             Camera.LookAt(Camera.WorldSize / 4f);
 
             base.Initialize();
