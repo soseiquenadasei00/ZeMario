@@ -4,8 +4,9 @@ using System.Runtime.InteropServices;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Newtonsoft.Json;
-using Newtonsoft.Json.Linq;
 using Genbox.VelcroPhysics.Dynamics;
+using Newtonsoft.Json.Linq;
+
 
 namespace IPCA.MonoGame
 {
@@ -20,7 +21,7 @@ namespace IPCA.MonoGame
             using (StreamReader reader = File.OpenText(filename))
             {
                 JObject sceneJson = (JObject) JToken.ReadFrom(new JsonTextReader(reader));
-                JArray spriteJson = (JArray) sceneJson["data"][""];
+                JArray spriteJson = (JArray) sceneJson["composite"]["sImages"];
                 foreach (JObject image in spriteJson)
                 {
                     float x = (float) (image["x"] ?? 0);

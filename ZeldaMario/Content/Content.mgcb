@@ -13,17 +13,7 @@
 
 #---------------------------------- Content ---------------------------------#
 
-#begin ../../../PROJETO2/Mapa-teste/scenes/MainScene.dt
-/importer:
-/processor:
-/build:../../../PROJETO2/Mapa-teste/scenes/MainScene.dt;MainScene.dt
-
-#begin ../../../PROJETO2/MapaTeste/scenes/MainScene.dt
-/importer:
-/processor:
-/build:../../../PROJETO2/MapaTeste/scenes/MainScene.dt;MainScene.dt
-
-#begin tile000.png
+#begin assets/orig/images/tile000.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -33,9 +23,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:tile000.png
+/build:assets/orig/images/tile000.png
 
-#begin tile001.png
+#begin assets/orig/images/tile001.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -45,9 +35,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:tile001.png
+/build:assets/orig/images/tile001.png
 
-#begin tile002.png
+#begin assets/orig/images/tile002.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -57,9 +47,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:tile002.png
+/build:assets/orig/images/tile002.png
 
-#begin tile004.png
+#begin assets/orig/images/tile004.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -69,9 +59,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:tile004.png
+/build:assets/orig/images/tile004.png
 
-#begin tile006.png
+#begin assets/orig/images/tile006.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -81,9 +71,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:tile006.png
+/build:assets/orig/images/tile006.png
 
-#begin tile007.png
+#begin assets/orig/images/tile007.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -93,9 +83,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:tile007.png
+/build:assets/orig/images/tile007.png
 
-#begin tile008.png
+#begin assets/orig/images/tile008.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -105,9 +95,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:tile008.png
+/build:assets/orig/images/tile008.png
 
-#begin tile020.png
+#begin assets/orig/images/tile020.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -117,9 +107,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:tile020.png
+/build:assets/orig/images/tile020.png
 
-#begin tile021.png
+#begin assets/orig/images/tile021.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -129,9 +119,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:tile021.png
+/build:assets/orig/images/tile021.png
 
-#begin tile022.png
+#begin assets/orig/images/tile022.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -141,9 +131,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:tile022.png
+/build:assets/orig/images/tile022.png
 
-#begin tile024.png
+#begin assets/orig/images/tile024.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -153,9 +143,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:tile024.png
+/build:assets/orig/images/tile024.png
 
-#begin tile026.png
+#begin assets/orig/images/tile026.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -165,9 +155,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:tile026.png
+/build:assets/orig/images/tile026.png
 
-#begin tile028.png
+#begin assets/orig/images/tile028.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -177,9 +167,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:tile028.png
+/build:assets/orig/images/tile028.png
 
-#begin tile030.png
+#begin assets/orig/images/tile030.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -189,9 +179,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:tile030.png
+/build:assets/orig/images/tile030.png
 
-#begin tile032.png
+#begin assets/orig/images/tile032.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -201,9 +191,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:tile032.png
+/build:assets/orig/images/tile032.png
 
-#begin tile040.png
+#begin assets/orig/images/tile040.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -213,9 +203,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:tile040.png
+/build:assets/orig/images/tile040.png
 
-#begin tile041.png
+#begin assets/orig/images/tile041.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -225,9 +215,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:tile041.png
+/build:assets/orig/images/tile041.png
 
-#begin tile042.png
+#begin assets/orig/images/tile042.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -237,9 +227,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:tile042.png
+/build:assets/orig/images/tile042.png
 
-#begin tile044.png
+#begin assets/orig/images/tile044.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -249,9 +239,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:tile044.png
+/build:assets/orig/images/tile044.png
 
-#begin tile046.png
+#begin assets/orig/images/tile046.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -261,9 +251,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:tile046.png
+/build:assets/orig/images/tile046.png
 
-#begin tile047.png
+#begin assets/orig/images/tile047.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -273,9 +263,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:tile047.png
+/build:assets/orig/images/tile047.png
 
-#begin tile048.png
+#begin assets/orig/images/tile048.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -285,9 +275,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:tile048.png
+/build:assets/orig/images/tile048.png
 
-#begin tile050.png
+#begin assets/orig/images/tile050.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -297,9 +287,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:tile050.png
+/build:assets/orig/images/tile050.png
 
-#begin tile051.png
+#begin assets/orig/images/tile051.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -309,9 +299,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:tile051.png
+/build:assets/orig/images/tile051.png
 
-#begin tile052.png
+#begin assets/orig/images/tile052.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -321,9 +311,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:tile052.png
+/build:assets/orig/images/tile052.png
 
-#begin tile080.png
+#begin assets/orig/images/tile080.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -333,9 +323,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:tile080.png
+/build:assets/orig/images/tile080.png
 
-#begin tile081.png
+#begin assets/orig/images/tile081.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -345,9 +335,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:tile081.png
+/build:assets/orig/images/tile081.png
 
-#begin tile082.png
+#begin assets/orig/images/tile082.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -357,9 +347,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:tile082.png
+/build:assets/orig/images/tile082.png
 
-#begin tile084.png
+#begin assets/orig/images/tile084.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -369,9 +359,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:tile084.png
+/build:assets/orig/images/tile084.png
 
-#begin tile091.png
+#begin assets/orig/images/tile091.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -381,9 +371,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:tile091.png
+/build:assets/orig/images/tile091.png
 
-#begin tile120.png
+#begin assets/orig/images/tile120.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -393,9 +383,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:tile120.png
+/build:assets/orig/images/tile120.png
 
-#begin tile121.png
+#begin assets/orig/images/tile121.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -405,9 +395,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:tile121.png
+/build:assets/orig/images/tile121.png
 
-#begin tile122.png
+#begin assets/orig/images/tile122.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -417,9 +407,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:tile122.png
+/build:assets/orig/images/tile122.png
 
-#begin tile124.png
+#begin assets/orig/images/tile124.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -429,9 +419,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:tile124.png
+/build:assets/orig/images/tile124.png
 
-#begin tile126.png
+#begin assets/orig/images/tile126.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -441,9 +431,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:tile126.png
+/build:assets/orig/images/tile126.png
 
-#begin tile127.png
+#begin assets/orig/images/tile127.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -453,9 +443,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:tile127.png
+/build:assets/orig/images/tile127.png
 
-#begin tile128.png
+#begin assets/orig/images/tile128.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -465,9 +455,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:tile128.png
+/build:assets/orig/images/tile128.png
 
-#begin tile130.png
+#begin assets/orig/images/tile130.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -477,9 +467,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:tile130.png
+/build:assets/orig/images/tile130.png
 
-#begin tile132.png
+#begin assets/orig/images/tile132.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -489,9 +479,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:tile132.png
+/build:assets/orig/images/tile132.png
 
-#begin tile140.png
+#begin assets/orig/images/tile140.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -501,9 +491,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:tile140.png
+/build:assets/orig/images/tile140.png
 
-#begin tile141.png
+#begin assets/orig/images/tile141.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -513,9 +503,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:tile141.png
+/build:assets/orig/images/tile141.png
 
-#begin tile142.png
+#begin assets/orig/images/tile142.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -525,9 +515,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:tile142.png
+/build:assets/orig/images/tile142.png
 
-#begin tile144.png
+#begin assets/orig/images/tile144.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -537,9 +527,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:tile144.png
+/build:assets/orig/images/tile144.png
 
-#begin tile146.png
+#begin assets/orig/images/tile146.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -549,9 +539,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:tile146.png
+/build:assets/orig/images/tile146.png
 
-#begin tile148.png
+#begin assets/orig/images/tile148.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -561,9 +551,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:tile148.png
+/build:assets/orig/images/tile148.png
 
-#begin tile150.png
+#begin assets/orig/images/tile150.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -573,9 +563,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:tile150.png
+/build:assets/orig/images/tile150.png
 
-#begin tile151.png
+#begin assets/orig/images/tile151.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -585,9 +575,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:tile151.png
+/build:assets/orig/images/tile151.png
 
-#begin tile152.png
+#begin assets/orig/images/tile152.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -597,9 +587,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:tile152.png
+/build:assets/orig/images/tile152.png
 
-#begin tile160.png
+#begin assets/orig/images/tile160.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -609,9 +599,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:tile160.png
+/build:assets/orig/images/tile160.png
 
-#begin tile161.png
+#begin assets/orig/images/tile161.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -621,9 +611,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:tile161.png
+/build:assets/orig/images/tile161.png
 
-#begin tile162.png
+#begin assets/orig/images/tile162.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -633,9 +623,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:tile162.png
+/build:assets/orig/images/tile162.png
 
-#begin tile164.png
+#begin assets/orig/images/tile164.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -645,9 +635,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:tile164.png
+/build:assets/orig/images/tile164.png
 
-#begin tile166.png
+#begin assets/orig/images/tile166.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -657,9 +647,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:tile166.png
+/build:assets/orig/images/tile166.png
 
-#begin tile167.png
+#begin assets/orig/images/tile167.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -669,9 +659,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:tile167.png
+/build:assets/orig/images/tile167.png
 
-#begin tile168.png
+#begin assets/orig/images/tile168.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -681,9 +671,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:tile168.png
+/build:assets/orig/images/tile168.png
 
-#begin tile190.png
+#begin assets/orig/images/tile190.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -693,9 +683,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:tile190.png
+/build:assets/orig/images/tile190.png
 
-#begin tile191.png
+#begin assets/orig/images/tile191.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -705,9 +695,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:tile191.png
+/build:assets/orig/images/tile191.png
 
-#begin tile192.png
+#begin assets/orig/images/tile192.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -717,9 +707,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:tile192.png
+/build:assets/orig/images/tile192.png
 
-#begin tile200.png
+#begin assets/orig/images/tile200.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -729,9 +719,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:tile200.png
+/build:assets/orig/images/tile200.png
 
-#begin tile201.png
+#begin assets/orig/images/tile201.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -741,9 +731,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:tile201.png
+/build:assets/orig/images/tile201.png
 
-#begin tile202.png
+#begin assets/orig/images/tile202.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -753,9 +743,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:tile202.png
+/build:assets/orig/images/tile202.png
 
-#begin tile204.png
+#begin assets/orig/images/tile204.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -765,9 +755,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:tile204.png
+/build:assets/orig/images/tile204.png
 
-#begin tile210.png
+#begin assets/orig/images/tile210.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -777,9 +767,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:tile210.png
+/build:assets/orig/images/tile210.png
 
-#begin tile212.png
+#begin assets/orig/images/tile212.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -789,9 +779,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:tile212.png
+/build:assets/orig/images/tile212.png
 
-#begin tile226.png
+#begin assets/orig/images/tile226.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -801,9 +791,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:tile226.png
+/build:assets/orig/images/tile226.png
 
-#begin tile227.png
+#begin assets/orig/images/tile227.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -813,9 +803,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:tile227.png
+/build:assets/orig/images/tile227.png
 
-#begin tile228.png
+#begin assets/orig/images/tile228.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -825,9 +815,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:tile228.png
+/build:assets/orig/images/tile228.png
 
-#begin tile229.png
+#begin assets/orig/images/tile229.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -837,9 +827,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:tile229.png
+/build:assets/orig/images/tile229.png
 
-#begin tile231.png
+#begin assets/orig/images/tile231.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -849,9 +839,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:tile231.png
+/build:assets/orig/images/tile231.png
 
-#begin tile240.png
+#begin assets/orig/images/tile240.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -861,9 +851,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:tile240.png
+/build:assets/orig/images/tile240.png
 
-#begin tile241.png
+#begin assets/orig/images/tile241.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -873,9 +863,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:tile241.png
+/build:assets/orig/images/tile241.png
 
-#begin tile247.png
+#begin assets/orig/images/tile247.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -885,9 +875,9 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:tile247.png
+/build:assets/orig/images/tile247.png
 
-#begin tile248.png
+#begin assets/orig/images/tile248.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -897,5 +887,5 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:tile248.png
+/build:assets/orig/images/tile248.png
 
