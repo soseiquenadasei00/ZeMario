@@ -1,7 +1,7 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
-
+using IPCA.MonoGame;
 namespace ZeldaMario
 {
     public class Game1 : Game
@@ -18,7 +18,14 @@ namespace ZeldaMario
 
         protected override void Initialize()
         {
-            // TODO: Add your initialization logic here
+            _graphics.PreferredBackBufferHeight = 768;
+            _graphics.PreferredBackBufferWidth = 1024;
+            _graphics.ApplyChanges();
+
+            Debug.SetGraphicsDevice(GraphicsDevice);
+
+            new Camera(GraphicsDevice, height: 5f);
+            Camera.LookAt(Camera.WorldSize / 2f);
 
             base.Initialize();
         }
