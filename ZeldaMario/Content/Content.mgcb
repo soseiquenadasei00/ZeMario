@@ -13,3 +13,8 @@
 
 #---------------------------------- Content ---------------------------------#
 
+#begin mapa..json
+/importer:
+/processor:
+/build:mapa..json
+
