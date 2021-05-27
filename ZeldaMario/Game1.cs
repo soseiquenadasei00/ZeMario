@@ -13,6 +13,7 @@ namespace ZeldaMario
         private SpriteBatch _spriteBatch;
         private World _world;
         private Scene _scene;
+       // private Player _player;
         public Game1()
         {
             _graphics = new GraphicsDeviceManager(this);
@@ -32,6 +33,7 @@ namespace ZeldaMario
 
             new Camera(GraphicsDevice, height: 15f);
             Camera.LookAt(Camera.WorldSize / 4f);
+           // _player = new Player(this);
 
             base.Initialize();
         }
@@ -47,8 +49,8 @@ namespace ZeldaMario
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape))
                 Exit();
 
-            // TODO: Add your update logic here
-
+            _world.Step((float)gameTime.ElapsedGameTime.TotalMilliseconds * 0.001f);
+           // _player.Update(gameTime);
             base.Update(gameTime);
         }
 
@@ -57,6 +59,7 @@ namespace ZeldaMario
             GraphicsDevice.Clear(Color.CornflowerBlue);
             _spriteBatch.Begin();
             _scene.Draw(_spriteBatch, gameTime);
+          //  _player.Draw(_spriteBatch, gameTime);
             _spriteBatch.End();
 
             base.Draw(gameTime);
