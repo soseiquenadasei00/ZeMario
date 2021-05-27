@@ -40,12 +40,22 @@ namespace IPCA.MonoGame
             Vector2 anchor = _texture.Bounds.Size.ToVector2() / 2f;
            
             Vector2 scale = Camera.Length2Pixels(_size) / 128f; // TODO: HARDCODED!
+            Vector2 scalePlayer = Camera.Length2Pixels(_size) / 4f; // TODO: HARDCODED!
             scale.Y = scale.X;  // FIXME! TODO: HACK HACK HACK
             
+            if(Name == "player") { 
             spriteBatch.Draw(_texture, pos, null, Color.White,
-                _rotation, anchor, scale, 
+                _rotation, anchor, scalePlayer, 
                 _direction == Direction.Right ? SpriteEffects.None : SpriteEffects.FlipHorizontally,
                 0);
+            }
+            else
+            {
+                spriteBatch.Draw(_texture, pos, null, Color.White,
+                                _rotation, anchor, scale,
+                                _direction == Direction.Right ? SpriteEffects.None : SpriteEffects.FlipHorizontally,
+                                0);
+            }
 
             base.Draw(spriteBatch, gameTime);
         }

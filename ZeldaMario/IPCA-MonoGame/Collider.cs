@@ -40,26 +40,26 @@ namespace IPCA.MonoGame
         public abstract void Draw(SpriteBatch spriteBatch, GameTime gameTime);
         
         // Intersects ray r = p + td, |d| = 1, with circle c 
-        protected static bool IntersectSegmentCircle(Vector2 pt1, Vector2 pt2, CircleCollider circle)
-        {
-            float dist = (pt2 - pt1).Length();
-            Vector2 p = pt1;
-            Vector2 d = (pt2 - pt1) / dist;
+        //protected static bool IntersectSegmentCircle(Vector2 pt1, Vector2 pt2, CircleCollider circle)
+        //{
+        //    float dist = (pt2 - pt1).Length();
+        //    Vector2 p = pt1;
+        //    Vector2 d = (pt2 - pt1) / dist;
             
-            Vector2 m = p - circle.Location;
-            float b = Vector2.Dot(m, d);
-            float c = Vector2.Dot(m, m) - circle.Radius * circle.Radius;
-            // Exit if r’s origin outside s (c > 0) and r pointing away from s (b > 0)
-            if (c > 0.0f && b > 0.0f) return false;
-            float discr = b*b - c; 
-            // A negative discriminant corresponds to ray missing sphere
-            if (discr < 0.0f) return false;
+        //    Vector2 m = p - circle.Location;
+        //    float b = Vector2.Dot(m, d);
+        //    float c = Vector2.Dot(m, m) - circle.Radius * circle.Radius;
+        //    // Exit if r’s origin outside s (c > 0) and r pointing away from s (b > 0)
+        //    if (c > 0.0f && b > 0.0f) return false;
+        //    float discr = b*b - c; 
+        //    // A negative discriminant corresponds to ray missing sphere
+        //    if (discr < 0.0f) return false;
             
-            // Ray now found to intersect sphere, compute smallest t value of intersection
-            float t = - b - MathF.Sqrt(discr);
-            // If t is negative, ray started inside sphere so clamp t to zero
-            if (t < 0.0f) t = 0.0f;
-            return t <= dist;
-        }
+        //    // Ray now found to intersect sphere, compute smallest t value of intersection
+        //    float t = - b - MathF.Sqrt(discr);
+        //    // If t is negative, ray started inside sphere so clamp t to zero
+        //    if (t < 0.0f) t = 0.0f;
+        //    return t <= dist;
+        //}
     }
 }
