@@ -6,7 +6,8 @@ using Microsoft.Xna.Framework.Graphics;
 using Newtonsoft.Json;
 using Genbox.VelcroPhysics.Dynamics;
 using Newtonsoft.Json.Linq;
-
+using ZeldaMario;
+using System;
 
 namespace IPCA.MonoGame
 {
@@ -14,7 +15,7 @@ namespace IPCA.MonoGame
     {
         private List<Sprite> _sprites;
 
-        public Scene(Game game, string name)
+        public Scene(Game1 game, string name)
         {
             string filename = $"Content/scenes/{name}.dt";
             _sprites = new List<Sprite>();
@@ -32,10 +33,24 @@ namespace IPCA.MonoGame
                     // Load texture here, and send it to the sprite object
                     Texture2D texture = game.Content.Load<Texture2D>(imageFilename);
                     Sprite sprite = new Sprite(imageFilename, texture, new Vector2(x/128, y/128), true);
-                    
-                    _sprites.Add(sprite);
-                    sprite.AddRectangleBody(game.Services.GetService<World>(), 
-                        isKinematic: true);
+                    Console.WriteLine(imageFilename);
+
+                    if (imageName == "prantinha1")
+                    {
+                        game._prantinha = new Prantinha(game, x, y);
+                        
+                    }
+                    else if (imageName == "Wulfric1")
+                    {
+                        game._player = new Player(game, x/16, y+2f);
+                    }
+                    else 
+                    {
+                        _sprites.Add(sprite);
+                        sprite.AddRectangleBody(game.Services.GetService<World>(),
+                            isKinematic: true);
+
+                    }
                 }
             }
         }

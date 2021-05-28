@@ -13,8 +13,10 @@ namespace ZeldaMario
         private SpriteBatch _spriteBatch;
         private World _world;
         private Scene _scene;
-        private Player _player;
+        public Player _player;
+        public Prantinha _prantinha;
 
+      //  public Player Player => _player;
 
         public Game1()
         {
@@ -34,9 +36,10 @@ namespace ZeldaMario
 
             Debug.SetGraphicsDevice(GraphicsDevice);
 
-            new Camera(GraphicsDevice, height: 15f);
+            new Camera(GraphicsDevice, height: 20f);//zoom da cam
             Camera.LookAt(Camera.WorldSize / 4f);
-            _player = new Player(this);
+          // _player = new Player(this);
+          // _prantinha = new Prantinha(this, float x, float y);
 
             base.Initialize();
         }
@@ -54,6 +57,7 @@ namespace ZeldaMario
 
             _world.Step((float)gameTime.ElapsedGameTime.TotalMilliseconds * 0.001f);
             _player.Update(gameTime);
+            _prantinha.Update(gameTime);
             base.Update(gameTime);
         }
 
@@ -64,6 +68,7 @@ namespace ZeldaMario
             _spriteBatch.Begin(SpriteSortMode.Deferred, BlendState.NonPremultiplied, SamplerState.PointClamp, DepthStencilState.Default, RasterizerState.CullNone);
             _scene.Draw(_spriteBatch, gameTime);
            _player.Draw(_spriteBatch, gameTime);
+            _prantinha.Draw(_spriteBatch, gameTime);
             _spriteBatch.End();
 
             base.Draw(gameTime);

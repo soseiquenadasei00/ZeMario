@@ -28,9 +28,9 @@ namespace ZeldaMario
         private List<Texture2D> _idleFrames;
         private List<Texture2D> _walkFrames;
 
-        public Player(Game1 game) :
+        public Player(Game1 game, float x, float y) :
             base("player",
-                new Vector2(0f, 4f),
+                new Vector2(x, y),
                 Enumerable.Range(1, 5)
                     .Select(
                         n => game.Content.Load<Texture2D>($"Wulfric{n}")
@@ -74,7 +74,7 @@ namespace ZeldaMario
                 KeysState.GoingDown,
                 () =>
                 {
-                    if (_isGrounded) Body.LinearVelocity = new Vector2(0, 5);
+                    if (_isGrounded) Body.LinearVelocity = new Vector2(0, 10); //alcance do salto
                 });
             KeyboardManager.Register(
                 Keys.A,

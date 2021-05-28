@@ -13,9 +13,9 @@ Timer de jogo
 
 Personagem 
 {
-  - 3 vidas 
-  - Atacar 
-  - movimentação 
+  - 3 vidas - mostrar no ecra
+  - Atacar - animacao de ataque
+  - movimentação  - dar fix na movimentacao
 }
 Cenario 
 {

@@ -41,6 +41,7 @@ namespace IPCA.MonoGame
            
             Vector2 scale = Camera.Length2Pixels(_size) / 128f; // TODO: HARDCODED!
             Vector2 scalePlayer = Camera.Length2Pixels(_size) / 4f; // TODO: HARDCODED!
+            Vector2 scaleEnemy = Camera.Length2Pixels(_size) / 5f; // TODO: HARDCODED!
             scale.Y = scale.X;  // FIXME! TODO: HACK HACK HACK
             
             if(Name == "player") { 
@@ -48,6 +49,31 @@ namespace IPCA.MonoGame
                 _rotation, anchor, scalePlayer, 
                 _direction == Direction.Right ? SpriteEffects.None : SpriteEffects.FlipHorizontally,
                 0);
+            }
+
+            else if (Name == "assets/orig/images/prantinha1")
+                 {
+                    spriteBatch.Draw(_texture, pos, null, Color.White,
+                        _rotation, anchor, scaleEnemy,
+                        _direction == Direction.Right ? SpriteEffects.None : SpriteEffects.FlipHorizontally,
+                        0);
+
+                 }
+            else if (Name == "assets/orig/images/coin0")
+            {
+                spriteBatch.Draw(_texture, pos, null, Color.White,
+                    _rotation, anchor, scale / 2f,
+                    _direction == Direction.Right ? SpriteEffects.None : SpriteEffects.FlipHorizontally,
+                    0);
+
+            }
+            else if (Name == "assets/orig/images/gumba0")
+            {
+                spriteBatch.Draw(_texture, pos, null, Color.White,
+                    _rotation, anchor, scale / 2f,
+                    _direction == Direction.Right ? SpriteEffects.None : SpriteEffects.FlipHorizontally,
+                    0);
+
             }
             else
             {
