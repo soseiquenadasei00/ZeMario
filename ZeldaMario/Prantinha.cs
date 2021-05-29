@@ -14,29 +14,18 @@ namespace ZeldaMario
 {
     public class Prantinha : AnimatedSprite
     {
-        enum Status
-        {
-            Flying, Patroling, Chasing
-        }
-
-        private Status _status = Status.Flying;
+        
         private Game1 _game;
-
-        private List<Texture2D> _idleFrames;
-        private List<Texture2D> _walkFrames;
-        private Vector2 _startingPoint;
-        private HashSet<Fixture> _collisions;
+        private float attackDist=0.8f;
+        private List<Bullet> tiro = new List<Bullet>();
+       
 
         public Prantinha(Game1 game, float x, float y) : base
             ("prantinha", new Vector2(x,y),
             Enumerable.Range(1,2).Select(n => game.Content.Load<Texture2D>($"planta-idle-export{n}")
             ).ToArray())
         {
-            _collisions = new HashSet<Fixture>();
-            _idleFrames = _textures;
-
-
-
+            
             _game = game;
 
             AddRectangleBody(
@@ -48,77 +37,52 @@ namespace ZeldaMario
 
             Body.Friction = 0f;
            
-
-
-
-            //sensor.OnCollision = (a, b, contact) =>
-            //{
-            //    _collisions.Add(b);  // FIXME FOR BULLETS
-            //    if (_status == Status.Flying && b.GameObject().Name != "bullet")
-            //    {
-            //        _status = Status.Patroling;
-            //        _startingPoint = _position;
-            //    }
-            //};
-            //sensor.OnSeparation = (a, b, contact) =>
-            //{
-            //    _collisions.Remove(b);
-            //};
         }
+        public bool distToPlayer(Player p)
+        {
+            float distX, h, distY,direction;
+            
+            direction=p.Position.X - Position.X;
+            if (direction < 0)
+            {
+                _direction = Direction.Right;
+            }
+            else _direction = Direction.Left;
+            distX = MathF.Abs(direction);
+            distY = MathF.Abs(p.Position.Y - Position.Y);
+            h = MathF.Abs ( MathF.Sqrt(distX * distX + distY * distY));
+            
+            if (h <= attackDist) return true;
+            else return false;
+           
+        }
+
 
         public override void Update(GameTime gameTime)
         {
-            //if (_status != Status.Flying && _collisions.Count == 0)
-            //{
-            //    Body.LinearVelocity = Vector2.Zero;
-            //    _status = Status.Flying;
-            //}
-            //// Chasing
-            //if (_status == Status.Chasing)
-            //{
-            //    // Player ran away
-            //    if ((_position - _game.Player.Position).Length() > 1.5f)
-            //        _status = Status.Patroling;
-            //    // We are near the player
-            //    else if ((_position - _game.Player.Position).Length() < 0.6f)
-            //    {
-            //        // FIXME: Do Damage!!! Lots of it.
-            //        Body.LinearVelocity = Vector2.Zero;
-            //    }
-            //    else
-            //    {
-            //        _direction = _position.X > _game.Player.Position.X
-            //            ? Direction.Left : Direction.Right;
-            //        Body.LinearVelocity = new
-            //            Vector2(_game.Player.Position.X - _position.X, 0);
-            //        Body.LinearVelocity.Normalize();
-
-            //    }
-            //}
-            //// Patrolling
-            //float _patrolDistance = 2f;
-            //if (_status == Status.Patroling)
-            //{
-            //    if ((_position - _game.Player.Position).Length() < 1.5f)
-            //    {
-            //        _status = Status.Chasing;
-            //    }
-            //    else if (_direction == Direction.Left) // Leaving Starting Point
-            //    {
-            //        if (_position.X < _startingPoint.X - _patrolDistance)
-            //            _direction = Direction.Right;
-            //        else
-            //            Body.LinearVelocity = -Vector2.UnitX;  //<<
-            //    }
-            //    else  // Going to starting Point
-            //    {
-            //        if (_position.X > _startingPoint.X)  //<<
-            //            _direction = Direction.Left;
-            //        else
-            //            Body.LinearVelocity = Vector2.UnitX;  //<<
-            //    }
-            //}
+         
+            if (distToPlayer(_game._player)) 
+            {
+                //Imagem invertida, então quando ta pra direita temos que virar pra esquerda
+                if(_direction == Direction.Right) 
+                {
+                    tiro.Add(new Bullet(_game,"p_tiro",_position.X - 10f, _position.Y, _direction));
+                }
+                else tiro.Add(new Bullet(_game, "p_tiro",_position.X + 10f, _position.Y, _direction));
+                Console.WriteLine();
+            }
             base.Update(gameTime);
         }
+
+        public override void Draw(SpriteBatch spriteBatch, GameTime gameTime)
+        {
+            foreach(Bullet b in tiro.ToArray()) 
+            {
+                b.Draw(spriteBatch, gameTime);
+
+            }
+            base.Draw(spriteBatch, gameTime);
+        }
+
     }
 }

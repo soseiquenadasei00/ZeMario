@@ -12,7 +12,7 @@ namespace IPCA.MonoGame
     public class Sprite : GameObject
     {
         
-        protected enum Direction
+        public enum Direction
         {
             Left,
             Right,
