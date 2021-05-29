@@ -29,7 +29,7 @@ namespace ZeldaMario
 
         public Prantinha(Game1 game, float x, float y) : base
             ("prantinha", new Vector2(x,y),
-            Enumerable.Range(1,2).Select(n => game.Content.Load<Texture2D>($"enemy{n}")
+            Enumerable.Range(1,2).Select(n => game.Content.Load<Texture2D>($"planta-idle-export{n}")
             ).ToArray())
         {
             _collisions = new HashSet<Fixture>();
@@ -41,16 +41,13 @@ namespace ZeldaMario
 
             AddRectangleBody(
             _game.Services.GetService<World>(),
-                width: _size.X * 5.8f,
-                height: _size.Y * 8f
+                width: _size.X/1.8f ,
+                height: _size.Y/0.8f ,
+                true
           ); // kinematic is false by default - kinematic : atributo q define so o body vai ser afetado pela fisica ou nao
 
             Body.Friction = 0f;
-            //Fixture sensor = FixtureFactory.AttachRectangle(
-            //    _size.X / 3f, _size.Y * 0.05f,
-            //    4, new Vector2(0, -_size.Y / 2f),
-            //    Body);
-            //sensor.IsSensor = true;
+           
 
 
 

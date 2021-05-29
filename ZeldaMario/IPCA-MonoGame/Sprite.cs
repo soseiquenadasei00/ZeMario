@@ -4,12 +4,14 @@ using Genbox.VelcroPhysics.Factories;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 
+
 namespace IPCA.MonoGame
 {
     // Game Object child
     // represents a game object that has a texture
     public class Sprite : GameObject
     {
+        
         protected enum Direction
         {
             Left,
@@ -37,48 +39,53 @@ namespace IPCA.MonoGame
         public override void Draw(SpriteBatch spriteBatch, GameTime gameTime)
         {
             Vector2 pos = Camera.Position2Pixels(_position);
-            Vector2 anchor = _texture.Bounds.Size.ToVector2() / 2f;
+            Vector2 anchor = new Vector2(_texture.Width / 2f, _texture.Height/2f);
            
-            Vector2 scale = Camera.Length2Pixels(_size) / 128f; // TODO: HARDCODED!
-            Vector2 scalePlayer = Camera.Length2Pixels(_size) / 4f; // TODO: HARDCODED!
-            Vector2 scaleEnemy = Camera.Length2Pixels(_size) / 5f; // TODO: HARDCODED!
+            Vector2 scale = Camera.Length2Pixels(_size) /16f; // TODO: HARDCODED!
+            Vector2 scalePlayer = Camera.Length2Pixels(_size) / 40f; 
+            
             scale.Y = scale.X;  // FIXME! TODO: HACK HACK HACK
             
-            if(Name == "player") { 
-            spriteBatch.Draw(_texture, pos, null, Color.White,
-                _rotation, anchor, scalePlayer, 
+            if(Name == "player") {
+                Vector2 anchor2 = new Vector2(_texture.Width / 2f, _texture.Height / 2.3f);
+                spriteBatch.Draw(_texture, pos, null, Color.White,
+                _rotation, anchor2, (scalePlayer), 
                 _direction == Direction.Right ? SpriteEffects.None : SpriteEffects.FlipHorizontally,
                 0);
             }
 
-            else if (Name == "assets/orig/images/prantinha1")
-                 {
-                    spriteBatch.Draw(_texture, pos, null, Color.White,
-                        _rotation, anchor, scaleEnemy,
+            else if (Name == "prantinha")
+            {
+                Vector2 anchor2 = new Vector2(_texture.Width / 2f, _texture.Height / 1.4f);
+                spriteBatch.Draw(_texture, pos, null, Color.White,
+                        _rotation, anchor2, scale/1.7f,
                         _direction == Direction.Right ? SpriteEffects.None : SpriteEffects.FlipHorizontally,
                         0);
 
                  }
-            else if (Name == "assets/orig/images/coin0")
+           
+            else if (Name == "gumba")
             {
+                Vector2 anchor2 = new Vector2(_texture.Width / 2f, _texture.Height/1.5f);
+
                 spriteBatch.Draw(_texture, pos, null, Color.White,
-                    _rotation, anchor, scale / 2f,
+                    _rotation, anchor2, scale / 2f,
                     _direction == Direction.Right ? SpriteEffects.None : SpriteEffects.FlipHorizontally,
                     0);
 
             }
-            else if (Name == "assets/orig/images/gumba0")
+            else if(Name == "Coin") 
             {
+                
                 spriteBatch.Draw(_texture, pos, null, Color.White,
-                    _rotation, anchor, scale / 2f,
-                    _direction == Direction.Right ? SpriteEffects.None : SpriteEffects.FlipHorizontally,
-                    0);
-
+                   _rotation, anchor, scale / 2f,
+                   _direction == Direction.Right ? SpriteEffects.None : SpriteEffects.FlipHorizontally,
+                   0);
             }
             else
             {
                 spriteBatch.Draw(_texture, pos, null, Color.White,
-                                _rotation, anchor, scale,
+                                _rotation, anchor, scale ,
                                 _direction == Direction.Right ? SpriteEffects.None : SpriteEffects.FlipHorizontally,
                                 0);
             }

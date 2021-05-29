@@ -21,29 +21,30 @@ namespace ZeldaMario
 
         private Game1 _game;
         private bool _isGrounded = false;
-      
 
+        public int countCoin;
         private List<ITempObject> _objects;
 
-        private List<Texture2D> _idleFrames;
+        private List<Texture2D> _idleFrames=new List<Texture2D>();
         private List<Texture2D> _walkFrames;
 
         public Player(Game1 game, float x, float y) :
             base("player",
                 new Vector2(x, y),
-                Enumerable.Range(1, 5)
+                Enumerable.Range(0,3)
                     .Select(
-                        n => game.Content.Load<Texture2D>($"Wulfric{n}")
+                        n => game.Content.Load<Texture2D>($"WulfricWalk{n}")
                         )
                     .ToArray())
         {
-            _idleFrames = _textures; // loaded by the base construtor
-
-            _walkFrames = Enumerable.Range(1, 5)
-                .Select(
-                    n => game.Content.Load<Texture2D>($"walk{n}")
-                )
-                .ToList();
+            _walkFrames = _textures; // loaded by the base construtor
+            countCoin = 0;
+            _idleFrames.Add(game.Content.Load<Texture2D>("Wulfric0"));
+                //= Enumerable.Range(0, 4)
+                //.Select(
+                //    n => game.Content.Load<Texture2D>($"WulfricWalk{n}")
+                //)
+                //.ToList();
 
             _game = game;
 
@@ -52,13 +53,13 @@ namespace ZeldaMario
 
             AddRectangleBody(
                 _game.Services.GetService<World>(),
-                width: _size.X * 5.8f,
-                height: _size.Y * 8f
+                width: _size.X /1.8f,
+                height: _size.Y /1.25f
             ); // kinematic is false by default
 
             Fixture sensor = FixtureFactory.AttachRectangle(
-                _size.X * 6 , _size.Y,
-                4, new Vector2(0, -_size.Y * 4f),
+                _size.X / 4f, _size.Y / 16f,
+                4, new Vector2(0, -_size.Y / 2.2f),
                 Body);
             sensor.IsSensor = true;
 
@@ -74,16 +75,16 @@ namespace ZeldaMario
                 KeysState.GoingDown,
                 () =>
                 {
-                    if (_isGrounded) Body.LinearVelocity = new Vector2(0, 10); //alcance do salto
+                    if (_isGrounded) Body.LinearVelocity = new Vector2(0, 4); //alcance do salto
                 });
             KeyboardManager.Register(
                 Keys.A,
                 KeysState.Down,
-                () => { Body.LinearVelocity = new Vector2(-5, Body.LinearVelocity.Y); });
+                () => { Body.LinearVelocity = new Vector2(-1, Body.LinearVelocity.Y); });
             KeyboardManager.Register(
                 Keys.D,
                 KeysState.Down,
-                () => { Body.LinearVelocity = new Vector2(5, Body.LinearVelocity.Y); });
+                () => { Body.LinearVelocity = new Vector2(1, Body.LinearVelocity.Y); });
 
             KeyboardManager.Register(
                 Keys.A,
@@ -93,28 +94,29 @@ namespace ZeldaMario
                 Keys.D,
                 KeysState.GoingUp,
                 () => { Body.LinearVelocity = new Vector2(0, 0); });
-            //BALAAA
-            //KeyboardManager.Register(
-            //    Keys.F, KeysState.GoingDown,
-            //    () =>
-            //    {
-            //        Vector2 pixelClick = Mouse.GetState().Position.ToVector2();
-            //        Vector2 pixelDyno = Camera.Position2Pixels(_position);
-            //        Vector2 delta = pixelClick - pixelDyno;
-            //        delta.Normalize();
-            //        delta.Y = -delta.Y; // Invert for "virtual" world
-            //        Vector2 dir = 5f * delta;
-
-            //        Bullet bullet = new Bullet(_fireBall, _position,
-            //            dir, game.Services.GetService<World>());
-            //        _objects.Add(bullet);
-            //    }
-            //    );
+            
 
         }
 
         public override void Update(GameTime gameTime)
         {
+            Body.OnCollision = (a, b, c) =>
+            {
+                Sprite temp;
+                temp = (Sprite)b.Body.UserData;
+                if (temp.Name == "Coin")
+                {
+                    foreach (Coin coin in _game._coin.ToArray())
+                    {
+                        if (temp.Position == coin.Position)
+                        {
+                            countCoin++;
+                            _game._coin.Remove(coin);
+                            Console.WriteLine(_game._coin.Count);
+                        }
+                    }
+                }
+            };
             foreach (ITempObject obj in _objects)
                 obj.Update(gameTime);
 
@@ -135,18 +137,10 @@ namespace ZeldaMario
             if (Body.LinearVelocity.X < 0f) _direction = Direction.Left;
             else if (Body.LinearVelocity.X > 0f) _direction = Direction.Right;
 
+
+
             base.Update(gameTime);
             Camera.LookAt(_position);
-
-            //UPDATE DA BALA
-            //_objects.AddRange(_objects
-            //    .Where(obj => obj is Bullet)
-            //    .Cast<Bullet>()
-            //    .Where(b => b.Collided)
-            //    .Select(b => new Explosion(_game, b.ImpactPos))
-            //    .ToArray()
-            //);
-            //_objects = _objects.Where(b => !b.IsDead()).ToList();
         }
 
         public override void Draw(SpriteBatch spriteBatch, GameTime gameTime)
