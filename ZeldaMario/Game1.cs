@@ -40,8 +40,8 @@ namespace ZeldaMario
 
             Debug.SetGraphicsDevice(GraphicsDevice);
 
-            new Camera(GraphicsDevice, height: 1.5f);//zoom da cam
-            Camera.LookAt(Camera.WorldSize / 4f);
+            new Camera(GraphicsDevice, height: 10.5f);//zoom da cam
+            Camera.LookAt(Camera.WorldSize / 2f);
           
 
             base.Initialize();

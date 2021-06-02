@@ -18,14 +18,14 @@ namespace ZeldaMario
         private Game1 _game;
         private float attackDist=0.8f;
         private List<Bullet> tiro = new List<Bullet>();
-       
+        private float timer, resetTimer = 5f;
 
         public Prantinha(Game1 game, float x, float y) : base
             ("prantinha", new Vector2(x,y),
             Enumerable.Range(1,2).Select(n => game.Content.Load<Texture2D>($"planta-idle-export{n}")
             ).ToArray())
         {
-            
+            timer = resetTimer;
             _game = game;
 
             AddRectangleBody(
@@ -50,7 +50,7 @@ namespace ZeldaMario
             else _direction = Direction.Left;
             distX = MathF.Abs(direction);
             distY = MathF.Abs(p.Position.Y - Position.Y);
-            h = MathF.Abs ( MathF.Sqrt(distX * distX + distY * distY));
+            h = MathF.Abs ( MathF.Sqrt(distX * distX + distY * distY)); //calculo da distancia para o player 
             
             if (h <= attackDist) return true;
             else return false;
@@ -60,16 +60,28 @@ namespace ZeldaMario
 
         public override void Update(GameTime gameTime)
         {
-         
+            Bullet bala;
+            
+
             if (distToPlayer(_game._player)) 
             {
-                //Imagem invertida, então quando ta pra direita temos que virar pra esquerda
-                if(_direction == Direction.Right) 
+                timer -= (float)gameTime.ElapsedGameTime.TotalSeconds;
+                if (timer <= 0)
                 {
-                    tiro.Add(new Bullet(_game,"p_tiro",_position.X - 10f, _position.Y, _direction));
+                    bala = new Bullet(_game, "p_tiro", this._position.X, this._position.Y, _direction);
+                    //Imagem invertida, então quando ta pra direita temos que virar pra esquerda
+                    if (_direction == Direction.Right)
+                    {
+                    
+                        tiro.Add(bala);
+                        Console.WriteLine("jogador: ", _game._player.Position.X);
+                        Console.WriteLine("plantinha: ", this._position.X);
+                    }
+                    else tiro.Add(bala);
+                    Console.WriteLine(_game._player.Position.X);
+                    timer = resetTimer;
                 }
-                else tiro.Add(new Bullet(_game, "p_tiro",_position.X + 10f, _position.Y, _direction));
-                Console.WriteLine();
+               
             }
             base.Update(gameTime);
         }
@@ -79,7 +91,6 @@ namespace ZeldaMario
             foreach(Bullet b in tiro.ToArray()) 
             {
                 b.Draw(spriteBatch, gameTime);
-
             }
             base.Draw(spriteBatch, gameTime);
         }

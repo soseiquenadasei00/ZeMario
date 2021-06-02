@@ -140,7 +140,7 @@ namespace ZeldaMario
 
 
             base.Update(gameTime);
-            Camera.LookAt(_position);
+           // Camera.LookAt(_position);
         }
 
         public override void Draw(SpriteBatch spriteBatch, GameTime gameTime)

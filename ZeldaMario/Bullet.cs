@@ -15,13 +15,15 @@ namespace ZeldaMario
         private Game1 _game;
         int direction;
         public bool morte = false;
+        public Vector2 target;
 
         float dieTimer = 3f;
-        public Bullet(Game1 game, string texName, float x = 0, float y = 0, Direction dir = Direction.Right) :
+        public Bullet(Game1 game, string texName, float x , float y , Direction dir = Direction.Right) :
             base("Bullet",
                 game.Content.Load<Texture2D>(texName), new Vector2(x, y), false 
                 )
         {
+            Camera.LookAt(_position);
             _game = game;
             if (dir == Direction.Right)
             {
@@ -46,6 +48,7 @@ namespace ZeldaMario
 
         public override void Update(GameTime gameTime)
         {
+            target = _game._player.Position;
             Body.LinearVelocity = new Vector2(speed * direction, Body.LinearVelocity.Y) * (float)gameTime.ElapsedGameTime.TotalSeconds;
             CountDown(ref dieTimer, gameTime);
             if (dieTimer <= 0) morte = true;
@@ -59,9 +62,10 @@ namespace ZeldaMario
 
 
 
-        public override void Draw(SpriteBatch spriteBatch, GameTime gameTime)
-        {
-            base.Draw(spriteBatch, gameTime);
-        }
+
+        //public override void Draw(SpriteBatch spriteBatch, GameTime gameTime)
+        //{
+        //    base.Draw(spriteBatch, gameTime);
+        //}
     }
 }

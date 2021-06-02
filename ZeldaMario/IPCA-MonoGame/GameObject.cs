@@ -59,14 +59,14 @@ namespace IPCA.MonoGame
                                 
                                 p1 = Camera.Position2Pixels(p1);
                                 p2 = Camera.Position2Pixels(p2);
-                                debug.DrawLine(spriteBatch, p1, p2, Color.Green);
+                               // debug.DrawLine(spriteBatch, p1, p2, Color.Green);
                             }
                             break;
                         case CircleShape c:
                             Vector2 center = Camera.Position2Pixels(
                                 Body.Position + c.Position);
                             float radius = Camera.Length2Pixels(new Vector2(c.Radius, 0)).X;
-                           debug.DrawCircle(spriteBatch, center, radius, Color.Blue);
+                           //debug.DrawCircle(spriteBatch, center, radius, Color.Blue);
                             break;
                     }
                 }
