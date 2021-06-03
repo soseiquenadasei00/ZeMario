@@ -40,8 +40,8 @@ namespace ZeldaMario
 
             Debug.SetGraphicsDevice(GraphicsDevice);
 
-            new Camera(GraphicsDevice, height: 10.5f);//zoom da cam
-            Camera.LookAt(Camera.WorldSize / 2f);
+            new Camera(GraphicsDevice, height: 2.5f);//zoom da cam
+            Camera.LookAt(Camera.WorldSize / 4f);
           
 
             base.Initialize();
@@ -60,14 +60,16 @@ namespace ZeldaMario
 
             _world.Step((float)gameTime.ElapsedGameTime.TotalMilliseconds * 0.001f);
             _player.Update(gameTime);
-            foreach (Prantinha p in _prantinha)
+            foreach (Prantinha p in _prantinha.ToArray())
             {
+                foreach (Bullet b in p.tiro.ToArray()) b.Update(gameTime);
                 p.Update(gameTime);
             }
-            foreach (Gumba g in _gumba)
+            foreach (Gumba g in _gumba.ToArray())
             {
                 g.Update(gameTime);
             }
+
             foreach (Coin c in _coin)
             {
                 c.Update(gameTime);

@@ -34,27 +34,27 @@ namespace IPCA.MonoGame
 
                     // Load texture here, and send it to the sprite object
                     Texture2D texture = game.Content.Load<Texture2D>(imageFilename);
-                    Sprite sprite = new Sprite(imageFilename, texture, new Vector2(x/128, y/128), true);
+                    Sprite sprite = new Sprite(imageFilename, texture, new Vector2(x/8, y/8), true);
                     //Console.WriteLine(imageFilename);
 
                     if (imageName == "planta-idle-export1")
                     {
-                         game._prantinha.Add(new Prantinha(game, (x / 128f) + 0.1f, (y / 128f)+0.08f));
+                         game._prantinha.Add(new Prantinha(game, (x / 8) + 0.2f, (y/8)+0.07f));
                         
                     }
                     else if (imageName == "Wulfric0")
                     {
-                        game._player = new Player(game, x +0.1f, y+0.5f); // y+2 para ajustar a altura
+                        game._player = new Player(game, (x/8)+0.2f , y+1f); // y+2 para ajustar a altura
                     }
                     else if (imageName == "gumba-idle")
                     {
-                        if(y==0) game._gumba.Add(new Gumba(game, (x / 128f) + 0.12f, y / 128f));
-                        else game._gumba.Add(new Gumba(game, (x / 128f)+0.12f, (y/128f)+1));
+                        if(y==0) game._gumba.Add(new Gumba(game, (x / 8) + 0.2f, (y/8 )+ 0.12f));
+                        else game._gumba.Add(new Gumba(game, (x / 8) + 0.2f, (y/8) + 0.12f));
                         
                     }
                     else if (imageName == "tileset1")
                     {
-                        game._coin.Add(new Coin(game, (x/128f)+0.14f, (y/128f)+0.12f));
+                        game._coin.Add(new Coin(game, (x / 8) + 0.12f,(y/8)+0.12f));
 
                     }
 

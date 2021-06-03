@@ -15,7 +15,7 @@ namespace ZeldaMario
         private Game1 _game;
         int direction;
         public bool morte = false;
-        public Vector2 target;
+       
 
         float dieTimer = 3f;
         public Bullet(Game1 game, string texName, float x , float y , Direction dir = Direction.Right) :
@@ -23,7 +23,7 @@ namespace ZeldaMario
                 game.Content.Load<Texture2D>(texName), new Vector2(x, y), false 
                 )
         {
-            Camera.LookAt(_position);
+            
             _game = game;
             if (dir == Direction.Right)
             {
@@ -40,16 +40,16 @@ namespace ZeldaMario
                 game.Services.GetService<World>(),
                 isKinematic: false
             ); // kinematic is false by default
-            Body.IsSensor = true;
+            //Body.IsSensor = true;
             Body.IgnoreGravity = true;
             Body.Friction = 0;
-            Body.OnCollision = (a, b, c) => { morte = true; };
+            //Body.OnCollision = (a, b, c) => { morte = true; };
         }
 
         public override void Update(GameTime gameTime)
         {
-            target = _game._player.Position;
-            Body.LinearVelocity = new Vector2(speed * direction, Body.LinearVelocity.Y) * (float)gameTime.ElapsedGameTime.TotalSeconds;
+
+            moverBala(gameTime, 2500f);
             CountDown(ref dieTimer, gameTime);
             if (dieTimer <= 0) morte = true;
             base.Update(gameTime);
@@ -60,12 +60,18 @@ namespace ZeldaMario
             _dieTimer -= (float)gameTime.ElapsedGameTime.TotalSeconds;
         }
 
+        public void moverBala(GameTime gameTime,float speed) 
+        {
+            if (_direction == Direction.Left)  // A planta é com lado invertido, ou seja, quando estamos a olhar para a direita na verdade estamos a calcular pro lado esquerdo 
+            {
+                _position.X -= speed * (float)gameTime.ElapsedGameTime.TotalSeconds;
+            }
+            else _position.X += speed * (float)gameTime.ElapsedGameTime.TotalSeconds;
+        }
 
-
-
-        //public override void Draw(SpriteBatch spriteBatch, GameTime gameTime)
-        //{
-        //    base.Draw(spriteBatch, gameTime);
-        //}
+        public override void Draw(SpriteBatch spriteBatch, GameTime gameTime)
+        {
+            base.Draw(spriteBatch, gameTime);
+        }
     }
 }

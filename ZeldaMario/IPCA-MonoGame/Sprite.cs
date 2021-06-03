@@ -82,6 +82,7 @@ namespace IPCA.MonoGame
                    _direction == Direction.Right ? SpriteEffects.None : SpriteEffects.FlipHorizontally,
                    0);
             }
+           
             else
             {
                 spriteBatch.Draw(_texture, pos, null, Color.White,

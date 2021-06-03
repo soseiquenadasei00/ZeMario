@@ -27,24 +27,24 @@ namespace ZeldaMario
 
         private List<Texture2D> _idleFrames=new List<Texture2D>();
         private List<Texture2D> _walkFrames;
+        private List<Texture2D> _atackFrames;
 
         public Player(Game1 game, float x, float y) :
             base("player",
                 new Vector2(x, y),
-                Enumerable.Range(0,3)
+                Enumerable.Range(1,22)
                     .Select(
-                        n => game.Content.Load<Texture2D>($"WulfricWalk{n}")
+                        n => game.Content.Load<Texture2D>($"Wulfricidle/idle{n}")
                         )
                     .ToArray())
         {
-            _walkFrames = _textures; // loaded by the base construtor
-            countCoin = 0;
-            _idleFrames.Add(game.Content.Load<Texture2D>("Wulfric0"));
-                //= Enumerable.Range(0, 4)
-                //.Select(
-                //    n => game.Content.Load<Texture2D>($"WulfricWalk{n}")
-                //)
-                //.ToList();
+            _idleFrames = _textures; // loaded by the base construtor
+
+            _walkFrames = Enumerable.Range(1, 10)
+                .Select(
+                    n => game.Content.Load<Texture2D>($"Wulfricwalking/andar-d{n}")
+                )
+                .ToList();
 
             _game = game;
 
@@ -95,7 +95,6 @@ namespace ZeldaMario
                 KeysState.GoingUp,
                 () => { Body.LinearVelocity = new Vector2(0, 0); });
             
-
         }
 
         public override void Update(GameTime gameTime)
@@ -112,7 +111,7 @@ namespace ZeldaMario
                         {
                             countCoin++;
                             _game._coin.Remove(coin);
-                            Console.WriteLine(_game._coin.Count);
+                            
                         }
                     }
                 }
@@ -140,8 +139,90 @@ namespace ZeldaMario
 
 
             base.Update(gameTime);
-           // Camera.LookAt(_position);
+           Camera.LookAt(_position);
         }
+
+        //public void Attack()
+        //{
+        //    Fixture fixture;
+        //    if (_currentTexture == 3)
+        //    {
+        //        if (_direction == Direction.Right)
+        //        {
+        //            fixture = FixtureFactory.AttachRectangle(
+        //                _size.X / 8f, _size.Y / 6f,
+        //                1,
+        //                new Vector2(_size.X / 5.5f, -_size.Y / 15f),
+        //                Body);
+        //            fixture.IsSensor = true;
+        //            fixture.OnCollision = (a, b, c) =>
+        //            {
+        //                Gumba gumba;
+        //                gumba = (Sprite)b.Body.UserData;
+
+        //                if (gumba.Name == "gumba")
+        //                {
+        //                    foreach (Gumba g in _game._gumba)
+        //                    {
+        //                        if (g.Position == gumba.Position)
+        //                        {
+        //                            g.Body = null;
+        //                            _game._gumba.Remove(g);
+        //                            break;
+        //                        }
+        //                    }
+        //                }
+        //            };
+
+        //        }
+        //        else if (_direction == Direction.Left)
+        //        {
+        //            fixture = FixtureFactory.AttachRectangle(
+        //                _size.X / 8f, _size.Y / 6f,
+        //                1,
+        //                new Vector2(-_size.X / 5.5f, -_size.Y / 15f),
+        //                Body);
+        //            fixture.IsSensor = true;
+        //            fixture.OnCollision = (a, b, c) =>
+        //            {
+        //                Sprite gumba;
+        //                gumba = (Sprite)b.Body.UserData;
+        //                if (gumba.Name == "gumba")
+        //                {
+        //                    foreach (Gumba g in _game._gumba)
+        //                    {
+        //                        if (g.Position == gumba.Position)
+        //                        {
+        //                            g.Body = null;
+        //                            _game._gumba.Remove(g);
+        //                            break;
+        //                        }
+        //                    }
+        //                }
+        //            };
+
+        //        }
+        //    }
+
+        //    if (_isGrounded && Body.LinearVelocity.X == 0)
+        //    {
+        //        //_position -= new Vector2(10, 0);
+        //        attacking = true;
+        //        _textures = _attackFrames;
+        //    }
+        //}
+
+        //public void StopAttack()
+        //{
+        //    if (Body.FixtureList.Count > 2)
+        //        Body.FixtureList.RemoveAt(2);
+
+        //    if (_isGrounded && _currentTexture == 2 && attacking)
+        //    {
+        //        attacking = false;
+        //        _textures = _idleFrames;
+        //    }
+        //}
 
         public override void Draw(SpriteBatch spriteBatch, GameTime gameTime)
         {

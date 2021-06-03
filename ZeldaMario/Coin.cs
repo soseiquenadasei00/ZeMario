@@ -16,8 +16,6 @@ namespace ZeldaMario
         private Game1 _game;
 
         private List<Texture2D> _idleFrames;
-        private List<Texture2D> _walkFrames;
-        private Vector2 _startingPoint;
 
         
 
@@ -48,12 +46,7 @@ namespace ZeldaMario
             Body.IsSensor = true;
             
          }
-        public override void Update(GameTime gameTime)
-        {
 
-
-            base.Update(gameTime);
-        }
 
     }
 }
