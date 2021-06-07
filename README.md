@@ -1,5 +1,5 @@
 # ZeldaMario
-Projeto no qual fazemos uma junção do estilo Mario junto com Zelda
+Projeto no qual fazemos uma junção do estilo Mario 
 
 Alunos: 
 
