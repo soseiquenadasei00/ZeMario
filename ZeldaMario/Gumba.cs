@@ -22,11 +22,10 @@ namespace ZeldaMario
 
         private Status _status = Status.Walk;
         private Game1 _game;
-        public bool attacking = false;
         public bool walk = false;
         public float speed = 15f;
 
-        private int patrolOffset = 3;
+        private int patrolOffset = 3; // raio que o gumba pode andar
 
         private List<Texture2D> _runFrames;
 

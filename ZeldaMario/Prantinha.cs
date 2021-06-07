@@ -16,9 +16,9 @@ namespace ZeldaMario
     {
         
         private Game1 _game;
-        private float attackDist=0.8f;
+        private float attackDist=6f;
         public List<Bullet> tiro = new List<Bullet>();
-        private float timer, resetTimer = 2f;
+        private float timer, resetTimer = 5f;
 
         public Prantinha(Game1 game, float x, float y) : base
             ("prantinha", new Vector2(x,y),
@@ -65,19 +65,30 @@ namespace ZeldaMario
 
             if (distToPlayer(_game._player))
             {
+                if (tiro.Count > 0)
+                {
+                    foreach (Bullet b in tiro.ToArray())
+                    {
+                        b.Update(gameTime);
+                        if (b.morte) tiro.Remove(b);
+                    }
+                }
                 timer -= (float)gameTime.ElapsedGameTime.TotalSeconds;
                 if (timer <= 0)
                 {
-                    bala = new Bullet(_game, "p_tiro", this._position.X, this._position.Y, _direction);
+
                     //Imagem invertida, então quando ta pra direita temos que virar pra esquerda
                     if (_direction == Direction.Right)
                     {
-
+                        bala = new Bullet(_game, "p_tiro", this._position.X - 0.25f, this._position.Y + 0.1f, _direction);
                         tiro.Add(bala);
-                       
+
                     }
-                    else tiro.Add(bala);
-                    
+                    else
+                    {
+                        bala = new Bullet(_game, "p_tiro", this._position.X +0.25f, this._position.Y + 0.1f, _direction);
+                        tiro.Add(bala);
+                    }
                     timer = resetTimer;
                 }
 

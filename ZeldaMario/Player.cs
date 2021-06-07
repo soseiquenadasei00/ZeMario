@@ -21,13 +21,15 @@ namespace ZeldaMario
 
         private Game1 _game;
         private bool _isGrounded = false;
+        private bool attack = false;
+        public int vidas = 3;
 
         public int countCoin;
         private List<ITempObject> _objects;
 
         private List<Texture2D> _idleFrames=new List<Texture2D>();
         private List<Texture2D> _walkFrames;
-        private List<Texture2D> _atackFrames;
+        private List<Texture2D> _attackFrames;
 
         public Player(Game1 game, float x, float y) :
             base("player",
@@ -45,7 +47,11 @@ namespace ZeldaMario
                     n => game.Content.Load<Texture2D>($"Wulfricwalking/andar-d{n}")
                 )
                 .ToList();
-
+            _attackFrames = Enumerable.Range(1, 16)
+                .Select(
+                    n => game.Content.Load<Texture2D>($"Wulfricatack/atack{n}")
+                )
+                .ToList();
             _game = game;
 
 
@@ -57,9 +63,10 @@ namespace ZeldaMario
                 height: _size.Y /1.25f
             ); // kinematic is false by default
 
+
             Fixture sensor = FixtureFactory.AttachRectangle(
                 _size.X / 4f, _size.Y / 16f,
-                4, new Vector2(0, -_size.Y / 2.2f),
+                4, new Vector2(0, -_size.Y / 1.5f),
                 Body);
             sensor.IsSensor = true;
 
@@ -94,8 +101,93 @@ namespace ZeldaMario
                 Keys.D,
                 KeysState.GoingUp,
                 () => { Body.LinearVelocity = new Vector2(0, 0); });
-            
+           // KeyboardManager.Register(Keys.F, KeysState.Down, () => { Attack(); });
+           //KeyboardManager.Register(Keys.F, KeysState.GoingUp, () => { StopAttack(); });
+
         }
+
+        //public void Attack()
+        //{
+        //    Fixture fixture;
+        //    if (_currentTexture == 3)
+        //    {
+        //        if (_direction == Direction.Right)
+        //        {
+        //            fixture = FixtureFactory.AttachRectangle(
+        //                _size.X / 8f, _size.Y / 6f,
+        //                1,
+        //                new Vector2(_size.X / 5.5f, -_size.Y / 15f),
+        //                Body);
+        //            fixture.IsSensor = true;
+        //            fixture.OnCollision = (a, b, c) =>
+        //            {
+        //                Sprite gumba;
+        //                gumba = (Sprite)b.Body.UserData;
+
+        //                if (gumba.Name == "gumba")
+        //                {
+        //                    foreach (Gumba g in _game._gumba)
+        //                    {
+        //                        if (g.Position == gumba.Position)
+        //                        {
+        //                            g.Body = null;
+        //                            _game._gumba.Remove(g);
+        //                            break;
+        //                        }
+        //                    }
+        //                }
+        //            };
+
+        //        }
+        //        else if (_direction == Direction.Left)
+        //        {
+        //            fixture = FixtureFactory.AttachRectangle(
+        //                _size.X +2f / 8f, _size.Y / 6f,
+        //                1,
+        //                new Vector2(-_size.X / 5.5f, -_size.Y / 15f),
+        //                Body);
+        //            fixture.IsSensor = true;
+        //            fixture.OnCollision = (a, b, c) =>
+        //            {
+        //                Sprite gumba;
+        //                gumba = (Sprite)b.Body.UserData;
+        //                if (gumba.Name == "gumba")
+        //                {
+        //                    foreach (Gumba g in _game._gumba)
+        //                    {
+        //                        if (g.Position == gumba.Position)
+        //                        {
+        //                            g.Body = null;
+        //                            _game._gumba.Remove(g);
+        //                            break;
+        //                        }
+        //                    }
+        //                }
+        //            };
+
+        //        }
+        //    }
+
+        //    if (_isGrounded && Body.LinearVelocity.X == 0)
+        //    {
+        //        attack = true;
+        //        _textures = _attackFrames;
+        //    }
+        //}
+
+        //public void StopAttack()
+        //{
+
+        //    if (Body.FixtureList.Count > 2)
+        //        Console.WriteLine("removi");
+        //    Body.FixtureList.RemoveAt(1);
+
+        //    if (_isGrounded && attack)
+        //    {
+        //        attack = false;
+        //        _textures = _idleFrames;
+        //    }
+        //}
 
         public override void Update(GameTime gameTime)
         {
@@ -136,93 +228,16 @@ namespace ZeldaMario
             if (Body.LinearVelocity.X < 0f) _direction = Direction.Left;
             else if (Body.LinearVelocity.X > 0f) _direction = Direction.Right;
 
-
-
+            //if (attack)
+            //{
+            //    _textures = _attackFrames;
+            //}
+            //else _textures = _idleFrames;
             base.Update(gameTime);
            Camera.LookAt(_position);
         }
 
-        //public void Attack()
-        //{
-        //    Fixture fixture;
-        //    if (_currentTexture == 3)
-        //    {
-        //        if (_direction == Direction.Right)
-        //        {
-        //            fixture = FixtureFactory.AttachRectangle(
-        //                _size.X / 8f, _size.Y / 6f,
-        //                1,
-        //                new Vector2(_size.X / 5.5f, -_size.Y / 15f),
-        //                Body);
-        //            fixture.IsSensor = true;
-        //            fixture.OnCollision = (a, b, c) =>
-        //            {
-        //                Gumba gumba;
-        //                gumba = (Sprite)b.Body.UserData;
-
-        //                if (gumba.Name == "gumba")
-        //                {
-        //                    foreach (Gumba g in _game._gumba)
-        //                    {
-        //                        if (g.Position == gumba.Position)
-        //                        {
-        //                            g.Body = null;
-        //                            _game._gumba.Remove(g);
-        //                            break;
-        //                        }
-        //                    }
-        //                }
-        //            };
-
-        //        }
-        //        else if (_direction == Direction.Left)
-        //        {
-        //            fixture = FixtureFactory.AttachRectangle(
-        //                _size.X / 8f, _size.Y / 6f,
-        //                1,
-        //                new Vector2(-_size.X / 5.5f, -_size.Y / 15f),
-        //                Body);
-        //            fixture.IsSensor = true;
-        //            fixture.OnCollision = (a, b, c) =>
-        //            {
-        //                Sprite gumba;
-        //                gumba = (Sprite)b.Body.UserData;
-        //                if (gumba.Name == "gumba")
-        //                {
-        //                    foreach (Gumba g in _game._gumba)
-        //                    {
-        //                        if (g.Position == gumba.Position)
-        //                        {
-        //                            g.Body = null;
-        //                            _game._gumba.Remove(g);
-        //                            break;
-        //                        }
-        //                    }
-        //                }
-        //            };
-
-        //        }
-        //    }
-
-        //    if (_isGrounded && Body.LinearVelocity.X == 0)
-        //    {
-        //        //_position -= new Vector2(10, 0);
-        //        attacking = true;
-        //        _textures = _attackFrames;
-        //    }
-        //}
-
-        //public void StopAttack()
-        //{
-        //    if (Body.FixtureList.Count > 2)
-        //        Body.FixtureList.RemoveAt(2);
-
-        //    if (_isGrounded && _currentTexture == 2 && attacking)
-        //    {
-        //        attacking = false;
-        //        _textures = _idleFrames;
-        //    }
-        //}
+        
 
         public override void Draw(SpriteBatch spriteBatch, GameTime gameTime)
         {

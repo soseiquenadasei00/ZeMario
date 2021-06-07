@@ -19,25 +19,13 @@ Personagem
 }
 Cenario 
 {
-
-  -Colecionaveis (escondidos em bloco)
-  -Blocos caem (se passar por cima)
   -Picos que matam
   -Construção 
-  {
-  - Linear e mundo aberto
-  - Não ser limitado ao ecrã
-  }
+ 
 }
-Colisões 
-{
-- Tipos de colisões
-}
-Camera 
-{ 
-  -movimentação da camera
-}
+
 
 
  --CENAS A FAZER--
 
+ Corrigir o bug do player na hora de atacar 

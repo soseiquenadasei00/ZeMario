@@ -59,7 +59,7 @@ namespace IPCA.MonoGame
                                 
                                 p1 = Camera.Position2Pixels(p1);
                                 p2 = Camera.Position2Pixels(p2);
-                               //debug.DrawLine(spriteBatch, p1, p2, Color.Green);
+                              // debug.DrawLine(spriteBatch, p1, p2, Color.Green);
                             }
                             break;
                         case CircleShape c:
@@ -98,12 +98,11 @@ namespace IPCA.MonoGame
             
             Body.FixedRotation = true;
         }
-        
+
 
         public void AddCircleBody(
            World world,
            float raids = 0f,
-           
            bool isKinematic = false)
         {
             Body = BodyFactory.CreateCircle(world,

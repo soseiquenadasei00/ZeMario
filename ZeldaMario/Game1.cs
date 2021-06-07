@@ -14,6 +14,8 @@ namespace ZeldaMario
         private World _world;
         private Scene _scene;
         public Player _player;
+        public Bandeira _bandeira;
+        public Texture2D background;
        
         public List<Prantinha> _prantinha= new List<Prantinha>();
         public List<Gumba> _gumba=new List<Gumba>(); 
@@ -51,6 +53,7 @@ namespace ZeldaMario
         {
             _spriteBatch = new SpriteBatch(GraphicsDevice);
             _scene = new Scene(this, "MainScene");
+            background = Content.Load<Texture2D>("background");
         }
 
         protected override void Update(GameTime gameTime)
@@ -60,6 +63,7 @@ namespace ZeldaMario
 
             _world.Step((float)gameTime.ElapsedGameTime.TotalMilliseconds * 0.001f);
             _player.Update(gameTime);
+            _bandeira.Update(gameTime);
             foreach (Prantinha p in _prantinha.ToArray())
             {
                 foreach (Bullet b in p.tiro.ToArray()) b.Update(gameTime);
@@ -82,8 +86,12 @@ namespace ZeldaMario
 
             GraphicsDevice.Clear(Color.CornflowerBlue);
             _spriteBatch.Begin(SpriteSortMode.Deferred, BlendState.NonPremultiplied, SamplerState.PointClamp, DepthStencilState.Default, RasterizerState.CullNone);
+            _spriteBatch.Draw(background,new Rectangle(0,0,1600,1600),Color.White);
+            _bandeira.Draw(_spriteBatch, gameTime);
             _scene.Draw(_spriteBatch, gameTime);
            _player.Draw(_spriteBatch, gameTime);
+           
+
             foreach (Prantinha p in _prantinha)
             {
                 p.Draw(_spriteBatch, gameTime);

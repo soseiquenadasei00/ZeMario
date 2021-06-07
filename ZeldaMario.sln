@@ -7,7 +7,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZeldaMario", "ZeldaMario\Ze
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{68499760-5CF1-4DF8-8F2C-93A8F4155891}"
 	ProjectSection(SolutionItems) = preProject
-		level1.txt = level1.txt
 		textoImportante.txt = textoImportante.txt
 	EndProjectSection
 EndProject

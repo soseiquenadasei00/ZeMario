@@ -29,15 +29,19 @@ namespace IPCA.MonoGame
                     float y = (float) (image["y"] ?? 0);
                     string imageName = (string) image["imageName"];
                     string imageFilename = $"assets/orig/images/{imageName}";
-                    
+                    string LayerName = (string)image["layerName"];
 
 
                     // Load texture here, and send it to the sprite object
                     Texture2D texture = game.Content.Load<Texture2D>(imageFilename);
                     Sprite sprite = new Sprite(imageFilename, texture, new Vector2(x/8, y/8), true);
                     //Console.WriteLine(imageFilename);
+                    if(LayerName == "Mapa1") 
+                    {
+                        _sprites.Add(sprite);
+                    }
 
-                    if (imageName == "planta-idle-export1")
+                    else if (imageName == "planta-idle-export1")
                     {
                          game._prantinha.Add(new Prantinha(game, (x / 8) + 0.2f, (y/8)+0.07f));
                         
@@ -57,9 +61,15 @@ namespace IPCA.MonoGame
                         game._coin.Add(new Coin(game, (x / 8) + 0.12f,(y/8)+0.12f));
 
                     }
-
-                    else
+                    else if(imageName == "banner") 
                     {
+                        game._bandeira = new Bandeira(game, (x / 8)+0.2f, (y / 8)+0.25f);
+                        game._bandeira.Body.IsSensor = true;
+                    }
+
+                    else 
+                    {
+                        
                         _sprites.Add(sprite);
                         sprite.AddRectangleBody(game.Services.GetService<World>(),
                             isKinematic: true);
