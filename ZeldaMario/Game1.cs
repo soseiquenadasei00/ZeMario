@@ -17,9 +17,9 @@ namespace ZeldaMario
         public Bandeira _bandeira;
         public Texture2D background;
        
-        public List<Prantinha> _prantinha= new List<Prantinha>();
-        public List<Gumba> _gumba=new List<Gumba>(); 
-        public List<Coin> _coin=new List<Coin>();
+        public List<Prantinha> _prantinha = new List<Prantinha>();
+        public List<Gumba> _gumba = new List<Gumba>(); 
+        public List<Coin> _coin = new List<Coin>();
         
 
       //  public Player Player => _player;

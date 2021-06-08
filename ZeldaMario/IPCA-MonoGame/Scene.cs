@@ -41,6 +41,14 @@ namespace IPCA.MonoGame
                         _sprites.Add(sprite);
                     }
 
+                    else if (LayerName == "morte") 
+                    {
+                       
+                        _sprites.Add(sprite);
+                        sprite.AddRectangleBody(game.Services.GetService<World>(), 
+                            
+                            height: (sprite.Size.Y / 2f), isKinematic: true);
+                    }
                     else if (imageName == "planta-idle-export1")
                     {
                          game._prantinha.Add(new Prantinha(game, (x / 8) + 0.2f, (y/8)+0.07f));
@@ -66,13 +74,14 @@ namespace IPCA.MonoGame
                         game._bandeira = new Bandeira(game, (x / 8)+0.2f, (y / 8)+0.25f);
                         game._bandeira.Body.IsSensor = true;
                     }
-
+                    
                     else 
                     {
                         
                         _sprites.Add(sprite);
                         sprite.AddRectangleBody(game.Services.GetService<World>(),
                             isKinematic: true);
+                        sprite.Body.Friction = 110f;
 
                     }
                 }

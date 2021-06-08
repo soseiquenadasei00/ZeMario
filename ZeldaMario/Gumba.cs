@@ -42,11 +42,11 @@ namespace ZeldaMario
             _game = game;
 
 
-            AddRectangleBody(
+           
+            AddCircleBody(
                 game.Services.GetService<World>(),
-                width: _size.X / 2f,
-                height: _size.Y / 2f
-            ); // kinematic is false by default
+                raids: _size.X / 3.5f
+                );
             Body.Restitution = 0;
             Body.Friction = 0;
 

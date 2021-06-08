@@ -59,14 +59,14 @@ namespace IPCA.MonoGame
                                 
                                 p1 = Camera.Position2Pixels(p1);
                                 p2 = Camera.Position2Pixels(p2);
-                              // debug.DrawLine(spriteBatch, p1, p2, Color.Green);
+                               debug.DrawLine(spriteBatch, p1, p2, Color.Red);
                             }
                             break;
                         case CircleShape c:
                             Vector2 center = Camera.Position2Pixels(
                                 Body.Position + c.Position);
                             float radius = Camera.Length2Pixels(new Vector2(c.Radius, 0)).X;
-                           //debug.DrawCircle(spriteBatch, center, radius, Color.Blue);
+                           debug.DrawCircle(spriteBatch, center, radius, Color.Blue);
                             break;
                     }
                 }
@@ -103,11 +103,14 @@ namespace IPCA.MonoGame
         public void AddCircleBody(
            World world,
            float raids = 0f,
+           float x = 0f,
+           float y =0f,
+           
            bool isKinematic = false)
         {
             Body = BodyFactory.CreateCircle(world,
                 raids > 0 ? raids : _size.X, density:0, 
-                 _position);
+                 _position + new Vector2(x,y));
 
             Body.UserData = this;
 
@@ -118,6 +121,7 @@ namespace IPCA.MonoGame
             Body.FixedRotation = true;
         }
 
+        
 
     }
 }

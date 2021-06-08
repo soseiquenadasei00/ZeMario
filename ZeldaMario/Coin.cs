@@ -37,11 +37,10 @@ namespace ZeldaMario
 
             AddCircleBody(  // Collider
                 _game.Services.GetService<World>(),
-                raids: _size.X / 4f, true
+                raids: _size.X / 4f,
+                isKinematic : true
 
-
-
-            ); // kinematic is false by default
+            ) ; // kinematic is false by default
 
             Body.IsSensor = true;
             

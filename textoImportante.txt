@@ -1,28 +1,14 @@
 PROJETO ZELDA-MARIO
 
-Sera um jogo estilo mario com caracteristicas do zelda. 
 
-Inimigos 
-{
-   - 3 tipos
-   - Movimentação diferente 
-   - Vida diferente (1,2 e 3 hits pra morrer)
-}
-Timer de jogo 
-2 fases 
+
+
 
 Personagem 
 {
   - 3 vidas - mostrar no ecra
-  - Atacar - animacao de ataque
-  - movimentação  - dar fix na movimentacao
-}
-Cenario 
-{
-  -Picos que matam
-  -Construção 
- 
-}
+  
+
 
 
 

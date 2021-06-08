@@ -47,7 +47,7 @@ namespace IPCA.MonoGame
             scale.Y = scale.X;  // FIXME! TODO: HACK HACK HACK
             
             if(Name == "player") {
-                Vector2 anchor2 = new Vector2(_texture.Width / 2f, _texture.Height / 2.3f);
+                Vector2 anchor2 = new Vector2(_texture.Width / 2f, _texture.Height / 2f);
                 spriteBatch.Draw(_texture, pos, null, Color.White,
                 _rotation, anchor2, (scalePlayer), 
                 _direction == Direction.Right ? SpriteEffects.None : SpriteEffects.FlipHorizontally,
