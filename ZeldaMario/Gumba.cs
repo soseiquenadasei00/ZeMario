@@ -26,8 +26,8 @@ namespace ZeldaMario
         public float speed = 15f;
         // hit do gumba 
         public float timer;
-        public float resetDoTempo = 1f;
-        public int life = 3;
+        public float resetDoTempo = 2f;
+        public int life = 500000;
         public bool hit = false;
 
         private int patrolOffset = 3; // raio que o gumba pode andar
@@ -83,6 +83,7 @@ namespace ZeldaMario
             {
                 corDoDesenho = Color.Red;
                 tempo(gameTime, ref timer);
+                Console.WriteLine("entreiNoHit");
             }
             else corDoDesenho = Color.White;
 

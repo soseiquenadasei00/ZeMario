@@ -10,7 +10,3 @@ Menu vencedor quando toca na bandeira e possivel adição de som de vencedor.
 
 
  --CENAS A FAZER--
-
- 
-
- Corrigir o bug do player na hora de atacar 
