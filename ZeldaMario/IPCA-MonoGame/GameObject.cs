@@ -12,6 +12,7 @@ namespace IPCA.MonoGame
         protected float _rotation;
         protected Vector2 _position, _size;
         protected string _name;
+        public Color corDoDesenho=Color.White;
         public Vector2 Position => _position;
         public Vector2 Size => _size;
         public string Name => _name;

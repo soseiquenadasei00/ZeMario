@@ -13,17 +13,17 @@ namespace ZeldaMario
         public float speed = 10f;
         private Game1 _game;
         int direction;
-        
+       
         public bool morte = false;
+        
 
-
-        float dieTimer = 100f;
+        float dieTimer = 20f; // Tempo de morte da bullet depois que é lançada 
         public Bullet(Game1 game, string texName, float x, float y, Direction dir = Direction.Right) :
             base("Bullet",
                 game.Content.Load<Texture2D>(texName), new Vector2(x, y), false
                 )
         {
-
+           
             _game = game;
             if (dir == Direction.Right)
             {
@@ -66,6 +66,7 @@ namespace ZeldaMario
         {
             _dieTimer -= (float)gameTime.ElapsedGameTime.TotalSeconds;
         }
+       
 
         public void moverBala(GameTime gameTime, float speed)
         {

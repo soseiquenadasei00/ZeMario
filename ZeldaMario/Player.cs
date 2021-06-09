@@ -28,13 +28,10 @@ namespace ZeldaMario
         public bool toque = false;
         private Vector2 posicaoInicial;
         private Fixture attackFixture;
-
-
         public int countCoin;
         private List<ITempObject> _objects;
-
         private List<Texture2D> _idleFrames=new List<Texture2D>();
-        private List<Texture2D> _walkFrames;
+        private List<Texture2D> _walkFrames=new List<Texture2D>();
         private List<Texture2D> _attackFrames= new List<Texture2D>();
 
         public Player(Game1 game, float x, float y) :
@@ -61,35 +58,24 @@ namespace ZeldaMario
                 .ToList();
             _game = game;
 
-
             _objects = new List<ITempObject>();
-
-            
 
             AddCircleBody(
                  _game.Services.GetService<World>(),
                  raids: 0.06f
-                
-
                 );
             Fixture fixtureCorpo = FixtureFactory.AttachCircle(
                 radius: 0.035f, 0, Body, offset
                 );
-
-
             Body.Friction = 0.01f;
             Fixture sensor = FixtureFactory.AttachRectangle(
                 _size.X / 4f, _size.Y / 16f,
                 4, new Vector2(0, -_size.Y / 2.5f),
                 Body);
             sensor.IsSensor = true;
-            //sensor.Friction = 1f;
-
-            Console.WriteLine(Body.FixtureList.Count);
-
+            
             sensor.OnCollision = (a, b, contact) =>
             {
-
                 _isGrounded = true;
             };
             sensor.OnSeparation = (a, b, contact) => _isGrounded = false;
@@ -122,11 +108,131 @@ namespace ZeldaMario
             KeyboardManager.Register(Keys.F, KeysState.Up, () => { StopAttack(); });
 
         }
+        public override void Update(GameTime gameTime)
+        {
+            
+            if (vidas == 0)
+            {
+                resetar();
+            }
+            //Verficação dos colliders com inimigos ou com a moeda 
+            Body.OnCollision = (a, b, c) =>
+            {
+                Sprite temp;
+                temp = (Sprite)b.Body.UserData;
+                if (b.Body.UserData != null)
+                {
+                    if (temp.Name == "Coin")
+                    {
+                        foreach (Coin coin in _game._coin.ToArray())
+                        {
+                            if (temp.Position == coin.Position)
+                            {
+                                countCoin++;
+                                _game._coin.Remove(coin);
+
+                            }
+                        }
+                    }
+                    if (temp.Name == "Bullet")
+                    {
+                        foreach (Prantinha p in _game._prantinha.ToArray())
+                        {
+                            foreach (Bullet bala in p.tiro.ToArray())
+                            {
+                                if (bala.Position == temp.Position)
+                                {
+                                    World world = _game.Services.GetService<World>();
+                                    world.RemoveBody(bala.Body);
+                                    p.tiro.Remove(bala);
+                                    break;
+                                }
+                            }
+                        }
+                        vidas -= 1;
+                    }
+                    if (temp.Name == "gumba" && attack==false)
+                    {
+                        if(toque == false )
+                         removerVida(gameTime);
+                    }
+                    if (temp.Name == "assets/orig/images/tile240" || temp.Name == "assets/orig/images/tile241")
+                    {
+                        resetar();
+                    }
+                }
+            };
+
+            if (_isGrounded) toque = false; // Para o gumba 
+
+            foreach (ITempObject obj in _objects)
+                obj.Update(gameTime);
+
+            if (_status == Status.Idle && Body.LinearVelocity.LengthSquared() > 0.001f)
+            {
+                _status = Status.Walk;
+                Console.WriteLine("entrei");
+                _textures = _walkFrames;
+                _currentTexture = 0;
+            }
+
+            if (_status == Status.Walk && Body.LinearVelocity.LengthSquared() <= 0.001f)
+            {
+                _status = Status.Idle;
+                _textures = _idleFrames;
+                _currentTexture = 0;
+            }
+
+            if (Body.LinearVelocity.X < 0f) _direction = Direction.Left;
+            else if (Body.LinearVelocity.X > 0f) _direction = Direction.Right;
+
+            if (attack)
+            {
+                _textures = _attackFrames;
+            }
+            else if (_status == Status.Idle) _textures = _idleFrames;
+
+            else
+            {
+                _textures = _walkFrames;
+            }
+
+            base.Update(gameTime);
+            
+           Camera.LookAt(_position);
+        }
+
+        public override void Draw(SpriteBatch spriteBatch, GameTime gameTime)
+        {
+            base.Draw(spriteBatch, gameTime);
+            foreach (ITempObject obj in _objects)
+                obj.Draw(spriteBatch, gameTime);
+        }
+
+        //Funções auxiliares
+
+        //Reseta o player para a posição inicial 
+        public void resetar()
+        {
+            Console.WriteLine("morri");
+            Body.Position = posicaoInicial;
+            Body.LinearVelocity = Vector2.Zero;
+            morte = false;
+            if (vidas == 0) vidas = 3;
+
+        }
+        public void removerVida(GameTime gameTime)
+        {
+            Console.WriteLine(vidas);
+            if (_direction == Direction.Right) Body.LinearVelocity = new Vector2(-1f, 2.5f);
+            else Body.LinearVelocity = new Vector2(1f, 2.5f);
+            vidas--;
+            toque = true;
+        }
 
         public void Attack()
         {
             Fixture fixture;
-
 
             if (_direction == Direction.Right)
             {
@@ -136,6 +242,60 @@ namespace ZeldaMario
                     1,
                     new Vector2(_size.X / 2, _size.Y / 15f),
                     Body);
+                attackFixture = fixture;
+                fixture.IsSensor = true;
+                fixture.OnCollision = (a, b, c) =>
+                {
+                    Sprite temp;
+                    temp = (Sprite)b.Body.UserData;
+
+                    if (temp.Name == "gumba")
+                    {
+                        foreach (Gumba g in _game._gumba.ToArray())
+                        {
+                            if (g.Position == temp.Position)
+                            {
+
+                                if (g.life > 0) 
+                                {
+                                    g.hit = true;
+                                    g.timer = g.resetDoTempo;
+                                    g.life--;
+                                    break;
+                                }
+                                else 
+                                {
+                                    World world = _game.Services.GetService<World>();
+                                    world.RemoveBody(g.Body);
+                                    _game._gumba.Remove(g);
+                                    break;
+                                }
+
+                            }
+                        }
+                    }
+                    else if (temp.Name == "prantinha")
+                    {
+                        foreach (Prantinha prantinha in _game._prantinha.ToArray())
+                        {
+                            if (prantinha.Position == temp.Position)
+                            {
+                                World world = _game.Services.GetService<World>();
+                                world.RemoveBody(prantinha.Body);
+                                _game._prantinha.Remove(prantinha);
+                                break;
+                            }
+                        }
+                    }
+                };
+            }
+            else if (_direction == Direction.Left)
+            {
+                fixture = FixtureFactory.AttachRectangle(
+                       _size.X / 8f, _size.Y / 6f,
+                       1,
+                       new Vector2(-_size.X / 2, _size.Y / 15f),
+                       Body);
                 attackFixture = fixture;
                 fixture.IsSensor = true;
                 fixture.OnCollision = (a, b, c) =>
@@ -171,48 +331,7 @@ namespace ZeldaMario
                     }
                 };
             }
-            else if (_direction == Direction.Left)
-            {
-                fixture = FixtureFactory.AttachRectangle(
-                       _size.X / 8f, _size.Y / 6f,
-                       1,
-                       new Vector2(-_size.X / 2, _size.Y / 15f),
-                       Body);
-                fixture.IsSensor = true;
-                fixture.OnCollision = (a, b, c) =>
-                {
-                    Sprite temp;
-                    temp = (Sprite)b.Body.UserData;
 
-                    if (temp.Name == "gumba")
-                    {
-                        foreach (Gumba g in _game._gumba.ToArray())
-                        {
-                            if (g.Position == temp.Position)
-                            {
-                                World world = _game.Services.GetService<World>();
-                                world.RemoveBody(g.Body);
-                                _game._gumba.Remove(g);
-                                break;
-                            }
-                        }
-                    }
-                    else if (temp.Name == "prantinha")
-                    {
-                        foreach (Prantinha prantinha in _game._prantinha.ToArray())
-                        {
-                            if (prantinha.Position == temp.Position)
-                            {
-                                World world = _game.Services.GetService<World>();
-                                world.RemoveBody(prantinha.Body);
-                                _game._prantinha.Remove(prantinha);
-                                break;
-                            }
-                        }
-                    }
-                };
-            }
-            
             attack = true;
             _textures = _attackFrames;
         }
@@ -220,135 +339,21 @@ namespace ZeldaMario
         public void StopAttack()
         {
 
-           if (attackFixture != null) { 
+            if (attackFixture != null)
+            {
+                World world = _game.Services.GetService<World>();
                 Body.FixtureList.Remove(attackFixture);
+                
                 attackFixture = null;
             }
 
             if (attack)
             {
                 attack = false;
+                
                 _textures = _idleFrames;
             }
-        }
-
-        public override void Update(GameTime gameTime)
-        {
-            Console.WriteLine(Body.FixtureList.Count);
-
-            if (vidas == 0)
-            {
-                resetar();
-            }
-            //Verficação dos colliders com inimigos 
-            Body.OnCollision = (a, b, c) =>
-            {
-                Sprite temp;
-                temp = (Sprite)b.Body.UserData;
-                if (b.Body.UserData != null)
-                {
-                    if (temp.Name == "Coin")
-                    {
-                        foreach (Coin coin in _game._coin.ToArray())
-                        {
-                            if (temp.Position == coin.Position)
-                            {
-                                countCoin++;
-                                _game._coin.Remove(coin);
-
-                            }
-                        }
-                    }
-
-                    if (temp.Name == "Bullet")
-                    {
-                        foreach (Prantinha p in _game._prantinha.ToArray())
-                        {
-                            foreach (Bullet bala in p.tiro.ToArray())
-                            {
-                                if (bala.Position == temp.Position)
-                                {
-                                    World world = _game.Services.GetService<World>();
-                                    world.RemoveBody(bala.Body);
-                                    p.tiro.Remove(bala);
-                                    break;
-                                }
-                            }
-                        }
-
-                        vidas -= 1;
-                    }
-
-                    if (temp.Name == "gumba" && attack==false)
-                    {
-                        
-                        if(toque == false )
-                         removerVida(gameTime);
-                    }
-
-                    if (temp.Name == "assets/orig/images/tile240" || temp.Name == "assets/orig/images/tile241")
-                    {
-                        resetar();
-                    }
-                }
-            };
-
-            if (_isGrounded) toque = false; // Para o gumba 
-
-            foreach (ITempObject obj in _objects)
-                obj.Update(gameTime);
-
-            if (_status == Status.Idle && Body.LinearVelocity.LengthSquared() > 0.001f)
-            {
-                _status = Status.Walk;
-                _textures = _walkFrames;
-                _currentTexture = 0;
-            }
-
-            if (_status == Status.Walk && Body.LinearVelocity.LengthSquared() <= 0.001f)
-            {
-                _status = Status.Idle;
-                _textures = _idleFrames;
-                _currentTexture = 0;
-            }
-
-            if (Body.LinearVelocity.X < 0f) _direction = Direction.Left;
-            else if (Body.LinearVelocity.X > 0f) _direction = Direction.Right;
-
-            if (attack)
-            {
-                _textures = _attackFrames;                
-            }
-            else _textures = _idleFrames;
-
-            base.Update(gameTime);
-            
-           Camera.LookAt(_position);
-        }
-
-        //Reseta o player para a posição inicial 
-        public void resetar()
-        {
-            Body.Position = posicaoInicial;
-            Body.LinearVelocity = Vector2.Zero;
-            morte = false;
-            if (vidas == 0) vidas = 3;
-
-        }
-        public void removerVida(GameTime gameTime) 
-        {
-            Console.WriteLine(vidas);
-            if (_direction == Direction.Right) Body.LinearVelocity = new Vector2(-1f, 2.5f);
-            else Body.LinearVelocity = new Vector2(1f, 2.5f);
-            vidas--;
-            toque = true;            
-        }
-
-        public override void Draw(SpriteBatch spriteBatch, GameTime gameTime)
-        {
-            base.Draw(spriteBatch, gameTime);
-            foreach (ITempObject obj in _objects)
-                obj.Draw(spriteBatch, gameTime);
         }
     }
+
 }

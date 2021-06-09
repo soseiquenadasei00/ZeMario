@@ -16,7 +16,7 @@ namespace ZeldaMario
     {
         
         private Game1 _game;
-        private float attackDist=4f;
+        private float attackDist=3f;
         public List<Bullet> tiro = new List<Bullet>();
         private float timer, resetTimer = 4f;
 

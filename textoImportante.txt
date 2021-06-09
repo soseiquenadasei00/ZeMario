@@ -1,17 +1,16 @@
 PROJETO ZELDA-MARIO
 
 
-
-
-
-Personagem 
-{
-  - 3 vidas - mostrar no ecra
-  
-
-
+Coisas a fazer para o trabalho ficar pronto : 
+- Menu principal do jogo com Player a começar numa plataforma e salta para a esquerda para começar o jogo, ou salta para a direita para sair do jogo. (necessario desenhar o mapa, Saldanha podes me dizer as dimensoes para desenhar no hyperlap) aproveitamos o nosso tema dark para o menu.
+- Colocação de som nas diversas partes do jogo. Som ambiente (menu e cena prinicipal), quando player morre,quando o inimigo morre, player atacar?, gumbla gigante a levar dano.
+- Colocação da informação das vidas (corações preenchidos para as vidas e/ou vazios para as vidas perdidas), coins apanhadas, e tempo de jogo.
+Menu vencedor quando toca na bandeira e possivel adição de som de vencedor.
+- Gumbla gingante - bandeira final - aumentar o mapa, está mt curto para ser só um mapa.
 
 
  --CENAS A FAZER--
+
+ 
 
  Corrigir o bug do player na hora de atacar 

@@ -56,7 +56,7 @@ namespace IPCA.MonoGame
                     }
                     else if (imageName == "Wulfric0")
                     {
-                        game._player = new Player(game, (x/8)+0.2f , y+1f); // y+2 para ajustar a altura
+                        game._player = new Player(game, (x/8)+0.2f , (y/2f)-0.25f); // y+2 para ajustar a altura
                     }
                     else if (imageName == "gumba-idle")
                     {

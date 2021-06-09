@@ -24,6 +24,11 @@ namespace ZeldaMario
         private Game1 _game;
         public bool walk = false;
         public float speed = 15f;
+        // hit do gumba 
+        public float timer;
+        public float resetDoTempo = 1f;
+        public int life = 3;
+        public bool hit = false;
 
         private int patrolOffset = 3; // raio que o gumba pode andar
 
@@ -38,11 +43,9 @@ namespace ZeldaMario
         {
             _runFrames = _textures;
             _direction = Direction.Left;
-
+            timer = resetDoTempo;
             _game = game;
 
-
-           
             AddCircleBody(
                 game.Services.GetService<World>(),
                 raids: _size.X / 3.5f
@@ -74,6 +77,15 @@ namespace ZeldaMario
 
         public override void Update(GameTime gameTime)
         {
+
+
+            if (hit && timer > 0)
+            {
+                corDoDesenho = Color.Red;
+                tempo(gameTime, ref timer);
+            }
+            else corDoDesenho = Color.White;
+
             if (Body != null)
             {
                 if (walk && _direction == Direction.Right)
@@ -88,6 +100,12 @@ namespace ZeldaMario
             base.Update(gameTime);
         }
 
+        // Função para verificação para o decremento de vida do gumba
+        // ref = endereço de memoria 
+        public void tempo(GameTime gameTime, ref float timer)
+        {
+            if (timer > 0) timer -= (float)gameTime.ElapsedGameTime.TotalSeconds;
+        }
         public override void Draw(SpriteBatch spriteBatch, GameTime gameTime)
         {
             base.Draw(spriteBatch, gameTime);
