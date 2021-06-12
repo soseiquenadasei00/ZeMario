@@ -61,6 +61,13 @@
 /processorParam:TextureFormat=Color
 /build:3hearts.png
 
+#begin arial12.spritefont
+/importer:FontDescriptionImporter
+/processor:FontDescriptionProcessor
+/processorParam:PremultiplyAlpha=True
+/processorParam:TextureFormat=Compressed
+/build:arial12.spritefont
+
 #begin assets/orig/images/banner.png
 /importer:TextureImporter
 /processor:TextureProcessor
@@ -1152,6 +1159,18 @@
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:idle.png
+
+#begin moedinha.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:moedinha.png
 
 #begin no ar.png
 /importer:TextureImporter

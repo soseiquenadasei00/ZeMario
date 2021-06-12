@@ -76,13 +76,13 @@ namespace IPCA.MonoGame
             }
             else if(Name == "Coin") 
             {
-                
+
                 spriteBatch.Draw(_texture, pos, null, Color.White,
                    _rotation, anchor, scale / 2f,
                    _direction == Direction.Right ? SpriteEffects.None : SpriteEffects.FlipHorizontally,
                    0);
             }
-            else if(Name == "Bandeira") 
+            else if(Name == "assets/orig/images/banner") 
             {
                 Vector2 anchor2 = new Vector2(_texture.Width / 2f, _texture.Height / 1.5f);
                 spriteBatch.Draw(_texture, pos, null, Color.White,

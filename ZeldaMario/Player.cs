@@ -30,7 +30,7 @@ namespace ZeldaMario
         
         private Vector2 posicaoInicial;
         
-        public int countCoin;
+        public int countCoin = 0;
         public int direçãoPlayer = 1;
         private List<ITempObject> _objects;
         private List<Texture2D> _idleFrames = new List<Texture2D>();
@@ -175,6 +175,11 @@ namespace ZeldaMario
                     }
 
                     if (temp.Name == "assets/orig/images/Exit")
+                    {
+                        _game.Exit();
+                    }
+
+                    if (temp.Name == "assets/orig/images/banner")
                     {
                         _game.Exit();
                     }
