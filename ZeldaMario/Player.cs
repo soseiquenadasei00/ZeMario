@@ -121,10 +121,8 @@ namespace ZeldaMario
         {
             if (_direction == Direction.Right) direçãoPlayer = 1;
             else direçãoPlayer = -1;
-            if (vidas == 0)
-            {
-                resetar();
-            }
+            if (vidas == -1) resetar();
+
             //Verficação dos colliders com inimigos ou com a moeda 
             Body.OnCollision = (a, b, c) =>
             {
@@ -161,16 +159,13 @@ namespace ZeldaMario
                         }
                         vidas -= 1;
                     }
-                    if (temp.Name == "gumba" && attack == false)
+                    if (temp.Name == "gumba" && attack == false && toque == false)
                     {
-                        if (toque == false)
-                        {
                             removerVida(gameTime);
-                        }
                     }
+
                     if (temp.Name == "assets/orig/images/tile240" || temp.Name == "assets/orig/images/tile241")
                     {
-                        
                         resetar();
                     }
                 }
@@ -227,19 +222,26 @@ namespace ZeldaMario
         //Reseta o player para a posição inicial 
         public void resetar()
         {
+            Console.WriteLine(this.vidas);
+            if (vidas == -1) vidas = 3;
+            else vidas--;
+
+
             Body.Position = posicaoInicial;
             Body.LinearVelocity = Vector2.Zero;
             morte = false;
-            if (vidas == 0) vidas = 3;
-            else vidas--;
+
 
         }
+
         public void removerVida(GameTime gameTime)
         {
-            Console.WriteLine(vidas);
+            Console.WriteLine(this.vidas);
             if (_direction == Direction.Right) Body.LinearVelocity = new Vector2(-1f, 2.5f);
             else Body.LinearVelocity = new Vector2(1f, 2.5f);
-            if(vidas>0) vidas--;
+
+            if (vidas > -1) vidas--;
+
             toque = false;
         }
 

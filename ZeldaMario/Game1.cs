@@ -20,9 +20,16 @@ namespace ZeldaMario
         public List<Prantinha> _prantinha = new List<Prantinha>();
         public List<Gumba> _gumba = new List<Gumba>(); 
         public List<Coin> _coin = new List<Coin>();
-        
 
-      //  public Player Player => _player;
+        private Texture2D _vida0;
+        private Texture2D _vida1;
+        private Texture2D _vida2;
+        private Texture2D _vida3;
+        Vector2 _posicaoVida;
+
+
+
+        //  public Player Player => _player;
 
         public Game1()
         {
@@ -54,6 +61,11 @@ namespace ZeldaMario
             _spriteBatch = new SpriteBatch(GraphicsDevice);
             _scene = new Scene(this, "MainScene");
             background = Content.Load<Texture2D>("background");
+            _vida0 = Content.Load<Texture2D>("0hearts");
+            _vida1 = Content.Load<Texture2D>("1heart");
+            _vida2 = Content.Load<Texture2D>("2hearts");
+            _vida3 = Content.Load<Texture2D>("3hearts");
+
         }
 
         protected override void Update(GameTime gameTime)
@@ -90,7 +102,26 @@ namespace ZeldaMario
             _bandeira.Draw(_spriteBatch, gameTime);
             _scene.Draw(_spriteBatch, gameTime);
            _player.Draw(_spriteBatch, gameTime);
-           
+
+
+            //desenhar vidas
+            Vector2 anchor = new Vector2(_vida3.Width / 32f, _vida3.Height / 16f);
+            Vector2 scale = Camera.Length2Pixels(_vida0.Bounds.Size.ToVector2() / 4048f);
+            scale.X = scale.X / 2f;
+            _posicaoVida = new Vector2(20, 750);
+
+            //
+            if (_player.vidas == 0) _spriteBatch.Draw(_vida0, _posicaoVida, null, Color.White,
+                        0, anchor, scale * 2f, 0, 0);
+            if (_player.vidas == 1) _spriteBatch.Draw(_vida1, _posicaoVida, null, Color.White,
+                        0, anchor, scale * 2f, 0, 0);
+            if (_player.vidas == 2) _spriteBatch.Draw(_vida2, _posicaoVida, null, Color.White,
+                        0, anchor, scale * 2f, 0, 0);
+            if (_player.vidas == 3) _spriteBatch.Draw(_vida3, _posicaoVida, null, Color.White,
+                        0, anchor, scale * 2f, 0, 0);
+
+
+
 
             foreach (Prantinha p in _prantinha)
             {
