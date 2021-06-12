@@ -13,8 +13,9 @@ namespace ZeldaMario
     public class Bandeira : Sprite
     {
         private Game1 _game;
-        public Bandeira(Game1 game, float x = 0, float y = 0) :
-           base("Bandeira",game.Content.Load<Texture2D>("assets/orig/images/banner"),new Vector2(x,y),false)
+        
+        public Bandeira(Game1 game, float x = 0, float y = 0, string textureName = "banner") :
+           base("Bandeira",game.Content.Load<Texture2D>($"assets/orig/images/{textureName}"),new Vector2(x,y),false)
                
         {
             _game = game;

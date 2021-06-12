@@ -26,6 +26,7 @@ namespace ZeldaMario
         public Vector2 offset = new Vector2(0, -0.05f);
         public bool morte = false;
         public bool toque = false;
+
         
         private Vector2 posicaoInicial;
         
@@ -72,6 +73,8 @@ namespace ZeldaMario
                  _game.Services.GetService<World>(),
                  raids: 0.06f
                 );
+            //quando trocar cena, configurar velocidade igual a Zero
+            Body.LinearVelocity = Vector2.Zero;
             Fixture fixtureCorpo = FixtureFactory.AttachCircle(
                 radius: 0.035f, 0, Body, offset
                 );
@@ -123,6 +126,8 @@ namespace ZeldaMario
             else direçãoPlayer = -1;
             if (vidas == -1) resetar();
 
+           // Console.WriteLine(vidas);
+
             //Verficação dos colliders com inimigos ou com a moeda 
             Body.OnCollision = (a, b, c) =>
             {
@@ -167,6 +172,25 @@ namespace ZeldaMario
                     if (temp.Name == "assets/orig/images/tile240" || temp.Name == "assets/orig/images/tile241")
                     {
                         resetar();
+                    }
+
+                    if (temp.Name == "assets/orig/images/Exit")
+                    {
+                        _game.Exit();
+                    }
+
+                    if (temp.Name == "assets/orig/images/Start")
+                    {
+                        foreach (Sprite s in _game._scene._sprites)
+                        {
+                            _game._world.RemoveBody(s.Body);                           
+                        }
+                        _game._scene._sprites.Clear();
+                        //_game._world.RemoveBody(Body);//remove body player
+                        _game._player = null;
+                        _game.changeScene = true;
+                        _game._scene = new Scene(_game, "MainScene");
+
                     }
                 }
             };
@@ -226,11 +250,9 @@ namespace ZeldaMario
             if (vidas == -1) vidas = 3;
             else vidas--;
 
-
             Body.Position = posicaoInicial;
             Body.LinearVelocity = Vector2.Zero;
             morte = false;
-
 
         }
 
@@ -307,10 +329,12 @@ namespace ZeldaMario
 
         public void StopAttack()
         {
-
-            if (Body.FixtureList.Count > 3)
+            if (Body != null)
             {
-                Body.DestroyFixture(Body.FixtureList[3]);
+                if (Body.FixtureList.Count > 3 && Body.FixtureList != null)
+                {
+                    Body.DestroyFixture(Body.FixtureList[3]);
+                }
             }
         }
         public void AbortAttack()//usado para quando parar de clicar na tecla

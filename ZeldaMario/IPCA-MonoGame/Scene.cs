@@ -13,11 +13,12 @@ namespace IPCA.MonoGame
 {
     public class Scene
     {
-        private List<Sprite> _sprites;
+        public List<Sprite> _sprites;
+        public string filename;
 
         public Scene(Game1 game, string name)
         {
-            string filename = $"Content/scenes/{name}.dt";
+            filename = $"Content/scenes/{name}.dt";
             _sprites = new List<Sprite>();
             using (StreamReader reader = File.OpenText(filename))
             {
@@ -74,7 +75,8 @@ namespace IPCA.MonoGame
                         game._bandeira = new Bandeira(game, (x / 8)+0.2f, (y / 8)+0.25f);
                         game._bandeira.Body.IsSensor = true;
                     }
-                    
+
+               
                     else 
                     {
                         
@@ -86,6 +88,7 @@ namespace IPCA.MonoGame
                     }
                 }
             }
+            game.changeScene = false;
         }
 
         public void Draw(SpriteBatch spriteBatch, GameTime gameTime)

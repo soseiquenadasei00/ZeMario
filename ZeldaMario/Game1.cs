@@ -11,8 +11,8 @@ namespace ZeldaMario
     {
         private GraphicsDeviceManager _graphics;
         private SpriteBatch _spriteBatch;
-        private World _world;
-        private Scene _scene;
+        public World _world;
+        public Scene _scene;
         public Player _player;
         public Bandeira _bandeira;
         public Texture2D background;
@@ -20,7 +20,7 @@ namespace ZeldaMario
         public List<Prantinha> _prantinha = new List<Prantinha>();
         public List<Gumba> _gumba = new List<Gumba>(); 
         public List<Coin> _coin = new List<Coin>();
-
+        public bool changeScene = false;
         private Texture2D _vida0;
         private Texture2D _vida1;
         private Texture2D _vida2;
@@ -59,7 +59,7 @@ namespace ZeldaMario
         protected override void LoadContent()
         {
             _spriteBatch = new SpriteBatch(GraphicsDevice);
-            _scene = new Scene(this, "MainScene");
+            _scene = new Scene(this, "MenuScene");
             background = Content.Load<Texture2D>("background");
             _vida0 = Content.Load<Texture2D>("0hearts");
             _vida1 = Content.Load<Texture2D>("1heart");
@@ -72,10 +72,12 @@ namespace ZeldaMario
         {
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape))
                 Exit();
-
-            _world.Step((float)gameTime.ElapsedGameTime.TotalMilliseconds * 0.001f);
+         
+                _world.Step((float)gameTime.ElapsedGameTime.TotalMilliseconds * 0.001f);
+          
             _player.Update(gameTime);
-            _bandeira.Update(gameTime);
+            //_bandeira.Update(gameTime);
+
             foreach (Prantinha p in _prantinha.ToArray())
             {
                 foreach (Bullet b in p.tiro.ToArray()) b.Update(gameTime);
@@ -99,26 +101,38 @@ namespace ZeldaMario
             GraphicsDevice.Clear(Color.CornflowerBlue);
             _spriteBatch.Begin(SpriteSortMode.Deferred, BlendState.NonPremultiplied, SamplerState.PointClamp, DepthStencilState.Default, RasterizerState.CullNone);
             _spriteBatch.Draw(background,new Rectangle(0,0,1600,800),Color.White);
-            _bandeira.Draw(_spriteBatch, gameTime);
-            _scene.Draw(_spriteBatch, gameTime);
+
            _player.Draw(_spriteBatch, gameTime);
+            _scene.Draw(_spriteBatch, gameTime);
+
+            if (_scene.filename == "Content/scenes/MainScene.dt")
+            {               
+                _bandeira.Draw(_spriteBatch, gameTime);
+
+                Vector2 anchor = new Vector2(_vida3.Width / 32f, _vida3.Height / 16f);
+                Vector2 scale = Camera.Length2Pixels(_vida0.Bounds.Size.ToVector2() / 4048f);
+                scale.X = scale.X / 2f;
+                _posicaoVida = new Vector2(20, 750);
+
+
+                if (_player.vidas == 0) _spriteBatch.Draw(_vida0, _posicaoVida, null, Color.White,
+                            0, anchor, scale * 2f, 0, 0);
+                if (_player.vidas == 1) _spriteBatch.Draw(_vida1, _posicaoVida, null, Color.White,
+                            0, anchor, scale * 2f, 0, 0);
+                if (_player.vidas == 2) _spriteBatch.Draw(_vida2, _posicaoVida, null, Color.White,
+                            0, anchor, scale * 2f, 0, 0);
+                if (_player.vidas == 3) _spriteBatch.Draw(_vida3, _posicaoVida, null, Color.White,
+                            0, anchor, scale * 2f, 0, 0);
+
+            }
+           
+ 
+               
+            
 
 
             //desenhar vidas
-            Vector2 anchor = new Vector2(_vida3.Width / 32f, _vida3.Height / 16f);
-            Vector2 scale = Camera.Length2Pixels(_vida0.Bounds.Size.ToVector2() / 4048f);
-            scale.X = scale.X / 2f;
-            _posicaoVida = new Vector2(20, 750);
-
-            //
-            if (_player.vidas == 0) _spriteBatch.Draw(_vida0, _posicaoVida, null, Color.White,
-                        0, anchor, scale * 2f, 0, 0);
-            if (_player.vidas == 1) _spriteBatch.Draw(_vida1, _posicaoVida, null, Color.White,
-                        0, anchor, scale * 2f, 0, 0);
-            if (_player.vidas == 2) _spriteBatch.Draw(_vida2, _posicaoVida, null, Color.White,
-                        0, anchor, scale * 2f, 0, 0);
-            if (_player.vidas == 3) _spriteBatch.Draw(_vida3, _posicaoVida, null, Color.White,
-                        0, anchor, scale * 2f, 0, 0);
+            
 
 
 

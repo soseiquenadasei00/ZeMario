@@ -90,7 +90,16 @@ namespace IPCA.MonoGame
                   _direction == Direction.Right ? SpriteEffects.None : SpriteEffects.FlipHorizontally,
                   0);
             }
-           
+            else if (Name == "assets/orig/images/Start")
+            {
+                Vector2 anchor2 = new Vector2(_texture.Width / 2f, _texture.Height / 1.5f);
+                spriteBatch.Draw(_texture, pos, null, Color.White,
+                  _rotation, anchor, scale / 4f,
+                  _direction == Direction.Right ? SpriteEffects.None : SpriteEffects.FlipHorizontally,
+                  0);
+
+            }
+
             else
             {
                 spriteBatch.Draw(_texture, pos, null, Color.White,
