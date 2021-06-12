@@ -86,7 +86,7 @@ namespace ZeldaMario
 
             GraphicsDevice.Clear(Color.CornflowerBlue);
             _spriteBatch.Begin(SpriteSortMode.Deferred, BlendState.NonPremultiplied, SamplerState.PointClamp, DepthStencilState.Default, RasterizerState.CullNone);
-            _spriteBatch.Draw(background,new Rectangle(0,0,1600,1600),Color.White);
+            _spriteBatch.Draw(background,new Rectangle(0,0,1600,800),Color.White);
             _bandeira.Draw(_spriteBatch, gameTime);
             _scene.Draw(_spriteBatch, gameTime);
            _player.Draw(_spriteBatch, gameTime);

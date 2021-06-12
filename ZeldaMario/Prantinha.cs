@@ -62,7 +62,12 @@ namespace ZeldaMario
         {
             foreach (Bullet b in tiro.ToArray())
             {
-                if (b.morte) tiro.Remove(b);
+                if (b.morte)
+                {
+                    World world = _game.Services.GetService<World>();
+                    world.RemoveBody(b.Body);
+                    tiro.Remove(b);
+                }
             }
             if (distToPlayer(_game._player))
             {
@@ -71,7 +76,12 @@ namespace ZeldaMario
                     foreach (Bullet b in tiro.ToArray())
                     {
                         b.Update(gameTime);
-                        if (b.morte) tiro.Remove(b);
+                        if (b.morte)
+                        {
+                            World world = _game.Services.GetService<World>();
+                            world.RemoveBody(b.Body);
+                            tiro.Remove(b);
+                        }
                     }
                 }
                 timer -= (float)gameTime.ElapsedGameTime.TotalSeconds;

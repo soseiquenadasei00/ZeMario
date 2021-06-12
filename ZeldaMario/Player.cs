@@ -26,6 +26,7 @@ namespace ZeldaMario
         public Vector2 offset = new Vector2(0, -0.05f);
         public bool morte = false;
         public bool toque = false;
+        
         private Vector2 posicaoInicial;
         
         public int countCoin;
@@ -34,6 +35,7 @@ namespace ZeldaMario
         private List<Texture2D> _idleFrames = new List<Texture2D>();
         private List<Texture2D> _walkFrames = new List<Texture2D>();
         private List<Texture2D> _attackFrames = new List<Texture2D>();
+        private List<Texture2D> _pulo = new List<Texture2D>();
 
         public Player(Game1 game, float x, float y) :
             base("player",
@@ -57,10 +59,15 @@ namespace ZeldaMario
                     n => game.Content.Load<Texture2D>($"Wulfricatack/atack{n}")
                 )
                 .ToList();
+            _pulo = Enumerable.Range(0, 1)
+                .Select(
+                    n => game.Content.Load<Texture2D>("Wulfricjumping/jump")
+                )
+                .ToList();
             _game = game;
 
             _objects = new List<ITempObject>();
-
+            //Collider
             AddCircleBody(
                  _game.Services.GetService<World>(),
                  raids: 0.06f
@@ -69,9 +76,10 @@ namespace ZeldaMario
                 radius: 0.035f, 0, Body, offset
                 );
             Body.Friction = 0.01f;
+            //Sensor
             Fixture sensor = FixtureFactory.AttachRectangle(
                 _size.X / 4f, _size.Y / 16f,
-                4, new Vector2(0, -_size.Y / 2.5f),
+                4, new Vector2(0, -_size.Y / 2.2f),
                 Body);
             sensor.IsSensor = true;
 
@@ -113,7 +121,6 @@ namespace ZeldaMario
         {
             if (_direction == Direction.Right) direçãoPlayer = 1;
             else direçãoPlayer = -1;
-
             if (vidas == 0)
             {
                 resetar();
@@ -157,16 +164,18 @@ namespace ZeldaMario
                     if (temp.Name == "gumba" && attack == false)
                     {
                         if (toque == false)
+                        {
                             removerVida(gameTime);
+                        }
                     }
                     if (temp.Name == "assets/orig/images/tile240" || temp.Name == "assets/orig/images/tile241")
                     {
+                        
                         resetar();
                     }
                 }
             };
 
-            if (_isGrounded) toque = false; // Para o gumba 
 
             foreach (ITempObject obj in _objects)
                 obj.Update(gameTime);
@@ -184,18 +193,22 @@ namespace ZeldaMario
                 _textures = _idleFrames;
                 _currentTexture = 0;
             }
-
+    
             if (Body.LinearVelocity.X < 0f) _direction = Direction.Left;
             else if (Body.LinearVelocity.X > 0f) _direction = Direction.Right;
 
-            if (attack )
+            if (attack)
             {
                 _textures = _attackFrames;
             }
-            else if (_status == Status.Idle) _textures = _idleFrames;
-            else
+            else if ( _status == Status.Idle) _textures = _idleFrames;
+            else if  (!_isGrounded &&( Body.LinearVelocity.Y > 0.01f || Body.LinearVelocity.Y < -0.01f))  
             {
-                _textures = _walkFrames;
+                _textures = _pulo;
+            }
+            else if (Body.LinearVelocity.X > 0.01f || Body.LinearVelocity.X < -0.01f)
+            {
+                    _textures = _walkFrames;
             }
 
             base.Update(gameTime);
@@ -218,6 +231,7 @@ namespace ZeldaMario
             Body.LinearVelocity = Vector2.Zero;
             morte = false;
             if (vidas == 0) vidas = 3;
+            else vidas--;
 
         }
         public void removerVida(GameTime gameTime)
@@ -225,8 +239,8 @@ namespace ZeldaMario
             Console.WriteLine(vidas);
             if (_direction == Direction.Right) Body.LinearVelocity = new Vector2(-1f, 2.5f);
             else Body.LinearVelocity = new Vector2(1f, 2.5f);
-            vidas--;
-            toque = true;
+            if(vidas>0) vidas--;
+            toque = false;
         }
 
         public void Attack()
@@ -295,7 +309,6 @@ namespace ZeldaMario
             if (Body.FixtureList.Count > 3)
             {
                 Body.DestroyFixture(Body.FixtureList[3]);
-                
             }
         }
         public void AbortAttack()//usado para quando parar de clicar na tecla
