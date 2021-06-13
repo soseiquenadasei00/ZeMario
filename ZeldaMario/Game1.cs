@@ -14,6 +14,7 @@ namespace ZeldaMario
         public World _world;
         public Scene _scene;
         public Player _player;
+        public GumbaBoss _boss;
         public Texture2D background;
         private SpriteFont arial12;
         private int countMoeda = 0;
@@ -21,19 +22,13 @@ namespace ZeldaMario
         public List<Prantinha> _prantinha = new List<Prantinha>();
         public List<Gumba> _gumba = new List<Gumba>(); 
         public List<Coin> _coin = new List<Coin>();
+        
         public bool changeScene = false;
-        private Texture2D _vida0;
-        private Texture2D _vida1;
-        private Texture2D _vida2;
-        private Texture2D _vida3;
+        private Texture2D _vida0, _vida1, _vida2, _vida3;
         private Texture2D _moedinha;
+        private Texture2D backgroudMenu;
         Vector2 _posicaoVida;
         Vector2 _posicaoMoedinha;
-
-
-
-        //  public Player Player => _player;
-
         public Game1()
         {
             _graphics = new GraphicsDeviceManager(this);
@@ -70,19 +65,23 @@ namespace ZeldaMario
             _vida2 = Content.Load<Texture2D>("2hearts");
             _vida3 = Content.Load<Texture2D>("3hearts");
             _moedinha = Content.Load<Texture2D>("moedinha");
+            backgroudMenu = Content.Load<Texture2D>("cave");
 
         }
-
         protected override void Update(GameTime gameTime)
         {
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape))
                 Exit();
          
                 _world.Step((float)gameTime.ElapsedGameTime.TotalMilliseconds * 0.001f);
-          
+            if (Keyboard.GetState().IsKeyDown(Keys.R)) Initialize();
             _player.Update(gameTime);
+            if (_scene.filename == "Content/scenes/MainScene.dt" && _boss !=null)
+            {
+                
+                _boss.Update(gameTime);
+            }
 
-            
             foreach (Prantinha p in _prantinha.ToArray())
             {
                 foreach (Bullet b in p.tiro.ToArray()) b.Update(gameTime);
@@ -97,6 +96,7 @@ namespace ZeldaMario
             {
                 c.Update(gameTime);
             }
+           
             base.Update(gameTime);
         }
 
@@ -105,22 +105,27 @@ namespace ZeldaMario
 
             GraphicsDevice.Clear(Color.CornflowerBlue);
             _spriteBatch.Begin(SpriteSortMode.Deferred, BlendState.NonPremultiplied, SamplerState.PointClamp, DepthStencilState.Default, RasterizerState.CullNone);
-            _spriteBatch.Draw(background,new Rectangle(0,0,1600,800),Color.White);
+            if (_scene.filename == "Content/scenes/MenuScene.dt")
+                _spriteBatch.Draw(backgroudMenu, new Rectangle(0, 0, 1600, 800), Color.White);
+            else _spriteBatch.Draw(background, new Rectangle(0, 0, 1600, 800), Color.White);
 
             _player.Draw(_spriteBatch, gameTime);
+
             _scene.Draw(_spriteBatch, gameTime);
 
-            //desenhar vidas  e moeda 
+            //desenhar vidas e moeda 
             if (_scene.filename == "Content/scenes/MainScene.dt")
-            {               
-
+            {
+               if(_boss != null)
+                _boss.Draw(_spriteBatch, gameTime);
+                
                 Vector2 anchor = new Vector2(_vida3.Width / 32f, _vida3.Height / 16f);
                 Vector2 scale = Camera.Length2Pixels(_vida0.Bounds.Size.ToVector2() / 4048f);
                 scale.X = scale.X / 2f;
                 _posicaoVida = new Vector2(20, 750);
                 _posicaoMoedinha = new Vector2(0, 650);
 
-
+                //desenhar vidas
                 if (_player.vidas == 0) _spriteBatch.Draw(_vida0, _posicaoVida, null, Color.White,
                             0, anchor, scale * 2f, 0, 0);
                 if (_player.vidas == 1) _spriteBatch.Draw(_vida1, _posicaoVida, null, Color.White,
@@ -140,13 +145,6 @@ namespace ZeldaMario
 
             }
            
-
-            //desenhar vidas
-            
-
-
-
-
             foreach (Prantinha p in _prantinha)
             {
                 p.Draw(_spriteBatch, gameTime);
@@ -159,11 +157,11 @@ namespace ZeldaMario
             {
                 c.Draw(_spriteBatch, gameTime);
             }
+
             _spriteBatch.End();
 
             base.Draw(gameTime);
         }
-
         public void drawCoinsText(Vector2 _position, string _text)
         {
             _spriteBatch.DrawString(

@@ -33,6 +33,9 @@
     <None Update="Content\assets\orig\images\Exit.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="Content\assets\orig\images\idle.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="Content\moedinha.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>

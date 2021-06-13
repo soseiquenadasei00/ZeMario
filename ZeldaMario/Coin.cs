@@ -17,8 +17,6 @@ namespace ZeldaMario
 
         private List<Texture2D> _idleFrames;
 
-        
-
         private HashSet<Fixture> _collisions;
 
         public Coin(Game1 game, float x, float y) :

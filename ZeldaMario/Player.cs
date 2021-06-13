@@ -27,11 +27,15 @@ namespace ZeldaMario
         public bool morte = false;
         public bool toque = false;
 
-        
+
         private Vector2 posicaoInicial;
-        
+
         public int countCoin = 0;
         public int direçãoPlayer = 1;
+
+        int extraJumps;
+        int resetExtraJumps = 2;
+
         private List<ITempObject> _objects;
         private List<Texture2D> _idleFrames = new List<Texture2D>();
         private List<Texture2D> _walkFrames = new List<Texture2D>();
@@ -47,6 +51,7 @@ namespace ZeldaMario
                         )
                     .ToArray())
         {
+            extraJumps = resetExtraJumps;
             posicaoInicial = new Vector2(x, y);
             _idleFrames = _textures; // loaded by the base construtor
 
@@ -97,7 +102,8 @@ namespace ZeldaMario
                 KeysState.GoingDown,
                 () =>
                 {
-                    if (_isGrounded) Body.LinearVelocity = new Vector2(0, 4); //alcance do salto
+                    if (_game._scene.filename == "Content/scenes/MainScene.dt") //para nao saltar no menu inicial
+                        if (extraJumps > 0) { Body.LinearVelocity = new Vector2(0, 2.5f); extraJumps -= 1; } //alcance do salto
                 });
             KeyboardManager.Register(
                 Keys.A,
@@ -116,7 +122,7 @@ namespace ZeldaMario
                 Keys.D,
                 KeysState.GoingUp,
                 () => { Body.LinearVelocity = new Vector2(0, 0); });
-            KeyboardManager.Register(Keys.F, KeysState.Down, () => {attack = true; Attack(); });
+            KeyboardManager.Register(Keys.F, KeysState.Down, () => { attack = true; Attack(); });
             KeyboardManager.Register(Keys.F, KeysState.Up, () => { AbortAttack(); });
 
         }
@@ -126,8 +132,9 @@ namespace ZeldaMario
             else direçãoPlayer = -1;
             if (vidas == -1) resetar();
 
-           // Console.WriteLine(vidas);
-
+            // Console.WriteLine(vidas);
+            //Pular duas vezes
+            if (_isGrounded) extraJumps = resetExtraJumps;
             //Verficação dos colliders com inimigos ou com a moeda 
             Body.OnCollision = (a, b, c) =>
             {
@@ -164,9 +171,9 @@ namespace ZeldaMario
                         }
                         vidas -= 1;
                     }
-                    if (temp.Name == "gumba" && attack == false && toque == false)
+                    if (temp.Name == "gumba" && attack == false && toque == false || temp.Name == "GumbaBoss" && attack == false && toque == false)
                     {
-                            removerVida(gameTime);
+                        removerVida(gameTime);
                     }
 
                     if (temp.Name == "assets/orig/images/tile240" || temp.Name == "assets/orig/images/tile241")
@@ -188,7 +195,7 @@ namespace ZeldaMario
                     {
                         foreach (Sprite s in _game._scene._sprites)
                         {
-                            _game._world.RemoveBody(s.Body);                           
+                            _game._world.RemoveBody(s.Body);
                         }
                         _game._scene._sprites.Clear();
                         //_game._world.RemoveBody(Body);//remove body player
@@ -200,9 +207,6 @@ namespace ZeldaMario
                 }
             };
 
-
-            foreach (ITempObject obj in _objects)
-                obj.Update(gameTime);
 
             if (_status == Status.Idle && Body.LinearVelocity.LengthSquared() > 0.001f)
             {
@@ -217,7 +221,7 @@ namespace ZeldaMario
                 _textures = _idleFrames;
                 _currentTexture = 0;
             }
-    
+
             if (Body.LinearVelocity.X < 0f) _direction = Direction.Left;
             else if (Body.LinearVelocity.X > 0f) _direction = Direction.Right;
 
@@ -225,14 +229,14 @@ namespace ZeldaMario
             {
                 _textures = _attackFrames;
             }
-            else if ( _status == Status.Idle) _textures = _idleFrames;
-            else if  (!_isGrounded &&( Body.LinearVelocity.Y > 0.01f || Body.LinearVelocity.Y < -0.01f))  
+            else if (_status == Status.Idle) _textures = _idleFrames;
+            else if (!_isGrounded && (Body.LinearVelocity.Y > 0.01f || Body.LinearVelocity.Y < -0.01f))
             {
                 _textures = _pulo;
             }
             else if (Body.LinearVelocity.X > 0.01f || Body.LinearVelocity.X < -0.01f)
             {
-                    _textures = _walkFrames;
+                _textures = _walkFrames;
             }
 
             base.Update(gameTime);
@@ -275,11 +279,11 @@ namespace ZeldaMario
         public void Attack()
         {
             Fixture fixture;
-           
+
             if (_currentTexture == 9)
             {
                 fixture = FixtureFactory.AttachRectangle(
-                    _size.X / 8f, _size.Y / 6f,
+                    _size.X / 2f, _size.Y / 3.5f,
                     1,
                     new Vector2((direçãoPlayer * _size.X / 2), _size.Y / 15f),
                     Body);
@@ -328,9 +332,34 @@ namespace ZeldaMario
                             }
                         }
                     }
+                    else if (temp.Name == "GumbaBoss")
+                    {
+                        if (_game._boss.Position == temp.Position)
+                        {
+                            if (_game._boss.life > 0)
+                            {
+                                _game._boss.hit = true;
+                                _game._boss.timerdaCor = _game._boss.resetACor;
+                                _game._boss.life--;
+                                
+
+
+                            }
+
+                            else
+                            {
+                                World world = _game.Services.GetService<World>();
+                                world.RemoveBody(_game._boss.Body);
+                                _game._boss = null;
+                            }
+                        }
+
+                    }
                 };
+
             }
         }
+
 
         public void StopAttack()
         {

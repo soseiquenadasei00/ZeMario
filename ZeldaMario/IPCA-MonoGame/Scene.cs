@@ -70,13 +70,12 @@ namespace IPCA.MonoGame
                         game._coin.Add(new Coin(game, (x / 8) + 0.12f,(y/8)+0.12f));
 
                     }
-                    //else if(imageName == "banner") 
-                    //{
-                    //    //game._bandeira = new Bandeira(game, (x / 8)+0.2f, (y / 8)+0.25f);
-                    //    //game._bandeira.Body.IsSensor = true;
-                    //}
+                    else if (imageName == "idle")
+                    {
+                        
+                        game._boss = new GumbaBoss(game, x /8f, (y/8f)+1.2f);
+                    }
 
-               
                     else 
                     {
                         

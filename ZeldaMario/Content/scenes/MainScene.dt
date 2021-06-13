@@ -173,7 +173,7 @@
         "originY": 0.5,
         "zIndex": 12,
         "layerName": "Mapa",
-        "imageName": "tile002"
+        "imageName": "tile001"
       },
       {
         "uniqueId": 17,
@@ -425,467 +425,6 @@
         "imageName": "tile022"
       },
       {
-        "uniqueId": 139,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:-8;ROW:-10",
-        "x": -8,
-        "y": -10,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 31,
-        "layerName": "Mapa",
-        "imageName": "tile080"
-      },
-      {
-        "uniqueId": 154,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:-7;ROW:-10",
-        "x": -7,
-        "y": -10,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 32,
-        "layerName": "Mapa",
-        "imageName": "tile081"
-      },
-      {
-        "uniqueId": 138,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:-6;ROW:-10",
-        "x": -6,
-        "y": -10,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 33,
-        "layerName": "Mapa",
-        "imageName": "tile081"
-      },
-      {
-        "uniqueId": 137,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:-5;ROW:-10",
-        "x": -5,
-        "y": -10,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 34,
-        "layerName": "Mapa",
-        "imageName": "tile081"
-      },
-      {
-        "uniqueId": 155,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:-4;ROW:-10",
-        "x": -4,
-        "y": -10,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 35,
-        "layerName": "Mapa",
-        "imageName": "tile081"
-      },
-      {
-        "uniqueId": 150,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:-3;ROW:-10",
-        "x": -3,
-        "y": -10,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 36,
-        "layerName": "Mapa",
-        "imageName": "tile081"
-      },
-      {
-        "uniqueId": 148,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:-2;ROW:-10",
-        "x": -2,
-        "y": -10,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 37,
-        "layerName": "Mapa",
-        "imageName": "tile081"
-      },
-      {
-        "uniqueId": 152,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:-1;ROW:-10",
-        "x": -1,
-        "y": -10,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 38,
-        "layerName": "Mapa",
-        "imageName": "tile081"
-      },
-      {
-        "uniqueId": 145,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:0;ROW:-10",
-        "y": -10,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 39,
-        "layerName": "Mapa",
-        "imageName": "tile081"
-      },
-      {
-        "uniqueId": 147,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:1;ROW:-10",
-        "x": 1,
-        "y": -10,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 40,
-        "layerName": "Mapa",
-        "imageName": "tile081"
-      },
-      {
-        "uniqueId": 151,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:2;ROW:-10",
-        "x": 2,
-        "y": -10,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 41,
-        "layerName": "Mapa",
-        "imageName": "tile082"
-      },
-      {
-        "uniqueId": 161,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:14;ROW:3",
-        "x": 14,
-        "y": 3,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 42,
-        "layerName": "Mapa",
-        "imageName": "tile080"
-      },
-      {
-        "uniqueId": 162,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:15;ROW:3",
-        "x": 15,
-        "y": 3,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 43,
-        "layerName": "Mapa",
-        "imageName": "tile081"
-      },
-      {
-        "uniqueId": 163,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:16;ROW:3",
-        "x": 16,
-        "y": 3,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 44,
-        "layerName": "Mapa",
-        "imageName": "tile082"
-      },
-      {
-        "uniqueId": 164,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:18;ROW:4",
-        "x": 18,
-        "y": 4,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 45,
-        "layerName": "Mapa",
-        "imageName": "tile080"
-      },
-      {
-        "uniqueId": 165,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:19;ROW:4",
-        "x": 19,
-        "y": 4,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 46,
-        "layerName": "Mapa",
-        "imageName": "tile081"
-      },
-      {
-        "uniqueId": 166,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:20;ROW:4",
-        "x": 20,
-        "y": 4,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 47,
-        "layerName": "Mapa",
-        "imageName": "tile082"
-      },
-      {
-        "uniqueId": 181,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:23;ROW:-3",
-        "x": 23,
-        "y": -3,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 48,
-        "layerName": "Mapa",
-        "imageName": "tile084"
-      },
-      {
-        "uniqueId": 182,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:26;ROW:-5",
-        "x": 26,
-        "y": -5,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 49,
-        "layerName": "Mapa",
-        "imageName": "tile084"
-      },
-      {
-        "uniqueId": 183,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:17;ROW:-10",
-        "x": 17,
-        "y": -10,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 50,
-        "layerName": "Mapa",
-        "imageName": "tile080"
-      },
-      {
-        "uniqueId": 184,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:18;ROW:-10",
-        "x": 18,
-        "y": -10,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 51,
-        "layerName": "Mapa",
-        "imageName": "tile081"
-      },
-      {
-        "uniqueId": 185,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:19;ROW:-10",
-        "x": 19,
-        "y": -10,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 52,
-        "layerName": "Mapa",
-        "imageName": "tile081"
-      },
-      {
-        "uniqueId": 186,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:20;ROW:-10",
-        "x": 20,
-        "y": -10,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 53,
-        "layerName": "Mapa",
-        "imageName": "tile081"
-      },
-      {
-        "uniqueId": 187,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:21;ROW:-10",
-        "x": 21,
-        "y": -10,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 54,
-        "layerName": "Mapa",
-        "imageName": "tile081"
-      },
-      {
-        "uniqueId": 188,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:22;ROW:-10",
-        "x": 22,
-        "y": -10,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 55,
-        "layerName": "Mapa",
-        "imageName": "tile081"
-      },
-      {
-        "uniqueId": 189,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:23;ROW:-10",
-        "x": 23,
-        "y": -10,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 56,
-        "layerName": "Mapa",
-        "imageName": "tile081"
-      },
-      {
-        "uniqueId": 190,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:24;ROW:-10",
-        "x": 24,
-        "y": -10,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 57,
-        "layerName": "Mapa",
-        "imageName": "tile081"
-      },
-      {
-        "uniqueId": 191,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:25;ROW:-10",
-        "x": 25,
-        "y": -10,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 58,
-        "layerName": "Mapa",
-        "imageName": "tile081"
-      },
-      {
-        "uniqueId": 192,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:26;ROW:-10",
-        "x": 26,
-        "y": -10,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 59,
-        "layerName": "Mapa",
-        "imageName": "tile081"
-      },
-      {
-        "uniqueId": 193,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:27;ROW:-10",
-        "x": 27,
-        "y": -10,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 60,
-        "layerName": "Mapa",
-        "imageName": "tile082"
-      },
-      {
-        "uniqueId": 204,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:31;ROW:-9",
-        "x": 31,
-        "y": -9,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 61,
-        "layerName": "Mapa",
-        "imageName": "tile080"
-      },
-      {
-        "uniqueId": 205,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:32;ROW:-9",
-        "x": 32,
-        "y": -9,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 62,
-        "layerName": "Mapa",
-        "imageName": "tile081"
-      },
-      {
-        "uniqueId": 206,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:33;ROW:-9",
-        "x": 33,
-        "y": -9,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 63,
-        "layerName": "Mapa",
-        "imageName": "tile082"
-      },
-      {
         "uniqueId": 210,
         "tags": [
           "TILE"
@@ -894,7 +433,7 @@
         "x": 29,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 64,
+        "zIndex": 31,
         "layerName": "Mapa",
         "imageName": "tile001"
       },
@@ -907,7 +446,7 @@
         "x": 30,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 65,
+        "zIndex": 32,
         "layerName": "Mapa",
         "imageName": "tile001"
       },
@@ -920,7 +459,7 @@
         "x": 31,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 66,
+        "zIndex": 33,
         "layerName": "Mapa",
         "imageName": "tile001"
       },
@@ -933,7 +472,7 @@
         "x": 32,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 67,
+        "zIndex": 34,
         "layerName": "Mapa",
         "imageName": "tile001"
       },
@@ -946,7 +485,7 @@
         "x": 33,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 68,
+        "zIndex": 35,
         "layerName": "Mapa",
         "imageName": "tile001"
       },
@@ -959,7 +498,7 @@
         "x": 34,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 69,
+        "zIndex": 36,
         "layerName": "Mapa",
         "imageName": "tile001"
       },
@@ -972,7 +511,7 @@
         "x": 35,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 70,
+        "zIndex": 37,
         "layerName": "Mapa",
         "imageName": "tile001"
       },
@@ -985,7 +524,7 @@
         "x": 36,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 71,
+        "zIndex": 38,
         "layerName": "Mapa",
         "imageName": "tile001"
       },
@@ -998,7 +537,7 @@
         "x": 37,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 72,
+        "zIndex": 39,
         "layerName": "Mapa",
         "imageName": "tile001"
       },
@@ -1011,7 +550,7 @@
         "x": 38,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 73,
+        "zIndex": 40,
         "layerName": "Mapa",
         "imageName": "tile001"
       },
@@ -1024,7 +563,7 @@
         "x": 39,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 74,
+        "zIndex": 41,
         "layerName": "Mapa",
         "imageName": "tile001"
       },
@@ -1037,7 +576,7 @@
         "x": 40,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 75,
+        "zIndex": 42,
         "layerName": "Mapa",
         "imageName": "tile001"
       },
@@ -1050,7 +589,7 @@
         "x": 41,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 76,
+        "zIndex": 43,
         "layerName": "Mapa",
         "imageName": "tile001"
       },
@@ -1063,7 +602,7 @@
         "x": 42,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 77,
+        "zIndex": 44,
         "layerName": "Mapa",
         "imageName": "tile001"
       },
@@ -1076,7 +615,7 @@
         "x": 43,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 78,
+        "zIndex": 45,
         "layerName": "Mapa",
         "imageName": "tile001"
       },
@@ -1089,7 +628,7 @@
         "x": 44,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 79,
+        "zIndex": 46,
         "layerName": "Mapa",
         "imageName": "tile001"
       },
@@ -1102,7 +641,7 @@
         "x": 45,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 80,
+        "zIndex": 47,
         "layerName": "Mapa",
         "imageName": "tile001"
       },
@@ -1116,7 +655,7 @@
         "y": -2,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 81,
+        "zIndex": 48,
         "layerName": "Mapa",
         "imageName": "tile040"
       },
@@ -1130,7 +669,7 @@
         "y": -2,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 82,
+        "zIndex": 49,
         "layerName": "Mapa",
         "imageName": "tile041"
       },
@@ -1144,23 +683,9 @@
         "y": -2,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 83,
+        "zIndex": 50,
         "layerName": "Mapa",
         "imageName": "tile041"
-      },
-      {
-        "uniqueId": 232,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:32;ROW:-3",
-        "x": 32,
-        "y": -3,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 84,
-        "layerName": "Mapa",
-        "imageName": "tile040"
       },
       {
         "uniqueId": 233,
@@ -1172,23 +697,9 @@
         "y": -4,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 85,
+        "zIndex": 51,
         "layerName": "Mapa",
         "imageName": "tile040"
-      },
-      {
-        "uniqueId": 234,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:33;ROW:-3",
-        "x": 33,
-        "y": -3,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 86,
-        "layerName": "Mapa",
-        "imageName": "tile041"
       },
       {
         "uniqueId": 235,
@@ -1200,7 +711,7 @@
         "y": -4,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 87,
+        "zIndex": 52,
         "layerName": "Mapa",
         "imageName": "tile041"
       },
@@ -1214,7 +725,7 @@
         "y": -4,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 88,
+        "zIndex": 53,
         "layerName": "Mapa",
         "imageName": "tile041"
       },
@@ -1228,7 +739,7 @@
         "y": -4,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 89,
+        "zIndex": 54,
         "layerName": "Mapa",
         "imageName": "tile041"
       },
@@ -1242,7 +753,7 @@
         "y": -4,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 90,
+        "zIndex": 55,
         "layerName": "Mapa",
         "imageName": "tile041"
       },
@@ -1256,7 +767,7 @@
         "y": -4,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 91,
+        "zIndex": 56,
         "layerName": "Mapa",
         "imageName": "tile041"
       },
@@ -1270,7 +781,7 @@
         "y": -5,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 92,
+        "zIndex": 57,
         "layerName": "Mapa",
         "imageName": "tile040"
       },
@@ -1284,7 +795,7 @@
         "y": -5,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 93,
+        "zIndex": 58,
         "layerName": "Mapa",
         "imageName": "tile041"
       },
@@ -1298,7 +809,7 @@
         "y": -5,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 94,
+        "zIndex": 59,
         "layerName": "Mapa",
         "imageName": "tile041"
       },
@@ -1312,7 +823,7 @@
         "y": -5,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 95,
+        "zIndex": 60,
         "layerName": "Mapa",
         "imageName": "tile041"
       },
@@ -1326,7 +837,7 @@
         "y": -5,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 96,
+        "zIndex": 61,
         "layerName": "Mapa",
         "imageName": "tile041"
       },
@@ -1340,7 +851,7 @@
         "y": -5,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 97,
+        "zIndex": 62,
         "layerName": "Mapa",
         "imageName": "tile041"
       },
@@ -1353,7 +864,7 @@
         "x": 46,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 98,
+        "zIndex": 63,
         "layerName": "Mapa",
         "imageName": "tile022"
       },
@@ -1367,7 +878,7 @@
         "y": 1,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 99,
+        "zIndex": 64,
         "layerName": "Mapa",
         "imageName": "tile004"
       },
@@ -1381,7 +892,7 @@
         "y": -1,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 100,
+        "zIndex": 65,
         "layerName": "Mapa",
         "imageName": "tile022"
       },
@@ -1395,7 +906,7 @@
         "y": -2,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 101,
+        "zIndex": 66,
         "layerName": "Mapa",
         "imageName": "tile022"
       },
@@ -1409,7 +920,7 @@
         "y": -3,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 102,
+        "zIndex": 67,
         "layerName": "Mapa",
         "imageName": "tile022"
       },
@@ -1423,7 +934,7 @@
         "y": -3,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 103,
+        "zIndex": 68,
         "layerName": "Mapa",
         "imageName": "tile000"
       },
@@ -1437,7 +948,7 @@
         "y": -3,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 104,
+        "zIndex": 69,
         "layerName": "Mapa",
         "imageName": "tile001"
       },
@@ -1451,7 +962,7 @@
         "y": -3,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 105,
+        "zIndex": 70,
         "layerName": "Mapa",
         "imageName": "tile001"
       },
@@ -1465,7 +976,7 @@
         "y": -3,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 106,
+        "zIndex": 71,
         "layerName": "Mapa",
         "imageName": "tile001"
       },
@@ -1479,7 +990,7 @@
         "y": -3,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 107,
+        "zIndex": 72,
         "layerName": "Mapa",
         "imageName": "tile001"
       },
@@ -1493,7 +1004,7 @@
         "y": -3,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 108,
+        "zIndex": 73,
         "layerName": "Mapa",
         "imageName": "tile002"
       },
@@ -1507,7 +1018,7 @@
         "y": -3,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 109,
+        "zIndex": 74,
         "layerName": "Mapa",
         "imageName": "tile020"
       },
@@ -1521,7 +1032,7 @@
         "y": -2,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 110,
+        "zIndex": 75,
         "layerName": "Mapa",
         "imageName": "tile020"
       },
@@ -1535,7 +1046,7 @@
         "y": -1,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 111,
+        "zIndex": 76,
         "layerName": "Mapa",
         "imageName": "tile000"
       },
@@ -1549,7 +1060,7 @@
         "y": -1,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 112,
+        "zIndex": 77,
         "layerName": "Mapa",
         "imageName": "tile001"
       },
@@ -1563,7 +1074,7 @@
         "y": -1,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 113,
+        "zIndex": 78,
         "layerName": "Mapa",
         "imageName": "tile001"
       },
@@ -1577,7 +1088,7 @@
         "y": -1,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 114,
+        "zIndex": 79,
         "layerName": "Mapa",
         "imageName": "tile001"
       },
@@ -1591,7 +1102,7 @@
         "y": -1,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 115,
+        "zIndex": 80,
         "layerName": "Mapa",
         "imageName": "tile001"
       },
@@ -1605,7 +1116,7 @@
         "y": -1,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 116,
+        "zIndex": 81,
         "layerName": "Mapa",
         "imageName": "tile002"
       },
@@ -1619,7 +1130,7 @@
         "y": -2,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 117,
+        "zIndex": 82,
         "layerName": "Mapa",
         "imageName": "tile022"
       },
@@ -1633,7 +1144,7 @@
         "y": -3,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 118,
+        "zIndex": 83,
         "layerName": "Mapa",
         "imageName": "tile022"
       },
@@ -1647,7 +1158,7 @@
         "y": -4,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 119,
+        "zIndex": 84,
         "layerName": "Mapa",
         "imageName": "tile022"
       },
@@ -1661,7 +1172,7 @@
         "y": -6,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 120,
+        "zIndex": 85,
         "layerName": "Mapa",
         "imageName": "tile040"
       },
@@ -1675,7 +1186,7 @@
         "y": -6,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 121,
+        "zIndex": 86,
         "layerName": "Mapa",
         "imageName": "tile041"
       },
@@ -1689,7 +1200,7 @@
         "y": -6,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 122,
+        "zIndex": 87,
         "layerName": "Mapa",
         "imageName": "tile041"
       },
@@ -1703,7 +1214,7 @@
         "y": -6,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 123,
+        "zIndex": 88,
         "layerName": "Mapa",
         "imageName": "tile041"
       },
@@ -1717,7 +1228,7 @@
         "y": -6,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 124,
+        "zIndex": 89,
         "layerName": "Mapa",
         "imageName": "tile041"
       },
@@ -1731,7 +1242,7 @@
         "y": -7,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 125,
+        "zIndex": 90,
         "layerName": "Mapa",
         "imageName": "tile040"
       },
@@ -1745,7 +1256,7 @@
         "y": -7,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 126,
+        "zIndex": 91,
         "layerName": "Mapa",
         "imageName": "tile041"
       },
@@ -1759,7 +1270,7 @@
         "y": -7,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 127,
+        "zIndex": 92,
         "layerName": "Mapa",
         "imageName": "tile041"
       },
@@ -1773,7 +1284,7 @@
         "y": -7,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 128,
+        "zIndex": 93,
         "layerName": "Mapa",
         "imageName": "tile041"
       },
@@ -1787,7 +1298,7 @@
         "y": -7,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 129,
+        "zIndex": 94,
         "layerName": "Mapa",
         "imageName": "tile041"
       },
@@ -1801,7 +1312,7 @@
         "y": -7,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 130,
+        "zIndex": 95,
         "layerName": "Mapa",
         "imageName": "tile041"
       },
@@ -1815,7 +1326,7 @@
         "y": -7,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 131,
+        "zIndex": 96,
         "layerName": "Mapa",
         "imageName": "tile042"
       },
@@ -1829,7 +1340,7 @@
         "y": -6,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 132,
+        "zIndex": 97,
         "layerName": "Mapa",
         "imageName": "tile041"
       },
@@ -1843,7 +1354,7 @@
         "y": -6,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 133,
+        "zIndex": 98,
         "layerName": "Mapa",
         "imageName": "tile041"
       },
@@ -1857,7 +1368,7 @@
         "y": -6,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 134,
+        "zIndex": 99,
         "layerName": "Mapa",
         "imageName": "tile041"
       },
@@ -1871,7 +1382,7 @@
         "y": -6,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 135,
+        "zIndex": 100,
         "layerName": "Mapa",
         "imageName": "tile041"
       },
@@ -1885,7 +1396,7 @@
         "y": -6,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 136,
+        "zIndex": 101,
         "layerName": "Mapa",
         "imageName": "tile041"
       },
@@ -1899,7 +1410,7 @@
         "y": -6,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 137,
+        "zIndex": 102,
         "layerName": "Mapa",
         "imageName": "tile041"
       },
@@ -1913,7 +1424,7 @@
         "y": -6,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 138,
+        "zIndex": 103,
         "layerName": "Mapa",
         "imageName": "tile041"
       },
@@ -1927,7 +1438,7 @@
         "y": -6,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 139,
+        "zIndex": 104,
         "layerName": "Mapa",
         "imageName": "tile041"
       },
@@ -1941,7 +1452,7 @@
         "y": -6,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 140,
+        "zIndex": 105,
         "layerName": "Mapa",
         "imageName": "tile042"
       },
@@ -1955,7 +1466,7 @@
         "y": -5,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 141,
+        "zIndex": 106,
         "layerName": "Mapa",
         "imageName": "tile030"
       },
@@ -1969,7 +1480,7 @@
         "y": -5,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 142,
+        "zIndex": 107,
         "layerName": "Mapa",
         "imageName": "tile001"
       },
@@ -1983,7 +1494,7 @@
         "y": -5,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 143,
+        "zIndex": 108,
         "layerName": "Mapa",
         "imageName": "tile001"
       },
@@ -1997,7 +1508,7 @@
         "y": -5,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 144,
+        "zIndex": 109,
         "layerName": "Mapa",
         "imageName": "tile001"
       },
@@ -2011,7 +1522,7 @@
         "y": -5,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 145,
+        "zIndex": 110,
         "layerName": "Mapa",
         "imageName": "tile001"
       },
@@ -2025,7 +1536,7 @@
         "y": -5,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 146,
+        "zIndex": 111,
         "layerName": "Mapa",
         "imageName": "tile001"
       },
@@ -2039,7 +1550,7 @@
         "y": -5,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 147,
+        "zIndex": 112,
         "layerName": "Mapa",
         "imageName": "tile001"
       },
@@ -2053,7 +1564,7 @@
         "y": -5,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 148,
+        "zIndex": 113,
         "layerName": "Mapa",
         "imageName": "tile001"
       },
@@ -2067,7 +1578,7 @@
         "y": 4,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 149,
+        "zIndex": 114,
         "layerName": "Mapa",
         "imageName": "tile084"
       },
@@ -2081,7 +1592,7 @@
         "y": 6,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 150,
+        "zIndex": 115,
         "layerName": "Mapa",
         "imageName": "tile084"
       },
@@ -2095,7 +1606,7 @@
         "y": 9,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 151,
+        "zIndex": 116,
         "layerName": "Mapa",
         "imageName": "tile084"
       },
@@ -2109,7 +1620,7 @@
         "y": 11,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 152,
+        "zIndex": 117,
         "layerName": "Mapa",
         "imageName": "tile080"
       },
@@ -2123,7 +1634,7 @@
         "y": 11,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 153,
+        "zIndex": 118,
         "layerName": "Mapa",
         "imageName": "tile081"
       },
@@ -2137,7 +1648,7 @@
         "y": 11,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 154,
+        "zIndex": 119,
         "layerName": "Mapa",
         "imageName": "tile082"
       },
@@ -2151,7 +1662,7 @@
         "y": 12,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 155,
+        "zIndex": 120,
         "layerName": "Mapa",
         "imageName": "tile080"
       },
@@ -2165,7 +1676,7 @@
         "y": 12,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 156,
+        "zIndex": 121,
         "layerName": "Mapa",
         "imageName": "tile081"
       },
@@ -2179,7 +1690,7 @@
         "y": 12,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 157,
+        "zIndex": 122,
         "layerName": "Mapa",
         "imageName": "tile081"
       },
@@ -2193,7 +1704,7 @@
         "y": 12,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 158,
+        "zIndex": 123,
         "layerName": "Mapa",
         "imageName": "tile082"
       },
@@ -2207,7 +1718,7 @@
         "y": 14,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 159,
+        "zIndex": 124,
         "layerName": "Mapa",
         "imageName": "tile084"
       },
@@ -2221,7 +1732,7 @@
         "y": 13,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 160,
+        "zIndex": 125,
         "layerName": "Mapa",
         "imageName": "tile084"
       },
@@ -2234,7 +1745,7 @@
         "x": 28,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 161,
+        "zIndex": 126,
         "layerName": "Mapa",
         "imageName": "tile001"
       },
@@ -2247,7 +1758,7 @@
         "x": 27,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 162,
+        "zIndex": 127,
         "layerName": "Mapa",
         "imageName": "tile080"
       },
@@ -2261,260 +1772,205 @@
         "y": -1,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 163,
+        "zIndex": 128,
         "layerName": "Mapa",
         "imageName": "tile040"
       },
       {
-        "uniqueId": 83,
+        "uniqueId": 100,
         "tags": [
           "TILE"
         ],
-        "customVars": "COLUMN:-7;ROW:-9",
-        "x": -7,
-        "y": -9,
+        "customVars": "COLUMN:13;ROW:1",
+        "x": 13,
+        "y": 1,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 164,
-        "layerName": "morte",
-        "imageName": "tile240"
+        "zIndex": 129,
+        "layerName": "Mapa",
+        "imageName": "tile001"
       },
       {
-        "uniqueId": 92,
+        "uniqueId": 101,
         "tags": [
           "TILE"
         ],
-        "customVars": "COLUMN:-6;ROW:-9",
-        "x": -6,
-        "y": -9,
+        "customVars": "COLUMN:14;ROW:1",
+        "x": 14,
+        "y": 1,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 165,
-        "layerName": "morte",
-        "imageName": "tile240"
+        "zIndex": 130,
+        "layerName": "Mapa",
+        "imageName": "tile001"
       },
       {
-        "uniqueId": 75,
+        "uniqueId": 102,
         "tags": [
           "TILE"
         ],
-        "customVars": "COLUMN:-5;ROW:-9",
-        "x": -5,
-        "y": -9,
+        "customVars": "COLUMN:15;ROW:1",
+        "x": 15,
+        "y": 1,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 166,
-        "layerName": "morte",
-        "imageName": "tile240"
+        "zIndex": 131,
+        "layerName": "Mapa",
+        "imageName": "tile001"
       },
       {
-        "uniqueId": 80,
+        "uniqueId": 103,
         "tags": [
           "TILE"
         ],
-        "customVars": "COLUMN:-4;ROW:-9",
-        "x": -4,
-        "y": -9,
+        "customVars": "COLUMN:16;ROW:1",
+        "x": 16,
+        "y": 1,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 167,
-        "layerName": "morte",
-        "imageName": "tile240"
+        "zIndex": 132,
+        "layerName": "Mapa",
+        "imageName": "tile001"
       },
       {
-        "uniqueId": 93,
+        "uniqueId": 104,
         "tags": [
           "TILE"
         ],
-        "customVars": "COLUMN:-3;ROW:-9",
-        "x": -3,
-        "y": -9,
+        "customVars": "COLUMN:17;ROW:1",
+        "x": 17,
+        "y": 1,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 168,
-        "layerName": "morte",
-        "imageName": "tile240"
+        "zIndex": 133,
+        "layerName": "Mapa",
+        "imageName": "tile001"
       },
       {
-        "uniqueId": 78,
+        "uniqueId": 105,
         "tags": [
           "TILE"
         ],
-        "customVars": "COLUMN:-2;ROW:-9",
-        "x": -2,
-        "y": -9,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 169,
-        "layerName": "morte",
-        "imageName": "tile240"
-      },
-      {
-        "uniqueId": 86,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:-1;ROW:-9",
-        "x": -1,
-        "y": -9,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 170,
-        "layerName": "morte",
-        "imageName": "tile240"
-      },
-      {
-        "uniqueId": 95,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:0;ROW:-9",
-        "y": -9,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 171,
-        "layerName": "morte",
-        "imageName": "tile240"
-      },
-      {
-        "uniqueId": 98,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:1;ROW:-9",
-        "x": 1,
-        "y": -9,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 172,
-        "layerName": "morte",
-        "imageName": "tile240"
-      },
-      {
-        "uniqueId": 82,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:18;ROW:-9",
+        "customVars": "COLUMN:18;ROW:1",
         "x": 18,
-        "y": -9,
+        "y": 1,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 173,
-        "layerName": "morte",
-        "imageName": "tile240"
+        "zIndex": 134,
+        "layerName": "Mapa",
+        "imageName": "tile001"
       },
       {
-        "uniqueId": 76,
+        "uniqueId": 106,
         "tags": [
           "TILE"
         ],
-        "customVars": "COLUMN:19;ROW:-9",
+        "customVars": "COLUMN:19;ROW:1",
         "x": 19,
-        "y": -9,
+        "y": 1,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 174,
-        "layerName": "morte",
-        "imageName": "tile240"
+        "zIndex": 135,
+        "layerName": "Mapa",
+        "imageName": "tile001"
       },
       {
-        "uniqueId": 94,
+        "uniqueId": 107,
         "tags": [
           "TILE"
         ],
-        "customVars": "COLUMN:20;ROW:-9",
+        "customVars": "COLUMN:20;ROW:1",
         "x": 20,
-        "y": -9,
+        "y": 1,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 175,
-        "layerName": "morte",
-        "imageName": "tile240"
+        "zIndex": 136,
+        "layerName": "Mapa",
+        "imageName": "tile001"
       },
       {
-        "uniqueId": 79,
+        "uniqueId": 108,
         "tags": [
           "TILE"
         ],
-        "customVars": "COLUMN:21;ROW:-9",
+        "customVars": "COLUMN:21;ROW:1",
         "x": 21,
-        "y": -9,
+        "y": 1,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 176,
-        "layerName": "morte",
-        "imageName": "tile240"
+        "zIndex": 137,
+        "layerName": "Mapa",
+        "imageName": "tile001"
       },
       {
-        "uniqueId": 87,
+        "uniqueId": 109,
         "tags": [
           "TILE"
         ],
-        "customVars": "COLUMN:22;ROW:-9",
+        "customVars": "COLUMN:22;ROW:1",
         "x": 22,
-        "y": -9,
+        "y": 1,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 177,
-        "layerName": "morte",
-        "imageName": "tile240"
+        "zIndex": 138,
+        "layerName": "Mapa",
+        "imageName": "tile001"
       },
       {
-        "uniqueId": 88,
+        "uniqueId": 110,
         "tags": [
           "TILE"
         ],
-        "customVars": "COLUMN:23;ROW:-9",
+        "customVars": "COLUMN:23;ROW:1",
         "x": 23,
-        "y": -9,
+        "y": 1,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 178,
-        "layerName": "morte",
-        "imageName": "tile240"
+        "zIndex": 139,
+        "layerName": "Mapa",
+        "imageName": "tile001"
       },
       {
-        "uniqueId": 97,
+        "uniqueId": 111,
         "tags": [
           "TILE"
         ],
-        "customVars": "COLUMN:24;ROW:-9",
+        "customVars": "COLUMN:24;ROW:1",
         "x": 24,
-        "y": -9,
+        "y": 1,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 179,
-        "layerName": "morte",
-        "imageName": "tile240"
+        "zIndex": 140,
+        "layerName": "Mapa",
+        "imageName": "tile001"
       },
       {
-        "uniqueId": 81,
+        "uniqueId": 112,
         "tags": [
           "TILE"
         ],
-        "customVars": "COLUMN:25;ROW:-9",
+        "customVars": "COLUMN:25;ROW:1",
         "x": 25,
-        "y": -9,
+        "y": 1,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 180,
-        "layerName": "morte",
-        "imageName": "tile240"
+        "zIndex": 141,
+        "layerName": "Mapa",
+        "imageName": "tile001"
       },
       {
-        "uniqueId": 91,
+        "uniqueId": 113,
         "tags": [
           "TILE"
         ],
-        "customVars": "COLUMN:26;ROW:-9",
+        "customVars": "COLUMN:26;ROW:1",
         "x": 26,
-        "y": -9,
+        "y": 1,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 181,
-        "layerName": "morte",
-        "imageName": "tile240"
+        "zIndex": 142,
+        "layerName": "Mapa",
+        "imageName": "tile001"
       },
       {
         "uniqueId": 77,
@@ -2526,7 +1982,7 @@
         "y": -2,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 182,
+        "zIndex": 143,
         "layerName": "morte",
         "imageName": "tile240"
       },
@@ -2540,7 +1996,7 @@
         "y": -2,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 183,
+        "zIndex": 144,
         "layerName": "morte",
         "imageName": "tile240"
       },
@@ -2554,7 +2010,7 @@
         "y": -2,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 184,
+        "zIndex": 145,
         "layerName": "morte",
         "imageName": "tile240"
       },
@@ -2568,7 +2024,7 @@
         "y": -2,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 185,
+        "zIndex": 146,
         "layerName": "morte",
         "imageName": "tile240"
       },
@@ -2582,7 +2038,7 @@
         "y": -2,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 186,
+        "zIndex": 147,
         "layerName": "morte",
         "imageName": "tile240"
       },
@@ -2596,7 +2052,7 @@
         "y": -2,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 187,
+        "zIndex": 148,
         "layerName": "morte",
         "imageName": "tile240"
       },
@@ -2610,7 +2066,7 @@
         "y": 1,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 188,
+        "zIndex": 149,
         "layerName": "morte",
         "imageName": "tile240"
       },
@@ -2624,7 +2080,7 @@
         "y": -4,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 189,
+        "zIndex": 150,
         "layerName": "Mapa1",
         "imageName": "tile021"
       },
@@ -2638,7 +2094,7 @@
         "y": -3,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 190,
+        "zIndex": 151,
         "layerName": "Mapa1",
         "imageName": "tile021"
       },
@@ -2652,7 +2108,7 @@
         "y": -2,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 191,
+        "zIndex": 152,
         "layerName": "Mapa1",
         "imageName": "tile021"
       },
@@ -2666,7 +2122,7 @@
         "y": -1,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 192,
+        "zIndex": 153,
         "layerName": "Mapa1",
         "imageName": "tile021"
       },
@@ -2680,7 +2136,7 @@
         "y": -2,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 193,
+        "zIndex": 154,
         "layerName": "Mapa1",
         "imageName": "tile021"
       },
@@ -2694,7 +2150,7 @@
         "y": -2,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 194,
+        "zIndex": 155,
         "layerName": "Mapa1",
         "imageName": "tile021"
       },
@@ -2708,7 +2164,7 @@
         "y": -1,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 195,
+        "zIndex": 156,
         "layerName": "Mapa1",
         "imageName": "tile021"
       },
@@ -2722,7 +2178,7 @@
         "y": -2,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 196,
+        "zIndex": 157,
         "layerName": "Mapa1",
         "imageName": "tile021"
       },
@@ -2736,7 +2192,7 @@
         "y": -2,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 197,
+        "zIndex": 158,
         "layerName": "Mapa1",
         "imageName": "tile021"
       },
@@ -2750,7 +2206,7 @@
         "y": -1,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 198,
+        "zIndex": 159,
         "layerName": "Mapa1",
         "imageName": "tile021"
       },
@@ -2764,7 +2220,7 @@
         "y": -1,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 199,
+        "zIndex": 160,
         "layerName": "Mapa1",
         "imageName": "tile021"
       },
@@ -2778,7 +2234,7 @@
         "y": -3,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 200,
+        "zIndex": 161,
         "layerName": "Mapa1",
         "imageName": "tile021"
       },
@@ -2792,7 +2248,7 @@
         "y": -3,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 201,
+        "zIndex": 162,
         "layerName": "Mapa1",
         "imageName": "tile021"
       },
@@ -2806,7 +2262,7 @@
         "y": -3,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 202,
+        "zIndex": 163,
         "layerName": "Mapa1",
         "imageName": "tile021"
       },
@@ -2820,7 +2276,7 @@
         "y": -2,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 203,
+        "zIndex": 164,
         "layerName": "Mapa1",
         "imageName": "tile021"
       },
@@ -2834,7 +2290,7 @@
         "y": -1,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 204,
+        "zIndex": 165,
         "layerName": "Mapa1",
         "imageName": "tile021"
       },
@@ -2848,7 +2304,7 @@
         "y": -2,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 205,
+        "zIndex": 166,
         "layerName": "Mapa1",
         "imageName": "tile021"
       },
@@ -2862,7 +2318,7 @@
         "y": -3,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 206,
+        "zIndex": 167,
         "layerName": "Mapa1",
         "imageName": "tile021"
       },
@@ -2876,7 +2332,7 @@
         "y": -2,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 207,
+        "zIndex": 168,
         "layerName": "Mapa1",
         "imageName": "tile021"
       },
@@ -2890,7 +2346,7 @@
         "y": -2,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 208,
+        "zIndex": 169,
         "layerName": "Mapa1",
         "imageName": "tile021"
       },
@@ -2904,7 +2360,7 @@
         "y": -1,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 209,
+        "zIndex": 170,
         "layerName": "Mapa1",
         "imageName": "tile021"
       },
@@ -2918,7 +2374,7 @@
         "y": -1,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 210,
+        "zIndex": 171,
         "layerName": "Mapa1",
         "imageName": "tile021"
       },
@@ -2932,7 +2388,7 @@
         "y": -1,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 211,
+        "zIndex": 172,
         "layerName": "Mapa1",
         "imageName": "tile021"
       },
@@ -2946,7 +2402,7 @@
         "y": -3,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 212,
+        "zIndex": 173,
         "layerName": "Mapa1",
         "imageName": "tile021"
       },
@@ -2960,7 +2416,7 @@
         "y": -3,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 213,
+        "zIndex": 174,
         "layerName": "Mapa1",
         "imageName": "tile021"
       },
@@ -2974,7 +2430,7 @@
         "y": -3,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 214,
+        "zIndex": 175,
         "layerName": "Mapa1",
         "imageName": "tile021"
       },
@@ -2988,7 +2444,7 @@
         "y": -2,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 215,
+        "zIndex": 176,
         "layerName": "Mapa1",
         "imageName": "tile021"
       },
@@ -3002,7 +2458,7 @@
         "y": -2,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 216,
+        "zIndex": 177,
         "layerName": "Mapa1",
         "imageName": "tile021"
       },
@@ -3016,7 +2472,7 @@
         "y": -3,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 217,
+        "zIndex": 178,
         "layerName": "Mapa1",
         "imageName": "tile021"
       },
@@ -3030,7 +2486,7 @@
         "y": -2,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 218,
+        "zIndex": 179,
         "layerName": "Mapa1",
         "imageName": "tile021"
       },
@@ -3044,7 +2500,7 @@
         "y": -1,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 219,
+        "zIndex": 180,
         "layerName": "Mapa1",
         "imageName": "tile021"
       },
@@ -3057,7 +2513,7 @@
         "x": 11,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 220,
+        "zIndex": 181,
         "layerName": "Mapa1",
         "imageName": "tile021"
       },
@@ -3070,7 +2526,7 @@
         "x": 10,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 221,
+        "zIndex": 182,
         "layerName": "Mapa1",
         "imageName": "tile021"
       },
@@ -3084,7 +2540,7 @@
         "y": -1,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 222,
+        "zIndex": 183,
         "layerName": "Mapa1",
         "imageName": "tile021"
       },
@@ -3098,7 +2554,7 @@
         "y": -1,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 223,
+        "zIndex": 184,
         "layerName": "Mapa1",
         "imageName": "tile021"
       },
@@ -3111,7 +2567,7 @@
         "x": 9,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 224,
+        "zIndex": 185,
         "layerName": "Mapa1",
         "imageName": "tile021"
       },
@@ -3124,7 +2580,7 @@
         "x": 8,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 225,
+        "zIndex": 186,
         "layerName": "Mapa1",
         "imageName": "tile021"
       },
@@ -3137,7 +2593,7 @@
         "x": 7,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 226,
+        "zIndex": 187,
         "layerName": "Mapa1",
         "imageName": "tile021"
       },
@@ -3151,7 +2607,7 @@
         "y": -1,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 227,
+        "zIndex": 188,
         "layerName": "Mapa1",
         "imageName": "tile021"
       },
@@ -3165,7 +2621,7 @@
         "y": -1,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 228,
+        "zIndex": 189,
         "layerName": "Mapa1",
         "imageName": "tile021"
       },
@@ -3179,7 +2635,7 @@
         "y": -1,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 229,
+        "zIndex": 190,
         "layerName": "Mapa1",
         "imageName": "tile021"
       },
@@ -3193,7 +2649,7 @@
         "y": -2,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 230,
+        "zIndex": 191,
         "layerName": "Mapa1",
         "imageName": "tile021"
       },
@@ -3207,7 +2663,7 @@
         "y": -2,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 231,
+        "zIndex": 192,
         "layerName": "Mapa1",
         "imageName": "tile021"
       },
@@ -3221,7 +2677,7 @@
         "y": -1,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 232,
+        "zIndex": 193,
         "layerName": "Mapa1",
         "imageName": "tile021"
       },
@@ -3235,7 +2691,7 @@
         "y": -1,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 233,
+        "zIndex": 194,
         "layerName": "Mapa1",
         "imageName": "tile021"
       },
@@ -3249,7 +2705,7 @@
         "y": -3,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 234,
+        "zIndex": 195,
         "layerName": "Mapa1",
         "imageName": "tile021"
       },
@@ -3263,7 +2719,7 @@
         "y": -2,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 235,
+        "zIndex": 196,
         "layerName": "Mapa1",
         "imageName": "tile021"
       },
@@ -3277,7 +2733,7 @@
         "y": -2,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 236,
+        "zIndex": 197,
         "layerName": "Mapa1",
         "imageName": "tile021"
       },
@@ -3291,7 +2747,7 @@
         "y": -2,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 237,
+        "zIndex": 198,
         "layerName": "Mapa1",
         "imageName": "tile021"
       },
@@ -3305,7 +2761,7 @@
         "y": -2,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 238,
+        "zIndex": 199,
         "layerName": "Mapa1",
         "imageName": "tile021"
       },
@@ -3319,7 +2775,7 @@
         "y": -2,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 239,
+        "zIndex": 200,
         "layerName": "Mapa1",
         "imageName": "tile021"
       },
@@ -3333,7 +2789,7 @@
         "y": -2,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 240,
+        "zIndex": 201,
         "layerName": "Mapa1",
         "imageName": "tile021"
       },
@@ -3347,7 +2803,7 @@
         "y": -2,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 241,
+        "zIndex": 202,
         "layerName": "Mapa1",
         "imageName": "tile021"
       },
@@ -3361,7 +2817,7 @@
         "y": -2,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 242,
+        "zIndex": 203,
         "layerName": "Mapa1",
         "imageName": "tile021"
       },
@@ -3375,7 +2831,7 @@
         "y": -2,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 243,
+        "zIndex": 204,
         "layerName": "Mapa1",
         "imageName": "tile021"
       },
@@ -3389,7 +2845,7 @@
         "y": -2,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 244,
+        "zIndex": 205,
         "layerName": "Mapa1",
         "imageName": "tile021"
       },
@@ -3403,7 +2859,7 @@
         "y": -1,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 245,
+        "zIndex": 206,
         "layerName": "Mapa1",
         "imageName": "tile021"
       },
@@ -3417,7 +2873,7 @@
         "y": -1,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 246,
+        "zIndex": 207,
         "layerName": "Mapa1",
         "imageName": "tile021"
       },
@@ -3431,7 +2887,7 @@
         "y": -1,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 247,
+        "zIndex": 208,
         "layerName": "Mapa1",
         "imageName": "tile021"
       },
@@ -3445,7 +2901,7 @@
         "y": -1,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 248,
+        "zIndex": 209,
         "layerName": "Mapa1",
         "imageName": "tile021"
       },
@@ -3459,7 +2915,7 @@
         "y": -1,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 249,
+        "zIndex": 210,
         "layerName": "Mapa1",
         "imageName": "tile021"
       },
@@ -3473,7 +2929,7 @@
         "y": -1,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 250,
+        "zIndex": 211,
         "layerName": "Mapa1",
         "imageName": "tile021"
       },
@@ -3487,7 +2943,7 @@
         "y": -1,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 251,
+        "zIndex": 212,
         "layerName": "Mapa1",
         "imageName": "tile021"
       },
@@ -3501,7 +2957,7 @@
         "y": -1,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 252,
+        "zIndex": 213,
         "layerName": "Mapa1",
         "imageName": "tile021"
       },
@@ -3515,7 +2971,7 @@
         "y": -1,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 253,
+        "zIndex": 214,
         "layerName": "Mapa1",
         "imageName": "tile021"
       },
@@ -3529,7 +2985,7 @@
         "y": -1,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 254,
+        "zIndex": 215,
         "layerName": "Mapa1",
         "imageName": "tile021"
       },
@@ -3543,7 +2999,7 @@
         "y": -1,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 255,
+        "zIndex": 216,
         "layerName": "Mapa1",
         "imageName": "tile021"
       },
@@ -3557,7 +3013,7 @@
         "y": -2,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 256,
+        "zIndex": 217,
         "layerName": "Mapa1",
         "imageName": "tile021"
       },
@@ -3571,7 +3027,7 @@
         "y": -3,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 257,
+        "zIndex": 218,
         "layerName": "Mapa1",
         "imageName": "tile021"
       },
@@ -3585,7 +3041,7 @@
         "y": -3,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 258,
+        "zIndex": 219,
         "layerName": "Mapa1",
         "imageName": "tile021"
       },
@@ -3599,7 +3055,7 @@
         "y": -3,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 259,
+        "zIndex": 220,
         "layerName": "Mapa1",
         "imageName": "tile021"
       },
@@ -3613,7 +3069,7 @@
         "y": -3,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 260,
+        "zIndex": 221,
         "layerName": "Mapa1",
         "imageName": "tile021"
       },
@@ -3627,7 +3083,7 @@
         "y": -3,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 261,
+        "zIndex": 222,
         "layerName": "Mapa1",
         "imageName": "tile021"
       },
@@ -3641,7 +3097,7 @@
         "y": -3,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 262,
+        "zIndex": 223,
         "layerName": "Mapa1",
         "imageName": "tile021"
       },
@@ -3655,7 +3111,7 @@
         "y": -4,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 263,
+        "zIndex": 224,
         "layerName": "Mapa1",
         "imageName": "tile021"
       },
@@ -3669,7 +3125,7 @@
         "y": -4,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 264,
+        "zIndex": 225,
         "layerName": "Mapa1",
         "imageName": "tile021"
       },
@@ -3683,7 +3139,7 @@
         "y": -4,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 265,
+        "zIndex": 226,
         "layerName": "Mapa1",
         "imageName": "tile021"
       },
@@ -3697,7 +3153,7 @@
         "y": -3,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 266,
+        "zIndex": 227,
         "layerName": "Mapa1",
         "imageName": "tile021"
       },
@@ -3711,7 +3167,7 @@
         "y": -3,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 267,
+        "zIndex": 228,
         "layerName": "Mapa1",
         "imageName": "tile021"
       },
@@ -3725,7 +3181,7 @@
         "y": -4,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 268,
+        "zIndex": 229,
         "layerName": "Mapa1",
         "imageName": "tile021"
       },
@@ -3739,7 +3195,7 @@
         "y": -4,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 269,
+        "zIndex": 230,
         "layerName": "Mapa1",
         "imageName": "tile021"
       },
@@ -3753,7 +3209,7 @@
         "y": -3,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 270,
+        "zIndex": 231,
         "layerName": "Mapa1",
         "imageName": "tile021"
       },
@@ -3767,7 +3223,7 @@
         "y": -3,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 271,
+        "zIndex": 232,
         "layerName": "Mapa1",
         "imageName": "tile021"
       },
@@ -3781,7 +3237,7 @@
         "y": -4,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 272,
+        "zIndex": 233,
         "layerName": "Mapa1",
         "imageName": "tile021"
       },
@@ -3795,7 +3251,7 @@
         "y": -4,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 273,
+        "zIndex": 234,
         "layerName": "Mapa1",
         "imageName": "tile021"
       },
@@ -3809,7 +3265,7 @@
         "y": -4,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 274,
+        "zIndex": 235,
         "layerName": "Mapa1",
         "imageName": "tile021"
       },
@@ -3823,7 +3279,7 @@
         "y": -5,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 275,
+        "zIndex": 236,
         "layerName": "Mapa1",
         "imageName": "tile021"
       },
@@ -3837,7 +3293,7 @@
         "y": -5,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 276,
+        "zIndex": 237,
         "layerName": "Mapa1",
         "imageName": "tile021"
       },
@@ -3851,7 +3307,7 @@
         "y": -5,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 277,
+        "zIndex": 238,
         "layerName": "Mapa1",
         "imageName": "tile021"
       },
@@ -3865,7 +3321,7 @@
         "y": -5,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 278,
+        "zIndex": 239,
         "layerName": "Mapa1",
         "imageName": "tile021"
       },
@@ -3879,7 +3335,7 @@
         "y": -4,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 279,
+        "zIndex": 240,
         "layerName": "Mapa1",
         "imageName": "tile021"
       },
@@ -3893,7 +3349,7 @@
         "y": -5,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 280,
+        "zIndex": 241,
         "layerName": "Mapa1",
         "imageName": "tile021"
       },
@@ -3907,7 +3363,7 @@
         "y": -4,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 281,
+        "zIndex": 242,
         "layerName": "Mapa1",
         "imageName": "tile021"
       },
@@ -3921,7 +3377,7 @@
         "y": -4,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 282,
+        "zIndex": 243,
         "layerName": "Mapa1",
         "imageName": "tile021"
       },
@@ -3935,7 +3391,7 @@
         "y": -5,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 283,
+        "zIndex": 244,
         "layerName": "Mapa1",
         "imageName": "tile021"
       },
@@ -3949,7 +3405,7 @@
         "y": -5,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 284,
+        "zIndex": 245,
         "layerName": "Mapa1",
         "imageName": "tile021"
       },
@@ -3963,7 +3419,7 @@
         "y": -5,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 285,
+        "zIndex": 246,
         "layerName": "Mapa1",
         "imageName": "tile021"
       },
@@ -3977,7 +3433,7 @@
         "y": -6,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 286,
+        "zIndex": 247,
         "layerName": "Mapa1",
         "imageName": "tile021"
       },
@@ -3991,7 +3447,7 @@
         "y": -6,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 287,
+        "zIndex": 248,
         "layerName": "Mapa1",
         "imageName": "tile021"
       },
@@ -4005,7 +3461,7 @@
         "y": -6,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 288,
+        "zIndex": 249,
         "layerName": "Mapa1",
         "imageName": "tile021"
       },
@@ -4019,7 +3475,7 @@
         "y": -4,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 289,
+        "zIndex": 250,
         "layerName": "Mapa1",
         "imageName": "tile021"
       },
@@ -4033,7 +3489,7 @@
         "y": -4,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 290,
+        "zIndex": 251,
         "layerName": "Mapa1",
         "imageName": "tile021"
       },
@@ -4047,7 +3503,7 @@
         "y": -4,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 291,
+        "zIndex": 252,
         "layerName": "Mapa1",
         "imageName": "tile021"
       },
@@ -4061,7 +3517,7 @@
         "y": -3,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 292,
+        "zIndex": 253,
         "layerName": "Mapa1",
         "imageName": "tile021"
       },
@@ -4075,7 +3531,7 @@
         "y": -3,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 293,
+        "zIndex": 254,
         "layerName": "Mapa1",
         "imageName": "tile021"
       },
@@ -4089,7 +3545,7 @@
         "y": -4,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 294,
+        "zIndex": 255,
         "layerName": "Mapa1",
         "imageName": "tile021"
       },
@@ -4103,7 +3559,7 @@
         "y": -5,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 295,
+        "zIndex": 256,
         "layerName": "Mapa1",
         "imageName": "tile021"
       },
@@ -4117,7 +3573,7 @@
         "y": -5,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 296,
+        "zIndex": 257,
         "layerName": "Mapa1",
         "imageName": "tile021"
       },
@@ -4131,7 +3587,7 @@
         "y": -4,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 297,
+        "zIndex": 258,
         "layerName": "Mapa1",
         "imageName": "tile021"
       },
@@ -4145,7 +3601,7 @@
         "y": -6,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 298,
+        "zIndex": 259,
         "layerName": "Mapa1",
         "imageName": "tile021"
       },
@@ -4159,7 +3615,7 @@
         "y": -6,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 299,
+        "zIndex": 260,
         "layerName": "Mapa1",
         "imageName": "tile021"
       },
@@ -4173,7 +3629,7 @@
         "y": -5,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 300,
+        "zIndex": 261,
         "layerName": "Mapa1",
         "imageName": "tile021"
       },
@@ -4187,7 +3643,7 @@
         "y": -6,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 301,
+        "zIndex": 262,
         "layerName": "Mapa1",
         "imageName": "tile021"
       },
@@ -4201,7 +3657,7 @@
         "y": -6,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 302,
+        "zIndex": 263,
         "layerName": "Mapa1",
         "imageName": "tile021"
       },
@@ -4215,7 +3671,7 @@
         "y": -5,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 303,
+        "zIndex": 264,
         "layerName": "Mapa1",
         "imageName": "tile021"
       },
@@ -4229,7 +3685,7 @@
         "y": -5,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 304,
+        "zIndex": 265,
         "layerName": "Mapa1",
         "imageName": "tile021"
       },
@@ -4243,7 +3699,7 @@
         "y": -4,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 305,
+        "zIndex": 266,
         "layerName": "Mapa1",
         "imageName": "tile021"
       },
@@ -4257,7 +3713,7 @@
         "y": -3,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 306,
+        "zIndex": 267,
         "layerName": "Mapa1",
         "imageName": "tile021"
       },
@@ -4271,7 +3727,7 @@
         "y": -3,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 307,
+        "zIndex": 268,
         "layerName": "Mapa1",
         "imageName": "tile021"
       },
@@ -4285,7 +3741,7 @@
         "y": -2,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 308,
+        "zIndex": 269,
         "layerName": "Mapa1",
         "imageName": "tile021"
       },
@@ -4299,7 +3755,7 @@
         "y": -2,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 309,
+        "zIndex": 270,
         "layerName": "Mapa1",
         "imageName": "tile021"
       },
@@ -4313,7 +3769,7 @@
         "y": -2,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 310,
+        "zIndex": 271,
         "layerName": "Mapa1",
         "imageName": "tile021"
       },
@@ -4327,7 +3783,7 @@
         "y": -2,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 311,
+        "zIndex": 272,
         "layerName": "Mapa1",
         "imageName": "tile021"
       },
@@ -4341,7 +3797,7 @@
         "y": -1,
         "originX": 0.5,
         "originY": 0.5,
-        "zIndex": 312,
+        "zIndex": 273,
         "layerName": "Mapa1",
         "imageName": "tile021"
       },
@@ -4353,81 +3809,9 @@
         "y": 1,
         "originX": 1,
         "originY": 1,
-        "zIndex": 313,
+        "zIndex": 274,
         "layerName": "Player",
         "imageName": "Wulfric0"
-      },
-      {
-        "uniqueId": 439,
-        "tags": [
-        ],
-        "x": -8.625,
-        "y": -9.4375,
-        "originX": 1,
-        "originY": 1,
-        "zIndex": 314,
-        "layerName": "Coin",
-        "imageName": "tileset1"
-      },
-      {
-        "uniqueId": 442,
-        "tags": [
-        ],
-        "x": 1.5,
-        "y": -9.4375,
-        "originX": 1,
-        "originY": 1,
-        "zIndex": 315,
-        "layerName": "Coin",
-        "imageName": "tileset1"
-      },
-      {
-        "uniqueId": 440,
-        "tags": [
-        ],
-        "x": 13.5,
-        "y": 3.5,
-        "originX": 1,
-        "originY": 1,
-        "zIndex": 316,
-        "layerName": "Coin",
-        "imageName": "tileset1"
-      },
-      {
-        "uniqueId": 437,
-        "tags": [
-        ],
-        "x": 17.5,
-        "y": 4.5,
-        "originX": 1,
-        "originY": 1,
-        "zIndex": 317,
-        "layerName": "Coin",
-        "imageName": "tileset1"
-      },
-      {
-        "uniqueId": 436,
-        "tags": [
-        ],
-        "x": 30.875,
-        "y": -8.4375,
-        "originX": 1,
-        "originY": 1,
-        "zIndex": 318,
-        "layerName": "Coin",
-        "imageName": "tileset1"
-      },
-      {
-        "uniqueId": 441,
-        "tags": [
-        ],
-        "x": 32.0625,
-        "y": -8.4375,
-        "originX": 1,
-        "originY": 1,
-        "zIndex": 319,
-        "layerName": "Coin",
-        "imageName": "tileset1"
       },
       {
         "uniqueId": 438,
@@ -4437,19 +3821,7 @@
         "y": 0.625,
         "originX": 1,
         "originY": 1,
-        "zIndex": 320,
-        "layerName": "Coin",
-        "imageName": "tileset1"
-      },
-      {
-        "uniqueId": 443,
-        "tags": [
-        ],
-        "x": 22.4375,
-        "y": -2.5,
-        "originX": 1,
-        "originY": 1,
-        "zIndex": 321,
+        "zIndex": 275,
         "layerName": "Coin",
         "imageName": "tileset1"
       },
@@ -4461,7 +3833,7 @@
         "y": 12.5625,
         "originX": 1,
         "originY": 1,
-        "zIndex": 322,
+        "zIndex": 276,
         "layerName": "Coin",
         "imageName": "tileset1"
       },
@@ -4473,7 +3845,7 @@
         "y": 12.625,
         "originX": 1,
         "originY": 1,
-        "zIndex": 323,
+        "zIndex": 277,
         "layerName": "Coin",
         "imageName": "tileset1"
       },
@@ -4485,7 +3857,7 @@
         "y": 12.625,
         "originX": 1,
         "originY": 1,
-        "zIndex": 324,
+        "zIndex": 278,
         "layerName": "Coin",
         "imageName": "tileset1"
       },
@@ -4497,7 +3869,7 @@
         "y": 1.5625,
         "originX": 1,
         "originY": 1,
-        "zIndex": 325,
+        "zIndex": 279,
         "layerName": "Coin",
         "imageName": "tileset1"
       },
@@ -4509,7 +3881,7 @@
         "y": 0.8125,
         "originX": 1,
         "originY": 1,
-        "zIndex": 326,
+        "zIndex": 280,
         "layerName": "Coin",
         "imageName": "tileset1"
       },
@@ -4521,7 +3893,7 @@
         "y": 2.375,
         "originX": 1,
         "originY": 1,
-        "zIndex": 327,
+        "zIndex": 281,
         "layerName": "Coin",
         "imageName": "tileset1"
       },
@@ -4533,7 +3905,7 @@
         "y": 2.0625,
         "originX": 1,
         "originY": 1,
-        "zIndex": 328,
+        "zIndex": 282,
         "layerName": "Inimigos",
         "imageName": "gumba-idle"
       },
@@ -4545,7 +3917,7 @@
         "y": 12.0625,
         "originX": 1,
         "originY": 1,
-        "zIndex": 329,
+        "zIndex": 283,
         "layerName": "Inimigos",
         "imageName": "planta-idle-export1"
       },
@@ -4553,11 +3925,11 @@
         "uniqueId": 433,
         "tags": [
         ],
-        "x": 37.1875,
-        "y": 1,
+        "x": 39.25,
+        "y": 14.9375,
         "originX": 1,
         "originY": 1,
-        "zIndex": 330,
+        "zIndex": 284,
         "layerName": "Inimigos",
         "imageName": "planta-idle-export1"
       },
@@ -4568,19 +3940,31 @@
         "x": 53.5,
         "originX": 1,
         "originY": 1,
-        "zIndex": 331,
+        "zIndex": 285,
         "layerName": "Inimigos",
         "imageName": "gumba-idle"
+      },
+      {
+        "uniqueId": 114,
+        "tags": [
+        ],
+        "x": 34.75,
+        "y": 1,
+        "originX": 2,
+        "originY": 2,
+        "zIndex": 286,
+        "layerName": "boss",
+        "imageName": "idle"
       },
       {
         "uniqueId": 451,
         "tags": [
         ],
-        "x": 63.75,
+        "x": 63.625,
         "y": -4,
         "originX": 2,
         "originY": 2,
-        "zIndex": 332,
+        "zIndex": 287,
         "layerName": "Bandeira",
         "imageName": "banner"
       }
@@ -4611,4625 +3995,7 @@
         "isVisible": true
       },
       {
-        "layerName": "Bandeira",
-        "isVisible": true
-      }
-    ]
-  },
-  "physicsPropertiesVO": {
-  },
-  "lightsPropertiesVO": {
-  }
-} {
-  "sceneName": "MainScene",
-  "composite": {
-    "sImages": [
-      {
-        "uniqueId": 4,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:0;ROW:0",
-        "originX": 0.5,
-        "originY": 0.5,
-        "layerName": "Mapa",
-        "imageName": "tile000"
-      },
-      {
-        "uniqueId": 5,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:1;ROW:0",
-        "x": 1,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 1,
-        "layerName": "Mapa",
-        "imageName": "tile001"
-      },
-      {
-        "uniqueId": 6,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:2;ROW:0",
-        "x": 2,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 2,
-        "layerName": "Mapa",
-        "imageName": "tile001"
-      },
-      {
-        "uniqueId": 7,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:3;ROW:0",
-        "x": 3,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 3,
-        "layerName": "Mapa",
-        "imageName": "tile001"
-      },
-      {
-        "uniqueId": 8,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:4;ROW:0",
-        "x": 4,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 4,
-        "layerName": "Mapa",
-        "imageName": "tile001"
-      },
-      {
-        "uniqueId": 9,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:5;ROW:0",
-        "x": 5,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 5,
-        "layerName": "Mapa",
-        "imageName": "tile001"
-      },
-      {
-        "uniqueId": 10,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:6;ROW:0",
-        "x": 6,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 6,
-        "layerName": "Mapa",
-        "imageName": "tile001"
-      },
-      {
-        "uniqueId": 11,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:7;ROW:1",
-        "x": 7,
-        "y": 1,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 7,
-        "layerName": "Mapa",
-        "imageName": "tile006"
-      },
-      {
-        "uniqueId": 12,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:8;ROW:1",
-        "x": 8,
-        "y": 1,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 8,
-        "layerName": "Mapa",
-        "imageName": "tile001"
-      },
-      {
-        "uniqueId": 13,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:9;ROW:1",
-        "x": 9,
-        "y": 1,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 9,
-        "layerName": "Mapa",
-        "imageName": "tile001"
-      },
-      {
-        "uniqueId": 14,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:10;ROW:1",
-        "x": 10,
-        "y": 1,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 10,
-        "layerName": "Mapa",
-        "imageName": "tile001"
-      },
-      {
-        "uniqueId": 15,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:11;ROW:1",
-        "x": 11,
-        "y": 1,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 11,
-        "layerName": "Mapa",
-        "imageName": "tile001"
-      },
-      {
-        "uniqueId": 16,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:12;ROW:1",
-        "x": 12,
-        "y": 1,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 12,
-        "layerName": "Mapa",
-        "imageName": "tile002"
-      },
-      {
-        "uniqueId": 17,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:0;ROW:-1",
-        "y": -1,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 13,
-        "layerName": "Mapa",
-        "imageName": "tile020"
-      },
-      {
-        "uniqueId": 18,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:0;ROW:-2",
-        "y": -2,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 14,
-        "layerName": "Mapa",
-        "imageName": "tile040"
-      },
-      {
-        "uniqueId": 20,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:1;ROW:-3",
-        "x": 1,
-        "y": -3,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 15,
-        "layerName": "Mapa",
-        "imageName": "tile020"
-      },
-      {
-        "uniqueId": 21,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:1;ROW:-4",
-        "x": 1,
-        "y": -4,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 16,
-        "layerName": "Mapa",
-        "imageName": "tile040"
-      },
-      {
-        "uniqueId": 22,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:2;ROW:-4",
-        "x": 2,
-        "y": -4,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 17,
-        "layerName": "Mapa",
-        "imageName": "tile041"
-      },
-      {
-        "uniqueId": 23,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:3;ROW:-4",
-        "x": 3,
-        "y": -4,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 18,
-        "layerName": "Mapa",
-        "imageName": "tile041"
-      },
-      {
-        "uniqueId": 24,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:4;ROW:-4",
-        "x": 4,
-        "y": -4,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 19,
-        "layerName": "Mapa",
-        "imageName": "tile041"
-      },
-      {
-        "uniqueId": 25,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:5;ROW:-4",
-        "x": 5,
-        "y": -4,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 20,
-        "layerName": "Mapa",
-        "imageName": "tile041"
-      },
-      {
-        "uniqueId": 26,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:6;ROW:-4",
-        "x": 6,
-        "y": -4,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 21,
-        "layerName": "Mapa",
-        "imageName": "tile041"
-      },
-      {
-        "uniqueId": 27,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:7;ROW:-4",
-        "x": 7,
-        "y": -4,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 22,
-        "layerName": "Mapa",
-        "imageName": "tile041"
-      },
-      {
-        "uniqueId": 28,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:8;ROW:-4",
-        "x": 8,
-        "y": -4,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 23,
-        "layerName": "Mapa",
-        "imageName": "tile041"
-      },
-      {
-        "uniqueId": 29,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:9;ROW:-4",
-        "x": 9,
-        "y": -4,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 24,
-        "layerName": "Mapa",
-        "imageName": "tile042"
-      },
-      {
-        "uniqueId": 30,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:10;ROW:-3",
-        "x": 10,
-        "y": -3,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 25,
-        "layerName": "Mapa",
-        "imageName": "tile041"
-      },
-      {
-        "uniqueId": 31,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:11;ROW:-3",
-        "x": 11,
-        "y": -3,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 26,
-        "layerName": "Mapa",
-        "imageName": "tile041"
-      },
-      {
-        "uniqueId": 32,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:12;ROW:-3",
-        "x": 12,
-        "y": -3,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 27,
-        "layerName": "Mapa",
-        "imageName": "tile042"
-      },
-      {
-        "uniqueId": 33,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:12;ROW:0",
-        "x": 12,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 28,
-        "layerName": "Mapa",
-        "imageName": "tile022"
-      },
-      {
-        "uniqueId": 34,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:12;ROW:-1",
-        "x": 12,
-        "y": -1,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 29,
-        "layerName": "Mapa",
-        "imageName": "tile022"
-      },
-      {
-        "uniqueId": 35,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:12;ROW:-2",
-        "x": 12,
-        "y": -2,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 30,
-        "layerName": "Mapa",
-        "imageName": "tile022"
-      },
-      {
-        "uniqueId": 139,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:-8;ROW:-10",
-        "x": -8,
-        "y": -10,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 31,
-        "layerName": "Mapa",
-        "imageName": "tile080"
-      },
-      {
-        "uniqueId": 154,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:-7;ROW:-10",
-        "x": -7,
-        "y": -10,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 32,
-        "layerName": "Mapa",
-        "imageName": "tile081"
-      },
-      {
-        "uniqueId": 138,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:-6;ROW:-10",
-        "x": -6,
-        "y": -10,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 33,
-        "layerName": "Mapa",
-        "imageName": "tile081"
-      },
-      {
-        "uniqueId": 137,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:-5;ROW:-10",
-        "x": -5,
-        "y": -10,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 34,
-        "layerName": "Mapa",
-        "imageName": "tile081"
-      },
-      {
-        "uniqueId": 155,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:-4;ROW:-10",
-        "x": -4,
-        "y": -10,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 35,
-        "layerName": "Mapa",
-        "imageName": "tile081"
-      },
-      {
-        "uniqueId": 150,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:-3;ROW:-10",
-        "x": -3,
-        "y": -10,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 36,
-        "layerName": "Mapa",
-        "imageName": "tile081"
-      },
-      {
-        "uniqueId": 148,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:-2;ROW:-10",
-        "x": -2,
-        "y": -10,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 37,
-        "layerName": "Mapa",
-        "imageName": "tile081"
-      },
-      {
-        "uniqueId": 152,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:-1;ROW:-10",
-        "x": -1,
-        "y": -10,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 38,
-        "layerName": "Mapa",
-        "imageName": "tile081"
-      },
-      {
-        "uniqueId": 145,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:0;ROW:-10",
-        "y": -10,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 39,
-        "layerName": "Mapa",
-        "imageName": "tile081"
-      },
-      {
-        "uniqueId": 147,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:1;ROW:-10",
-        "x": 1,
-        "y": -10,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 40,
-        "layerName": "Mapa",
-        "imageName": "tile081"
-      },
-      {
-        "uniqueId": 151,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:2;ROW:-10",
-        "x": 2,
-        "y": -10,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 41,
-        "layerName": "Mapa",
-        "imageName": "tile082"
-      },
-      {
-        "uniqueId": 161,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:14;ROW:3",
-        "x": 14,
-        "y": 3,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 42,
-        "layerName": "Mapa",
-        "imageName": "tile080"
-      },
-      {
-        "uniqueId": 162,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:15;ROW:3",
-        "x": 15,
-        "y": 3,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 43,
-        "layerName": "Mapa",
-        "imageName": "tile081"
-      },
-      {
-        "uniqueId": 163,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:16;ROW:3",
-        "x": 16,
-        "y": 3,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 44,
-        "layerName": "Mapa",
-        "imageName": "tile082"
-      },
-      {
-        "uniqueId": 164,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:18;ROW:4",
-        "x": 18,
-        "y": 4,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 45,
-        "layerName": "Mapa",
-        "imageName": "tile080"
-      },
-      {
-        "uniqueId": 165,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:19;ROW:4",
-        "x": 19,
-        "y": 4,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 46,
-        "layerName": "Mapa",
-        "imageName": "tile081"
-      },
-      {
-        "uniqueId": 166,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:20;ROW:4",
-        "x": 20,
-        "y": 4,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 47,
-        "layerName": "Mapa",
-        "imageName": "tile082"
-      },
-      {
-        "uniqueId": 181,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:23;ROW:-3",
-        "x": 23,
-        "y": -3,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 48,
-        "layerName": "Mapa",
-        "imageName": "tile084"
-      },
-      {
-        "uniqueId": 182,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:26;ROW:-5",
-        "x": 26,
-        "y": -5,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 49,
-        "layerName": "Mapa",
-        "imageName": "tile084"
-      },
-      {
-        "uniqueId": 183,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:17;ROW:-10",
-        "x": 17,
-        "y": -10,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 50,
-        "layerName": "Mapa",
-        "imageName": "tile080"
-      },
-      {
-        "uniqueId": 184,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:18;ROW:-10",
-        "x": 18,
-        "y": -10,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 51,
-        "layerName": "Mapa",
-        "imageName": "tile081"
-      },
-      {
-        "uniqueId": 185,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:19;ROW:-10",
-        "x": 19,
-        "y": -10,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 52,
-        "layerName": "Mapa",
-        "imageName": "tile081"
-      },
-      {
-        "uniqueId": 186,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:20;ROW:-10",
-        "x": 20,
-        "y": -10,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 53,
-        "layerName": "Mapa",
-        "imageName": "tile081"
-      },
-      {
-        "uniqueId": 187,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:21;ROW:-10",
-        "x": 21,
-        "y": -10,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 54,
-        "layerName": "Mapa",
-        "imageName": "tile081"
-      },
-      {
-        "uniqueId": 188,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:22;ROW:-10",
-        "x": 22,
-        "y": -10,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 55,
-        "layerName": "Mapa",
-        "imageName": "tile081"
-      },
-      {
-        "uniqueId": 189,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:23;ROW:-10",
-        "x": 23,
-        "y": -10,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 56,
-        "layerName": "Mapa",
-        "imageName": "tile081"
-      },
-      {
-        "uniqueId": 190,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:24;ROW:-10",
-        "x": 24,
-        "y": -10,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 57,
-        "layerName": "Mapa",
-        "imageName": "tile081"
-      },
-      {
-        "uniqueId": 191,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:25;ROW:-10",
-        "x": 25,
-        "y": -10,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 58,
-        "layerName": "Mapa",
-        "imageName": "tile081"
-      },
-      {
-        "uniqueId": 192,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:26;ROW:-10",
-        "x": 26,
-        "y": -10,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 59,
-        "layerName": "Mapa",
-        "imageName": "tile081"
-      },
-      {
-        "uniqueId": 193,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:27;ROW:-10",
-        "x": 27,
-        "y": -10,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 60,
-        "layerName": "Mapa",
-        "imageName": "tile082"
-      },
-      {
-        "uniqueId": 204,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:31;ROW:-9",
-        "x": 31,
-        "y": -9,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 61,
-        "layerName": "Mapa",
-        "imageName": "tile080"
-      },
-      {
-        "uniqueId": 205,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:32;ROW:-9",
-        "x": 32,
-        "y": -9,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 62,
-        "layerName": "Mapa",
-        "imageName": "tile081"
-      },
-      {
-        "uniqueId": 206,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:33;ROW:-9",
-        "x": 33,
-        "y": -9,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 63,
-        "layerName": "Mapa",
-        "imageName": "tile082"
-      },
-      {
-        "uniqueId": 210,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:29;ROW:0",
-        "x": 29,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 64,
-        "layerName": "Mapa",
-        "imageName": "tile001"
-      },
-      {
-        "uniqueId": 211,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:30;ROW:0",
-        "x": 30,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 65,
-        "layerName": "Mapa",
-        "imageName": "tile001"
-      },
-      {
-        "uniqueId": 212,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:31;ROW:0",
-        "x": 31,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 66,
-        "layerName": "Mapa",
-        "imageName": "tile001"
-      },
-      {
-        "uniqueId": 213,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:32;ROW:0",
-        "x": 32,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 67,
-        "layerName": "Mapa",
-        "imageName": "tile001"
-      },
-      {
-        "uniqueId": 214,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:33;ROW:0",
-        "x": 33,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 68,
-        "layerName": "Mapa",
-        "imageName": "tile001"
-      },
-      {
-        "uniqueId": 215,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:34;ROW:0",
-        "x": 34,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 69,
-        "layerName": "Mapa",
-        "imageName": "tile001"
-      },
-      {
-        "uniqueId": 216,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:35;ROW:0",
-        "x": 35,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 70,
-        "layerName": "Mapa",
-        "imageName": "tile001"
-      },
-      {
-        "uniqueId": 217,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:36;ROW:0",
-        "x": 36,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 71,
-        "layerName": "Mapa",
-        "imageName": "tile001"
-      },
-      {
-        "uniqueId": 218,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:37;ROW:0",
-        "x": 37,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 72,
-        "layerName": "Mapa",
-        "imageName": "tile001"
-      },
-      {
-        "uniqueId": 219,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:38;ROW:0",
-        "x": 38,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 73,
-        "layerName": "Mapa",
-        "imageName": "tile001"
-      },
-      {
-        "uniqueId": 220,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:39;ROW:0",
-        "x": 39,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 74,
-        "layerName": "Mapa",
-        "imageName": "tile001"
-      },
-      {
-        "uniqueId": 221,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:40;ROW:0",
-        "x": 40,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 75,
-        "layerName": "Mapa",
-        "imageName": "tile001"
-      },
-      {
-        "uniqueId": 222,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:41;ROW:0",
-        "x": 41,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 76,
-        "layerName": "Mapa",
-        "imageName": "tile001"
-      },
-      {
-        "uniqueId": 223,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:42;ROW:0",
-        "x": 42,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 77,
-        "layerName": "Mapa",
-        "imageName": "tile001"
-      },
-      {
-        "uniqueId": 224,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:43;ROW:0",
-        "x": 43,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 78,
-        "layerName": "Mapa",
-        "imageName": "tile001"
-      },
-      {
-        "uniqueId": 225,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:44;ROW:0",
-        "x": 44,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 79,
-        "layerName": "Mapa",
-        "imageName": "tile001"
-      },
-      {
-        "uniqueId": 226,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:45;ROW:0",
-        "x": 45,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 80,
-        "layerName": "Mapa",
-        "imageName": "tile001"
-      },
-      {
-        "uniqueId": 228,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:29;ROW:-2",
-        "x": 29,
-        "y": -2,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 81,
-        "layerName": "Mapa",
-        "imageName": "tile040"
-      },
-      {
-        "uniqueId": 229,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:30;ROW:-2",
-        "x": 30,
-        "y": -2,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 82,
-        "layerName": "Mapa",
-        "imageName": "tile041"
-      },
-      {
-        "uniqueId": 230,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:31;ROW:-2",
-        "x": 31,
-        "y": -2,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 83,
-        "layerName": "Mapa",
-        "imageName": "tile041"
-      },
-      {
-        "uniqueId": 232,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:32;ROW:-3",
-        "x": 32,
-        "y": -3,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 84,
-        "layerName": "Mapa",
-        "imageName": "tile040"
-      },
-      {
-        "uniqueId": 233,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:34;ROW:-4",
-        "x": 34,
-        "y": -4,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 85,
-        "layerName": "Mapa",
-        "imageName": "tile040"
-      },
-      {
-        "uniqueId": 234,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:33;ROW:-3",
-        "x": 33,
-        "y": -3,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 86,
-        "layerName": "Mapa",
-        "imageName": "tile041"
-      },
-      {
-        "uniqueId": 235,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:35;ROW:-4",
-        "x": 35,
-        "y": -4,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 87,
-        "layerName": "Mapa",
-        "imageName": "tile041"
-      },
-      {
-        "uniqueId": 236,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:36;ROW:-4",
-        "x": 36,
-        "y": -4,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 88,
-        "layerName": "Mapa",
-        "imageName": "tile041"
-      },
-      {
-        "uniqueId": 237,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:37;ROW:-4",
-        "x": 37,
-        "y": -4,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 89,
-        "layerName": "Mapa",
-        "imageName": "tile041"
-      },
-      {
-        "uniqueId": 238,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:38;ROW:-4",
-        "x": 38,
-        "y": -4,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 90,
-        "layerName": "Mapa",
-        "imageName": "tile041"
-      },
-      {
-        "uniqueId": 239,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:39;ROW:-4",
-        "x": 39,
-        "y": -4,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 91,
-        "layerName": "Mapa",
-        "imageName": "tile041"
-      },
-      {
-        "uniqueId": 240,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:40;ROW:-5",
-        "x": 40,
-        "y": -5,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 92,
-        "layerName": "Mapa",
-        "imageName": "tile040"
-      },
-      {
-        "uniqueId": 241,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:41;ROW:-5",
-        "x": 41,
-        "y": -5,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 93,
-        "layerName": "Mapa",
-        "imageName": "tile041"
-      },
-      {
-        "uniqueId": 242,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:42;ROW:-5",
-        "x": 42,
-        "y": -5,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 94,
-        "layerName": "Mapa",
-        "imageName": "tile041"
-      },
-      {
-        "uniqueId": 243,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:43;ROW:-5",
-        "x": 43,
-        "y": -5,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 95,
-        "layerName": "Mapa",
-        "imageName": "tile041"
-      },
-      {
-        "uniqueId": 244,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:44;ROW:-5",
-        "x": 44,
-        "y": -5,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 96,
-        "layerName": "Mapa",
-        "imageName": "tile041"
-      },
-      {
-        "uniqueId": 245,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:45;ROW:-5",
-        "x": 45,
-        "y": -5,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 97,
-        "layerName": "Mapa",
-        "imageName": "tile041"
-      },
-      {
-        "uniqueId": 246,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:46;ROW:0",
-        "x": 46,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 98,
-        "layerName": "Mapa",
-        "imageName": "tile022"
-      },
-      {
-        "uniqueId": 247,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:46;ROW:1",
-        "x": 46,
-        "y": 1,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 99,
-        "layerName": "Mapa",
-        "imageName": "tile004"
-      },
-      {
-        "uniqueId": 248,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:46;ROW:-1",
-        "x": 46,
-        "y": -1,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 100,
-        "layerName": "Mapa",
-        "imageName": "tile022"
-      },
-      {
-        "uniqueId": 249,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:46;ROW:-2",
-        "x": 46,
-        "y": -2,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 101,
-        "layerName": "Mapa",
-        "imageName": "tile022"
-      },
-      {
-        "uniqueId": 250,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:46;ROW:-3",
-        "x": 46,
-        "y": -3,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 102,
-        "layerName": "Mapa",
-        "imageName": "tile022"
-      },
-      {
-        "uniqueId": 251,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:47;ROW:-3",
-        "x": 47,
-        "y": -3,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 103,
-        "layerName": "Mapa",
-        "imageName": "tile000"
-      },
-      {
-        "uniqueId": 252,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:48;ROW:-3",
-        "x": 48,
-        "y": -3,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 104,
-        "layerName": "Mapa",
-        "imageName": "tile001"
-      },
-      {
-        "uniqueId": 253,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:49;ROW:-3",
-        "x": 49,
-        "y": -3,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 105,
-        "layerName": "Mapa",
-        "imageName": "tile001"
-      },
-      {
-        "uniqueId": 254,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:50;ROW:-3",
-        "x": 50,
-        "y": -3,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 106,
-        "layerName": "Mapa",
-        "imageName": "tile001"
-      },
-      {
-        "uniqueId": 255,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:51;ROW:-3",
-        "x": 51,
-        "y": -3,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 107,
-        "layerName": "Mapa",
-        "imageName": "tile001"
-      },
-      {
-        "uniqueId": 256,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:52;ROW:-3",
-        "x": 52,
-        "y": -3,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 108,
-        "layerName": "Mapa",
-        "imageName": "tile002"
-      },
-      {
-        "uniqueId": 263,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:53;ROW:-3",
-        "x": 53,
-        "y": -3,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 109,
-        "layerName": "Mapa",
-        "imageName": "tile020"
-      },
-      {
-        "uniqueId": 264,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:53;ROW:-2",
-        "x": 53,
-        "y": -2,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 110,
-        "layerName": "Mapa",
-        "imageName": "tile020"
-      },
-      {
-        "uniqueId": 265,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:53;ROW:-1",
-        "x": 53,
-        "y": -1,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 111,
-        "layerName": "Mapa",
-        "imageName": "tile000"
-      },
-      {
-        "uniqueId": 266,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:54;ROW:-1",
-        "x": 54,
-        "y": -1,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 112,
-        "layerName": "Mapa",
-        "imageName": "tile001"
-      },
-      {
-        "uniqueId": 267,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:55;ROW:-1",
-        "x": 55,
-        "y": -1,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 113,
-        "layerName": "Mapa",
-        "imageName": "tile001"
-      },
-      {
-        "uniqueId": 268,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:56;ROW:-1",
-        "x": 56,
-        "y": -1,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 114,
-        "layerName": "Mapa",
-        "imageName": "tile001"
-      },
-      {
-        "uniqueId": 269,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:57;ROW:-1",
-        "x": 57,
-        "y": -1,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 115,
-        "layerName": "Mapa",
-        "imageName": "tile001"
-      },
-      {
-        "uniqueId": 270,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:58;ROW:-1",
-        "x": 58,
-        "y": -1,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 116,
-        "layerName": "Mapa",
-        "imageName": "tile002"
-      },
-      {
-        "uniqueId": 271,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:58;ROW:-2",
-        "x": 58,
-        "y": -2,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 117,
-        "layerName": "Mapa",
-        "imageName": "tile022"
-      },
-      {
-        "uniqueId": 272,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:58;ROW:-3",
-        "x": 58,
-        "y": -3,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 118,
-        "layerName": "Mapa",
-        "imageName": "tile022"
-      },
-      {
-        "uniqueId": 273,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:58;ROW:-4",
-        "x": 58,
-        "y": -4,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 119,
-        "layerName": "Mapa",
-        "imageName": "tile022"
-      },
-      {
-        "uniqueId": 274,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:46;ROW:-6",
-        "x": 46,
-        "y": -6,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 120,
-        "layerName": "Mapa",
-        "imageName": "tile040"
-      },
-      {
-        "uniqueId": 275,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:47;ROW:-6",
-        "x": 47,
-        "y": -6,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 121,
-        "layerName": "Mapa",
-        "imageName": "tile041"
-      },
-      {
-        "uniqueId": 276,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:48;ROW:-6",
-        "x": 48,
-        "y": -6,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 122,
-        "layerName": "Mapa",
-        "imageName": "tile041"
-      },
-      {
-        "uniqueId": 277,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:49;ROW:-6",
-        "x": 49,
-        "y": -6,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 123,
-        "layerName": "Mapa",
-        "imageName": "tile041"
-      },
-      {
-        "uniqueId": 287,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:50;ROW:-6",
-        "x": 50,
-        "y": -6,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 124,
-        "layerName": "Mapa",
-        "imageName": "tile041"
-      },
-      {
-        "uniqueId": 289,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:51;ROW:-7",
-        "x": 51,
-        "y": -7,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 125,
-        "layerName": "Mapa",
-        "imageName": "tile040"
-      },
-      {
-        "uniqueId": 290,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:52;ROW:-7",
-        "x": 52,
-        "y": -7,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 126,
-        "layerName": "Mapa",
-        "imageName": "tile041"
-      },
-      {
-        "uniqueId": 291,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:53;ROW:-7",
-        "x": 53,
-        "y": -7,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 127,
-        "layerName": "Mapa",
-        "imageName": "tile041"
-      },
-      {
-        "uniqueId": 292,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:54;ROW:-7",
-        "x": 54,
-        "y": -7,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 128,
-        "layerName": "Mapa",
-        "imageName": "tile041"
-      },
-      {
-        "uniqueId": 293,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:55;ROW:-7",
-        "x": 55,
-        "y": -7,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 129,
-        "layerName": "Mapa",
-        "imageName": "tile041"
-      },
-      {
-        "uniqueId": 294,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:56;ROW:-7",
-        "x": 56,
-        "y": -7,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 130,
-        "layerName": "Mapa",
-        "imageName": "tile041"
-      },
-      {
-        "uniqueId": 295,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:57;ROW:-7",
-        "x": 57,
-        "y": -7,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 131,
-        "layerName": "Mapa",
-        "imageName": "tile042"
-      },
-      {
-        "uniqueId": 296,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:58;ROW:-6",
-        "x": 58,
-        "y": -6,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 132,
-        "layerName": "Mapa",
-        "imageName": "tile041"
-      },
-      {
-        "uniqueId": 297,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:59;ROW:-6",
-        "x": 59,
-        "y": -6,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 133,
-        "layerName": "Mapa",
-        "imageName": "tile041"
-      },
-      {
-        "uniqueId": 298,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:60;ROW:-6",
-        "x": 60,
-        "y": -6,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 134,
-        "layerName": "Mapa",
-        "imageName": "tile041"
-      },
-      {
-        "uniqueId": 299,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:61;ROW:-6",
-        "x": 61,
-        "y": -6,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 135,
-        "layerName": "Mapa",
-        "imageName": "tile041"
-      },
-      {
-        "uniqueId": 300,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:62;ROW:-6",
-        "x": 62,
-        "y": -6,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 136,
-        "layerName": "Mapa",
-        "imageName": "tile041"
-      },
-      {
-        "uniqueId": 301,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:63;ROW:-6",
-        "x": 63,
-        "y": -6,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 137,
-        "layerName": "Mapa",
-        "imageName": "tile041"
-      },
-      {
-        "uniqueId": 302,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:64;ROW:-6",
-        "x": 64,
-        "y": -6,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 138,
-        "layerName": "Mapa",
-        "imageName": "tile041"
-      },
-      {
-        "uniqueId": 303,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:65;ROW:-6",
-        "x": 65,
-        "y": -6,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 139,
-        "layerName": "Mapa",
-        "imageName": "tile041"
-      },
-      {
-        "uniqueId": 304,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:66;ROW:-6",
-        "x": 66,
-        "y": -6,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 140,
-        "layerName": "Mapa",
-        "imageName": "tile042"
-      },
-      {
-        "uniqueId": 305,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:66;ROW:-5",
-        "x": 66,
-        "y": -5,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 141,
-        "layerName": "Mapa",
-        "imageName": "tile030"
-      },
-      {
-        "uniqueId": 306,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:65;ROW:-5",
-        "x": 65,
-        "y": -5,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 142,
-        "layerName": "Mapa",
-        "imageName": "tile001"
-      },
-      {
-        "uniqueId": 307,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:64;ROW:-5",
-        "x": 64,
-        "y": -5,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 143,
-        "layerName": "Mapa",
-        "imageName": "tile001"
-      },
-      {
-        "uniqueId": 308,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:63;ROW:-5",
-        "x": 63,
-        "y": -5,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 144,
-        "layerName": "Mapa",
-        "imageName": "tile001"
-      },
-      {
-        "uniqueId": 309,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:62;ROW:-5",
-        "x": 62,
-        "y": -5,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 145,
-        "layerName": "Mapa",
-        "imageName": "tile001"
-      },
-      {
-        "uniqueId": 310,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:61;ROW:-5",
-        "x": 61,
-        "y": -5,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 146,
-        "layerName": "Mapa",
-        "imageName": "tile001"
-      },
-      {
-        "uniqueId": 311,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:60;ROW:-5",
-        "x": 60,
-        "y": -5,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 147,
-        "layerName": "Mapa",
-        "imageName": "tile001"
-      },
-      {
-        "uniqueId": 312,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:59;ROW:-5",
-        "x": 59,
-        "y": -5,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 148,
-        "layerName": "Mapa",
-        "imageName": "tile001"
-      },
-      {
-        "uniqueId": 424,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:42;ROW:4",
-        "x": 42,
-        "y": 4,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 149,
-        "layerName": "Mapa",
-        "imageName": "tile084"
-      },
-      {
-        "uniqueId": 430,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:39;ROW:6",
-        "x": 39,
-        "y": 6,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 150,
-        "layerName": "Mapa",
-        "imageName": "tile084"
-      },
-      {
-        "uniqueId": 429,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:42;ROW:9",
-        "x": 42,
-        "y": 9,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 151,
-        "layerName": "Mapa",
-        "imageName": "tile084"
-      },
-      {
-        "uniqueId": 420,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:44;ROW:11",
-        "x": 44,
-        "y": 11,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 152,
-        "layerName": "Mapa",
-        "imageName": "tile080"
-      },
-      {
-        "uniqueId": 428,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:45;ROW:11",
-        "x": 45,
-        "y": 11,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 153,
-        "layerName": "Mapa",
-        "imageName": "tile081"
-      },
-      {
-        "uniqueId": 422,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:46;ROW:11",
-        "x": 46,
-        "y": 11,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 154,
-        "layerName": "Mapa",
-        "imageName": "tile082"
-      },
-      {
-        "uniqueId": 421,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:32;ROW:12",
-        "x": 32,
-        "y": 12,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 155,
-        "layerName": "Mapa",
-        "imageName": "tile080"
-      },
-      {
-        "uniqueId": 427,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:33;ROW:12",
-        "x": 33,
-        "y": 12,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 156,
-        "layerName": "Mapa",
-        "imageName": "tile081"
-      },
-      {
-        "uniqueId": 423,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:34;ROW:12",
-        "x": 34,
-        "y": 12,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 157,
-        "layerName": "Mapa",
-        "imageName": "tile081"
-      },
-      {
-        "uniqueId": 426,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:35;ROW:12",
-        "x": 35,
-        "y": 12,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 158,
-        "layerName": "Mapa",
-        "imageName": "tile082"
-      },
-      {
-        "uniqueId": 431,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:40;ROW:14",
-        "x": 40,
-        "y": 14,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 159,
-        "layerName": "Mapa",
-        "imageName": "tile084"
-      },
-      {
-        "uniqueId": 425,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:49;ROW:13",
-        "x": 49,
-        "y": 13,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 160,
-        "layerName": "Mapa",
-        "imageName": "tile084"
-      },
-      {
-        "uniqueId": 2,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:28;ROW:0",
-        "x": 28,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 161,
-        "layerName": "Mapa",
-        "imageName": "tile001"
-      },
-      {
-        "uniqueId": 3,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:27;ROW:0",
-        "x": 27,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 162,
-        "layerName": "Mapa",
-        "imageName": "tile080"
-      },
-      {
-        "uniqueId": 63,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:28;ROW:-1",
-        "x": 28,
-        "y": -1,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 163,
-        "layerName": "Mapa",
-        "imageName": "tile040"
-      },
-      {
-        "uniqueId": 83,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:-7;ROW:-9",
-        "x": -7,
-        "y": -9,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 164,
-        "layerName": "morte",
-        "imageName": "tile240"
-      },
-      {
-        "uniqueId": 92,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:-6;ROW:-9",
-        "x": -6,
-        "y": -9,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 165,
-        "layerName": "morte",
-        "imageName": "tile240"
-      },
-      {
-        "uniqueId": 75,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:-5;ROW:-9",
-        "x": -5,
-        "y": -9,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 166,
-        "layerName": "morte",
-        "imageName": "tile240"
-      },
-      {
-        "uniqueId": 80,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:-4;ROW:-9",
-        "x": -4,
-        "y": -9,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 167,
-        "layerName": "morte",
-        "imageName": "tile240"
-      },
-      {
-        "uniqueId": 93,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:-3;ROW:-9",
-        "x": -3,
-        "y": -9,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 168,
-        "layerName": "morte",
-        "imageName": "tile240"
-      },
-      {
-        "uniqueId": 78,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:-2;ROW:-9",
-        "x": -2,
-        "y": -9,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 169,
-        "layerName": "morte",
-        "imageName": "tile240"
-      },
-      {
-        "uniqueId": 86,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:-1;ROW:-9",
-        "x": -1,
-        "y": -9,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 170,
-        "layerName": "morte",
-        "imageName": "tile240"
-      },
-      {
-        "uniqueId": 95,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:0;ROW:-9",
-        "y": -9,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 171,
-        "layerName": "morte",
-        "imageName": "tile240"
-      },
-      {
-        "uniqueId": 98,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:1;ROW:-9",
-        "x": 1,
-        "y": -9,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 172,
-        "layerName": "morte",
-        "imageName": "tile240"
-      },
-      {
-        "uniqueId": 82,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:18;ROW:-9",
-        "x": 18,
-        "y": -9,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 173,
-        "layerName": "morte",
-        "imageName": "tile240"
-      },
-      {
-        "uniqueId": 76,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:19;ROW:-9",
-        "x": 19,
-        "y": -9,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 174,
-        "layerName": "morte",
-        "imageName": "tile240"
-      },
-      {
-        "uniqueId": 94,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:20;ROW:-9",
-        "x": 20,
-        "y": -9,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 175,
-        "layerName": "morte",
-        "imageName": "tile240"
-      },
-      {
-        "uniqueId": 79,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:21;ROW:-9",
-        "x": 21,
-        "y": -9,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 176,
-        "layerName": "morte",
-        "imageName": "tile240"
-      },
-      {
-        "uniqueId": 87,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:22;ROW:-9",
-        "x": 22,
-        "y": -9,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 177,
-        "layerName": "morte",
-        "imageName": "tile240"
-      },
-      {
-        "uniqueId": 88,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:23;ROW:-9",
-        "x": 23,
-        "y": -9,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 178,
-        "layerName": "morte",
-        "imageName": "tile240"
-      },
-      {
-        "uniqueId": 97,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:24;ROW:-9",
-        "x": 24,
-        "y": -9,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 179,
-        "layerName": "morte",
-        "imageName": "tile240"
-      },
-      {
-        "uniqueId": 81,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:25;ROW:-9",
-        "x": 25,
-        "y": -9,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 180,
-        "layerName": "morte",
-        "imageName": "tile240"
-      },
-      {
-        "uniqueId": 91,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:26;ROW:-9",
-        "x": 26,
-        "y": -9,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 181,
-        "layerName": "morte",
-        "imageName": "tile240"
-      },
-      {
-        "uniqueId": 77,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:47;ROW:-2",
-        "x": 47,
-        "y": -2,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 182,
-        "layerName": "morte",
-        "imageName": "tile240"
-      },
-      {
-        "uniqueId": 96,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:48;ROW:-2",
-        "x": 48,
-        "y": -2,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 183,
-        "layerName": "morte",
-        "imageName": "tile240"
-      },
-      {
-        "uniqueId": 89,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:49;ROW:-2",
-        "x": 49,
-        "y": -2,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 184,
-        "layerName": "morte",
-        "imageName": "tile240"
-      },
-      {
-        "uniqueId": 99,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:50;ROW:-2",
-        "x": 50,
-        "y": -2,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 185,
-        "layerName": "morte",
-        "imageName": "tile240"
-      },
-      {
-        "uniqueId": 85,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:51;ROW:-2",
-        "x": 51,
-        "y": -2,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 186,
-        "layerName": "morte",
-        "imageName": "tile240"
-      },
-      {
-        "uniqueId": 84,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:52;ROW:-2",
-        "x": 52,
-        "y": -2,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 187,
-        "layerName": "morte",
-        "imageName": "tile240"
-      },
-      {
-        "uniqueId": 90,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:27;ROW:1",
-        "x": 27,
-        "y": 1,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 188,
-        "layerName": "morte",
-        "imageName": "tile240"
-      },
-      {
-        "uniqueId": 363,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:47;ROW:-4",
-        "x": 47,
-        "y": -4,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 189,
-        "layerName": "Mapa1",
-        "imageName": "tile021"
-      },
-      {
-        "uniqueId": 322,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:35;ROW:-3",
-        "x": 35,
-        "y": -3,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 190,
-        "layerName": "Mapa1",
-        "imageName": "tile021"
-      },
-      {
-        "uniqueId": 317,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:33;ROW:-2",
-        "x": 33,
-        "y": -2,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 191,
-        "layerName": "Mapa1",
-        "imageName": "tile021"
-      },
-      {
-        "uniqueId": 36,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:1;ROW:-1",
-        "x": 1,
-        "y": -1,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 192,
-        "layerName": "Mapa1",
-        "imageName": "tile021"
-      },
-      {
-        "uniqueId": 37,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:1;ROW:-2",
-        "x": 1,
-        "y": -2,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 193,
-        "layerName": "Mapa1",
-        "imageName": "tile021"
-      },
-      {
-        "uniqueId": 38,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:2;ROW:-2",
-        "x": 2,
-        "y": -2,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 194,
-        "layerName": "Mapa1",
-        "imageName": "tile021"
-      },
-      {
-        "uniqueId": 39,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:2;ROW:-1",
-        "x": 2,
-        "y": -1,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 195,
-        "layerName": "Mapa1",
-        "imageName": "tile021"
-      },
-      {
-        "uniqueId": 40,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:3;ROW:-2",
-        "x": 3,
-        "y": -2,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 196,
-        "layerName": "Mapa1",
-        "imageName": "tile021"
-      },
-      {
-        "uniqueId": 41,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:4;ROW:-2",
-        "x": 4,
-        "y": -2,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 197,
-        "layerName": "Mapa1",
-        "imageName": "tile021"
-      },
-      {
-        "uniqueId": 42,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:4;ROW:-1",
-        "x": 4,
-        "y": -1,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 198,
-        "layerName": "Mapa1",
-        "imageName": "tile021"
-      },
-      {
-        "uniqueId": 43,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:3;ROW:-1",
-        "x": 3,
-        "y": -1,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 199,
-        "layerName": "Mapa1",
-        "imageName": "tile021"
-      },
-      {
-        "uniqueId": 44,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:3;ROW:-3",
-        "x": 3,
-        "y": -3,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 200,
-        "layerName": "Mapa1",
-        "imageName": "tile021"
-      },
-      {
-        "uniqueId": 45,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:2;ROW:-3",
-        "x": 2,
-        "y": -3,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 201,
-        "layerName": "Mapa1",
-        "imageName": "tile021"
-      },
-      {
-        "uniqueId": 46,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:4;ROW:-3",
-        "x": 4,
-        "y": -3,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 202,
-        "layerName": "Mapa1",
-        "imageName": "tile021"
-      },
-      {
-        "uniqueId": 47,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:5;ROW:-2",
-        "x": 5,
-        "y": -2,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 203,
-        "layerName": "Mapa1",
-        "imageName": "tile021"
-      },
-      {
-        "uniqueId": 48,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:5;ROW:-1",
-        "x": 5,
-        "y": -1,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 204,
-        "layerName": "Mapa1",
-        "imageName": "tile021"
-      },
-      {
-        "uniqueId": 49,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:6;ROW:-2",
-        "x": 6,
-        "y": -2,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 205,
-        "layerName": "Mapa1",
-        "imageName": "tile021"
-      },
-      {
-        "uniqueId": 50,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:5;ROW:-3",
-        "x": 5,
-        "y": -3,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 206,
-        "layerName": "Mapa1",
-        "imageName": "tile021"
-      },
-      {
-        "uniqueId": 51,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:7;ROW:-2",
-        "x": 7,
-        "y": -2,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 207,
-        "layerName": "Mapa1",
-        "imageName": "tile021"
-      },
-      {
-        "uniqueId": 52,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:8;ROW:-2",
-        "x": 8,
-        "y": -2,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 208,
-        "layerName": "Mapa1",
-        "imageName": "tile021"
-      },
-      {
-        "uniqueId": 53,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:8;ROW:-1",
-        "x": 8,
-        "y": -1,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 209,
-        "layerName": "Mapa1",
-        "imageName": "tile021"
-      },
-      {
-        "uniqueId": 54,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:7;ROW:-1",
-        "x": 7,
-        "y": -1,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 210,
-        "layerName": "Mapa1",
-        "imageName": "tile021"
-      },
-      {
-        "uniqueId": 55,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:6;ROW:-1",
-        "x": 6,
-        "y": -1,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 211,
-        "layerName": "Mapa1",
-        "imageName": "tile021"
-      },
-      {
-        "uniqueId": 56,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:6;ROW:-3",
-        "x": 6,
-        "y": -3,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 212,
-        "layerName": "Mapa1",
-        "imageName": "tile021"
-      },
-      {
-        "uniqueId": 57,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:7;ROW:-3",
-        "x": 7,
-        "y": -3,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 213,
-        "layerName": "Mapa1",
-        "imageName": "tile021"
-      },
-      {
-        "uniqueId": 58,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:8;ROW:-3",
-        "x": 8,
-        "y": -3,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 214,
-        "layerName": "Mapa1",
-        "imageName": "tile021"
-      },
-      {
-        "uniqueId": 59,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:9;ROW:-2",
-        "x": 9,
-        "y": -2,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 215,
-        "layerName": "Mapa1",
-        "imageName": "tile021"
-      },
-      {
-        "uniqueId": 60,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:10;ROW:-2",
-        "x": 10,
-        "y": -2,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 216,
-        "layerName": "Mapa1",
-        "imageName": "tile021"
-      },
-      {
-        "uniqueId": 61,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:9;ROW:-3",
-        "x": 9,
-        "y": -3,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 217,
-        "layerName": "Mapa1",
-        "imageName": "tile021"
-      },
-      {
-        "uniqueId": 62,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:11;ROW:-2",
-        "x": 11,
-        "y": -2,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 218,
-        "layerName": "Mapa1",
-        "imageName": "tile021"
-      },
-      {
-        "uniqueId": 65,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:11;ROW:-1",
-        "x": 11,
-        "y": -1,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 219,
-        "layerName": "Mapa1",
-        "imageName": "tile021"
-      },
-      {
-        "uniqueId": 66,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:11;ROW:0",
-        "x": 11,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 220,
-        "layerName": "Mapa1",
-        "imageName": "tile021"
-      },
-      {
-        "uniqueId": 67,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:10;ROW:0",
-        "x": 10,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 221,
-        "layerName": "Mapa1",
-        "imageName": "tile021"
-      },
-      {
-        "uniqueId": 68,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:9;ROW:-1",
-        "x": 9,
-        "y": -1,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 222,
-        "layerName": "Mapa1",
-        "imageName": "tile021"
-      },
-      {
-        "uniqueId": 69,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:10;ROW:-1",
-        "x": 10,
-        "y": -1,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 223,
-        "layerName": "Mapa1",
-        "imageName": "tile021"
-      },
-      {
-        "uniqueId": 70,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:9;ROW:0",
-        "x": 9,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 224,
-        "layerName": "Mapa1",
-        "imageName": "tile021"
-      },
-      {
-        "uniqueId": 71,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:8;ROW:0",
-        "x": 8,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 225,
-        "layerName": "Mapa1",
-        "imageName": "tile021"
-      },
-      {
-        "uniqueId": 72,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:7;ROW:0",
-        "x": 7,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 226,
-        "layerName": "Mapa1",
-        "imageName": "tile021"
-      },
-      {
-        "uniqueId": 313,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:31;ROW:-1",
-        "x": 31,
-        "y": -1,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 227,
-        "layerName": "Mapa1",
-        "imageName": "tile021"
-      },
-      {
-        "uniqueId": 314,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:32;ROW:-1",
-        "x": 32,
-        "y": -1,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 228,
-        "layerName": "Mapa1",
-        "imageName": "tile021"
-      },
-      {
-        "uniqueId": 315,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:30;ROW:-1",
-        "x": 30,
-        "y": -1,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 229,
-        "layerName": "Mapa1",
-        "imageName": "tile021"
-      },
-      {
-        "uniqueId": 316,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:32;ROW:-2",
-        "x": 32,
-        "y": -2,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 230,
-        "layerName": "Mapa1",
-        "imageName": "tile021"
-      },
-      {
-        "uniqueId": 318,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:34;ROW:-2",
-        "x": 34,
-        "y": -2,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 231,
-        "layerName": "Mapa1",
-        "imageName": "tile021"
-      },
-      {
-        "uniqueId": 319,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:34;ROW:-1",
-        "x": 34,
-        "y": -1,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 232,
-        "layerName": "Mapa1",
-        "imageName": "tile021"
-      },
-      {
-        "uniqueId": 320,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:33;ROW:-1",
-        "x": 33,
-        "y": -1,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 233,
-        "layerName": "Mapa1",
-        "imageName": "tile021"
-      },
-      {
-        "uniqueId": 321,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:34;ROW:-3",
-        "x": 34,
-        "y": -3,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 234,
-        "layerName": "Mapa1",
-        "imageName": "tile021"
-      },
-      {
-        "uniqueId": 323,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:36;ROW:-2",
-        "x": 36,
-        "y": -2,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 235,
-        "layerName": "Mapa1",
-        "imageName": "tile021"
-      },
-      {
-        "uniqueId": 324,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:37;ROW:-2",
-        "x": 37,
-        "y": -2,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 236,
-        "layerName": "Mapa1",
-        "imageName": "tile021"
-      },
-      {
-        "uniqueId": 325,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:38;ROW:-2",
-        "x": 38,
-        "y": -2,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 237,
-        "layerName": "Mapa1",
-        "imageName": "tile021"
-      },
-      {
-        "uniqueId": 326,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:39;ROW:-2",
-        "x": 39,
-        "y": -2,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 238,
-        "layerName": "Mapa1",
-        "imageName": "tile021"
-      },
-      {
-        "uniqueId": 327,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:40;ROW:-2",
-        "x": 40,
-        "y": -2,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 239,
-        "layerName": "Mapa1",
-        "imageName": "tile021"
-      },
-      {
-        "uniqueId": 328,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:41;ROW:-2",
-        "x": 41,
-        "y": -2,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 240,
-        "layerName": "Mapa1",
-        "imageName": "tile021"
-      },
-      {
-        "uniqueId": 329,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:42;ROW:-2",
-        "x": 42,
-        "y": -2,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 241,
-        "layerName": "Mapa1",
-        "imageName": "tile021"
-      },
-      {
-        "uniqueId": 330,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:43;ROW:-2",
-        "x": 43,
-        "y": -2,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 242,
-        "layerName": "Mapa1",
-        "imageName": "tile021"
-      },
-      {
-        "uniqueId": 331,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:44;ROW:-2",
-        "x": 44,
-        "y": -2,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 243,
-        "layerName": "Mapa1",
-        "imageName": "tile021"
-      },
-      {
-        "uniqueId": 332,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:45;ROW:-2",
-        "x": 45,
-        "y": -2,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 244,
-        "layerName": "Mapa1",
-        "imageName": "tile021"
-      },
-      {
-        "uniqueId": 334,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:45;ROW:-1",
-        "x": 45,
-        "y": -1,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 245,
-        "layerName": "Mapa1",
-        "imageName": "tile021"
-      },
-      {
-        "uniqueId": 335,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:44;ROW:-1",
-        "x": 44,
-        "y": -1,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 246,
-        "layerName": "Mapa1",
-        "imageName": "tile021"
-      },
-      {
-        "uniqueId": 336,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:43;ROW:-1",
-        "x": 43,
-        "y": -1,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 247,
-        "layerName": "Mapa1",
-        "imageName": "tile021"
-      },
-      {
-        "uniqueId": 337,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:42;ROW:-1",
-        "x": 42,
-        "y": -1,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 248,
-        "layerName": "Mapa1",
-        "imageName": "tile021"
-      },
-      {
-        "uniqueId": 338,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:41;ROW:-1",
-        "x": 41,
-        "y": -1,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 249,
-        "layerName": "Mapa1",
-        "imageName": "tile021"
-      },
-      {
-        "uniqueId": 339,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:40;ROW:-1",
-        "x": 40,
-        "y": -1,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 250,
-        "layerName": "Mapa1",
-        "imageName": "tile021"
-      },
-      {
-        "uniqueId": 340,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:39;ROW:-1",
-        "x": 39,
-        "y": -1,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 251,
-        "layerName": "Mapa1",
-        "imageName": "tile021"
-      },
-      {
-        "uniqueId": 341,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:38;ROW:-1",
-        "x": 38,
-        "y": -1,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 252,
-        "layerName": "Mapa1",
-        "imageName": "tile021"
-      },
-      {
-        "uniqueId": 342,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:36;ROW:-1",
-        "x": 36,
-        "y": -1,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 253,
-        "layerName": "Mapa1",
-        "imageName": "tile021"
-      },
-      {
-        "uniqueId": 343,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:35;ROW:-1",
-        "x": 35,
-        "y": -1,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 254,
-        "layerName": "Mapa1",
-        "imageName": "tile021"
-      },
-      {
-        "uniqueId": 344,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:37;ROW:-1",
-        "x": 37,
-        "y": -1,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 255,
-        "layerName": "Mapa1",
-        "imageName": "tile021"
-      },
-      {
-        "uniqueId": 345,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:35;ROW:-2",
-        "x": 35,
-        "y": -2,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 256,
-        "layerName": "Mapa1",
-        "imageName": "tile021"
-      },
-      {
-        "uniqueId": 346,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:36;ROW:-3",
-        "x": 36,
-        "y": -3,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 257,
-        "layerName": "Mapa1",
-        "imageName": "tile021"
-      },
-      {
-        "uniqueId": 347,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:37;ROW:-3",
-        "x": 37,
-        "y": -3,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 258,
-        "layerName": "Mapa1",
-        "imageName": "tile021"
-      },
-      {
-        "uniqueId": 348,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:38;ROW:-3",
-        "x": 38,
-        "y": -3,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 259,
-        "layerName": "Mapa1",
-        "imageName": "tile021"
-      },
-      {
-        "uniqueId": 349,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:39;ROW:-3",
-        "x": 39,
-        "y": -3,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 260,
-        "layerName": "Mapa1",
-        "imageName": "tile021"
-      },
-      {
-        "uniqueId": 350,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:40;ROW:-3",
-        "x": 40,
-        "y": -3,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 261,
-        "layerName": "Mapa1",
-        "imageName": "tile021"
-      },
-      {
-        "uniqueId": 351,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:41;ROW:-3",
-        "x": 41,
-        "y": -3,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 262,
-        "layerName": "Mapa1",
-        "imageName": "tile021"
-      },
-      {
-        "uniqueId": 352,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:40;ROW:-4",
-        "x": 40,
-        "y": -4,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 263,
-        "layerName": "Mapa1",
-        "imageName": "tile021"
-      },
-      {
-        "uniqueId": 353,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:41;ROW:-4",
-        "x": 41,
-        "y": -4,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 264,
-        "layerName": "Mapa1",
-        "imageName": "tile021"
-      },
-      {
-        "uniqueId": 354,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:42;ROW:-4",
-        "x": 42,
-        "y": -4,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 265,
-        "layerName": "Mapa1",
-        "imageName": "tile021"
-      },
-      {
-        "uniqueId": 355,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:42;ROW:-3",
-        "x": 42,
-        "y": -3,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 266,
-        "layerName": "Mapa1",
-        "imageName": "tile021"
-      },
-      {
-        "uniqueId": 356,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:43;ROW:-3",
-        "x": 43,
-        "y": -3,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 267,
-        "layerName": "Mapa1",
-        "imageName": "tile021"
-      },
-      {
-        "uniqueId": 357,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:43;ROW:-4",
-        "x": 43,
-        "y": -4,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 268,
-        "layerName": "Mapa1",
-        "imageName": "tile021"
-      },
-      {
-        "uniqueId": 358,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:44;ROW:-4",
-        "x": 44,
-        "y": -4,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 269,
-        "layerName": "Mapa1",
-        "imageName": "tile021"
-      },
-      {
-        "uniqueId": 359,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:44;ROW:-3",
-        "x": 44,
-        "y": -3,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 270,
-        "layerName": "Mapa1",
-        "imageName": "tile021"
-      },
-      {
-        "uniqueId": 360,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:45;ROW:-3",
-        "x": 45,
-        "y": -3,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 271,
-        "layerName": "Mapa1",
-        "imageName": "tile021"
-      },
-      {
-        "uniqueId": 361,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:45;ROW:-4",
-        "x": 45,
-        "y": -4,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 272,
-        "layerName": "Mapa1",
-        "imageName": "tile021"
-      },
-      {
-        "uniqueId": 362,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:46;ROW:-4",
-        "x": 46,
-        "y": -4,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 273,
-        "layerName": "Mapa1",
-        "imageName": "tile021"
-      },
-      {
-        "uniqueId": 364,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:48;ROW:-4",
-        "x": 48,
-        "y": -4,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 274,
-        "layerName": "Mapa1",
-        "imageName": "tile021"
-      },
-      {
-        "uniqueId": 365,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:47;ROW:-5",
-        "x": 47,
-        "y": -5,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 275,
-        "layerName": "Mapa1",
-        "imageName": "tile021"
-      },
-      {
-        "uniqueId": 366,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:46;ROW:-5",
-        "x": 46,
-        "y": -5,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 276,
-        "layerName": "Mapa1",
-        "imageName": "tile021"
-      },
-      {
-        "uniqueId": 367,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:48;ROW:-5",
-        "x": 48,
-        "y": -5,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 277,
-        "layerName": "Mapa1",
-        "imageName": "tile021"
-      },
-      {
-        "uniqueId": 368,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:49;ROW:-5",
-        "x": 49,
-        "y": -5,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 278,
-        "layerName": "Mapa1",
-        "imageName": "tile021"
-      },
-      {
-        "uniqueId": 369,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:49;ROW:-4",
-        "x": 49,
-        "y": -4,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 279,
-        "layerName": "Mapa1",
-        "imageName": "tile021"
-      },
-      {
-        "uniqueId": 370,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:50;ROW:-5",
-        "x": 50,
-        "y": -5,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 280,
-        "layerName": "Mapa1",
-        "imageName": "tile021"
-      },
-      {
-        "uniqueId": 371,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:50;ROW:-4",
-        "x": 50,
-        "y": -4,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 281,
-        "layerName": "Mapa1",
-        "imageName": "tile021"
-      },
-      {
-        "uniqueId": 372,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:51;ROW:-4",
-        "x": 51,
-        "y": -4,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 282,
-        "layerName": "Mapa1",
-        "imageName": "tile021"
-      },
-      {
-        "uniqueId": 373,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:51;ROW:-5",
-        "x": 51,
-        "y": -5,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 283,
-        "layerName": "Mapa1",
-        "imageName": "tile021"
-      },
-      {
-        "uniqueId": 374,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:52;ROW:-5",
-        "x": 52,
-        "y": -5,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 284,
-        "layerName": "Mapa1",
-        "imageName": "tile021"
-      },
-      {
-        "uniqueId": 375,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:53;ROW:-5",
-        "x": 53,
-        "y": -5,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 285,
-        "layerName": "Mapa1",
-        "imageName": "tile021"
-      },
-      {
-        "uniqueId": 376,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:53;ROW:-6",
-        "x": 53,
-        "y": -6,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 286,
-        "layerName": "Mapa1",
-        "imageName": "tile021"
-      },
-      {
-        "uniqueId": 377,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:52;ROW:-6",
-        "x": 52,
-        "y": -6,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 287,
-        "layerName": "Mapa1",
-        "imageName": "tile021"
-      },
-      {
-        "uniqueId": 378,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:51;ROW:-6",
-        "x": 51,
-        "y": -6,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 288,
-        "layerName": "Mapa1",
-        "imageName": "tile021"
-      },
-      {
-        "uniqueId": 379,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:52;ROW:-4",
-        "x": 52,
-        "y": -4,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 289,
-        "layerName": "Mapa1",
-        "imageName": "tile021"
-      },
-      {
-        "uniqueId": 380,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:53;ROW:-4",
-        "x": 53,
-        "y": -4,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 290,
-        "layerName": "Mapa1",
-        "imageName": "tile021"
-      },
-      {
-        "uniqueId": 381,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:54;ROW:-4",
-        "x": 54,
-        "y": -4,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 291,
-        "layerName": "Mapa1",
-        "imageName": "tile021"
-      },
-      {
-        "uniqueId": 382,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:54;ROW:-3",
-        "x": 54,
-        "y": -3,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 292,
-        "layerName": "Mapa1",
-        "imageName": "tile021"
-      },
-      {
-        "uniqueId": 383,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:55;ROW:-3",
-        "x": 55,
-        "y": -3,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 293,
-        "layerName": "Mapa1",
-        "imageName": "tile021"
-      },
-      {
-        "uniqueId": 384,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:55;ROW:-4",
-        "x": 55,
-        "y": -4,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 294,
-        "layerName": "Mapa1",
-        "imageName": "tile021"
-      },
-      {
-        "uniqueId": 385,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:55;ROW:-5",
-        "x": 55,
-        "y": -5,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 295,
-        "layerName": "Mapa1",
-        "imageName": "tile021"
-      },
-      {
-        "uniqueId": 386,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:56;ROW:-5",
-        "x": 56,
-        "y": -5,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 296,
-        "layerName": "Mapa1",
-        "imageName": "tile021"
-      },
-      {
-        "uniqueId": 387,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:56;ROW:-4",
-        "x": 56,
-        "y": -4,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 297,
-        "layerName": "Mapa1",
-        "imageName": "tile021"
-      },
-      {
-        "uniqueId": 388,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:55;ROW:-6",
-        "x": 55,
-        "y": -6,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 298,
-        "layerName": "Mapa1",
-        "imageName": "tile021"
-      },
-      {
-        "uniqueId": 389,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:54;ROW:-6",
-        "x": 54,
-        "y": -6,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 299,
-        "layerName": "Mapa1",
-        "imageName": "tile021"
-      },
-      {
-        "uniqueId": 390,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:54;ROW:-5",
-        "x": 54,
-        "y": -5,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 300,
-        "layerName": "Mapa1",
-        "imageName": "tile021"
-      },
-      {
-        "uniqueId": 391,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:56;ROW:-6",
-        "x": 56,
-        "y": -6,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 301,
-        "layerName": "Mapa1",
-        "imageName": "tile021"
-      },
-      {
-        "uniqueId": 392,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:57;ROW:-6",
-        "x": 57,
-        "y": -6,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 302,
-        "layerName": "Mapa1",
-        "imageName": "tile021"
-      },
-      {
-        "uniqueId": 393,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:57;ROW:-5",
-        "x": 57,
-        "y": -5,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 303,
-        "layerName": "Mapa1",
-        "imageName": "tile021"
-      },
-      {
-        "uniqueId": 394,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:58;ROW:-5",
-        "x": 58,
-        "y": -5,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 304,
-        "layerName": "Mapa1",
-        "imageName": "tile021"
-      },
-      {
-        "uniqueId": 395,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:57;ROW:-4",
-        "x": 57,
-        "y": -4,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 305,
-        "layerName": "Mapa1",
-        "imageName": "tile021"
-      },
-      {
-        "uniqueId": 396,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:57;ROW:-3",
-        "x": 57,
-        "y": -3,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 306,
-        "layerName": "Mapa1",
-        "imageName": "tile021"
-      },
-      {
-        "uniqueId": 397,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:56;ROW:-3",
-        "x": 56,
-        "y": -3,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 307,
-        "layerName": "Mapa1",
-        "imageName": "tile021"
-      },
-      {
-        "uniqueId": 398,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:56;ROW:-2",
-        "x": 56,
-        "y": -2,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 308,
-        "layerName": "Mapa1",
-        "imageName": "tile021"
-      },
-      {
-        "uniqueId": 399,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:57;ROW:-2",
-        "x": 57,
-        "y": -2,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 309,
-        "layerName": "Mapa1",
-        "imageName": "tile021"
-      },
-      {
-        "uniqueId": 400,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:55;ROW:-2",
-        "x": 55,
-        "y": -2,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 310,
-        "layerName": "Mapa1",
-        "imageName": "tile021"
-      },
-      {
-        "uniqueId": 401,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:54;ROW:-2",
-        "x": 54,
-        "y": -2,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 311,
-        "layerName": "Mapa1",
-        "imageName": "tile021"
-      },
-      {
-        "uniqueId": 64,
-        "tags": [
-          "TILE"
-        ],
-        "customVars": "COLUMN:29;ROW:-1",
-        "x": 29,
-        "y": -1,
-        "originX": 0.5,
-        "originY": 0.5,
-        "zIndex": 312,
-        "layerName": "Mapa1",
-        "imageName": "tile021"
-      },
-      {
-        "uniqueId": 73,
-        "tags": [
-        ],
-        "x": -0.125,
-        "y": 1,
-        "originX": 1,
-        "originY": 1,
-        "zIndex": 313,
-        "layerName": "Player",
-        "imageName": "Wulfric0"
-      },
-      {
-        "uniqueId": 439,
-        "tags": [
-        ],
-        "x": -8.625,
-        "y": -9.4375,
-        "originX": 1,
-        "originY": 1,
-        "zIndex": 314,
-        "layerName": "Coin",
-        "imageName": "tileset1"
-      },
-      {
-        "uniqueId": 442,
-        "tags": [
-        ],
-        "x": 1.5,
-        "y": -9.4375,
-        "originX": 1,
-        "originY": 1,
-        "zIndex": 315,
-        "layerName": "Coin",
-        "imageName": "tileset1"
-      },
-      {
-        "uniqueId": 440,
-        "tags": [
-        ],
-        "x": 13.5,
-        "y": 3.5,
-        "originX": 1,
-        "originY": 1,
-        "zIndex": 316,
-        "layerName": "Coin",
-        "imageName": "tileset1"
-      },
-      {
-        "uniqueId": 437,
-        "tags": [
-        ],
-        "x": 17.5,
-        "y": 4.5,
-        "originX": 1,
-        "originY": 1,
-        "zIndex": 317,
-        "layerName": "Coin",
-        "imageName": "tileset1"
-      },
-      {
-        "uniqueId": 436,
-        "tags": [
-        ],
-        "x": 30.875,
-        "y": -8.4375,
-        "originX": 1,
-        "originY": 1,
-        "zIndex": 318,
-        "layerName": "Coin",
-        "imageName": "tileset1"
-      },
-      {
-        "uniqueId": 441,
-        "tags": [
-        ],
-        "x": 32.0625,
-        "y": -8.4375,
-        "originX": 1,
-        "originY": 1,
-        "zIndex": 319,
-        "layerName": "Coin",
-        "imageName": "tileset1"
-      },
-      {
-        "uniqueId": 438,
-        "tags": [
-        ],
-        "x": 5.4375,
-        "y": 0.625,
-        "originX": 1,
-        "originY": 1,
-        "zIndex": 320,
-        "layerName": "Coin",
-        "imageName": "tileset1"
-      },
-      {
-        "uniqueId": 443,
-        "tags": [
-        ],
-        "x": 22.4375,
-        "y": -2.5,
-        "originX": 1,
-        "originY": 1,
-        "zIndex": 321,
-        "layerName": "Coin",
-        "imageName": "tileset1"
-      },
-      {
-        "uniqueId": 444,
-        "tags": [
-        ],
-        "x": 31.875,
-        "y": 12.5625,
-        "originX": 1,
-        "originY": 1,
-        "zIndex": 322,
-        "layerName": "Coin",
-        "imageName": "tileset1"
-      },
-      {
-        "uniqueId": 445,
-        "tags": [
-        ],
-        "x": 32.9375,
-        "y": 12.625,
-        "originX": 1,
-        "originY": 1,
-        "zIndex": 323,
-        "layerName": "Coin",
-        "imageName": "tileset1"
-      },
-      {
-        "uniqueId": 446,
-        "tags": [
-        ],
-        "x": 34.125,
-        "y": 12.625,
-        "originX": 1,
-        "originY": 1,
-        "zIndex": 324,
-        "layerName": "Coin",
-        "imageName": "tileset1"
-      },
-      {
-        "uniqueId": 447,
-        "tags": [
-        ],
-        "x": 45.4375,
-        "y": 1.5625,
-        "originX": 1,
-        "originY": 1,
-        "zIndex": 325,
-        "layerName": "Coin",
-        "imageName": "tileset1"
-      },
-      {
-        "uniqueId": 449,
-        "tags": [
-        ],
-        "x": 58.1875,
-        "y": 0.8125,
-        "originX": 1,
-        "originY": 1,
-        "zIndex": 326,
-        "layerName": "Coin",
-        "imageName": "tileset1"
-      },
-      {
-        "uniqueId": 450,
-        "tags": [
-        ],
-        "x": 60.125,
-        "y": 2.375,
-        "originX": 1,
-        "originY": 1,
-        "zIndex": 327,
-        "layerName": "Coin",
-        "imageName": "tileset1"
-      },
-      {
-        "uniqueId": 74,
-        "tags": [
-        ],
-        "x": 7.0625,
-        "y": 2.0625,
-        "originX": 1,
-        "originY": 1,
-        "zIndex": 328,
-        "layerName": "Inimigos",
-        "imageName": "gumba-idle"
-      },
-      {
-        "uniqueId": 432,
-        "tags": [
-        ],
-        "x": 44.0625,
-        "y": 12.0625,
-        "originX": 1,
-        "originY": 1,
-        "zIndex": 329,
-        "layerName": "Inimigos",
-        "imageName": "planta-idle-export1"
-      },
-      {
-        "uniqueId": 433,
-        "tags": [
-        ],
-        "x": 37.1875,
-        "y": 1,
-        "originX": 1,
-        "originY": 1,
-        "zIndex": 330,
-        "layerName": "Inimigos",
-        "imageName": "planta-idle-export1"
-      },
-      {
-        "uniqueId": 434,
-        "tags": [
-        ],
-        "x": 53.5,
-        "originX": 1,
-        "originY": 1,
-        "zIndex": 331,
-        "layerName": "Inimigos",
-        "imageName": "gumba-idle"
-      },
-      {
-        "uniqueId": 451,
-        "tags": [
-        ],
-        "x": 63.75,
-        "y": -4,
-        "originX": 2,
-        "originY": 2,
-        "zIndex": 332,
-        "layerName": "Bandeira",
-        "imageName": "banner"
-      }
-    ],
-    "layers": [
-      {
-        "layerName": "Mapa",
-        "isVisible": true
-      },
-      {
-        "layerName": "morte",
-        "isVisible": true
-      },
-      {
-        "layerName": "Mapa1",
-        "isVisible": true
-      },
-      {
-        "layerName": "Player",
-        "isVisible": true
-      },
-      {
-        "layerName": "Coin",
-        "isVisible": true
-      },
-      {
-        "layerName": "Inimigos",
+        "layerName": "boss",
         "isVisible": true
       },
       {

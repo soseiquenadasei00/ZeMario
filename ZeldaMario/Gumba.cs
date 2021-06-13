@@ -15,12 +15,7 @@ namespace ZeldaMario
 
     public class Gumba : AnimatedSprite
     {
-        enum Status
-        {
-            Walk,
-        }
-
-        private Status _status = Status.Walk;
+       
         private Game1 _game;
         public bool walk = false;
         public float speed = 15f;
@@ -81,7 +76,7 @@ namespace ZeldaMario
             {
                 corDoDesenho = Color.Red;
                 tempo(gameTime, ref timer);
-                Console.WriteLine("entreiNoHit");
+               // Console.WriteLine("entreiNoHit");
             }
             else corDoDesenho = Color.White;
 
