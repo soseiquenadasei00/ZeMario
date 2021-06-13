@@ -4,6 +4,10 @@ using Microsoft.Xna.Framework.Input;
 using IPCA.MonoGame;
 using Genbox.VelcroPhysics.Dynamics;
 using System.Collections.Generic;
+using Microsoft.Xna.Framework.Audio;
+using Microsoft.Xna.Framework.Graphics;
+using Microsoft.Xna.Framework.Input;
+using Microsoft.Xna.Framework.Media;
 
 namespace ZeldaMario
 {
@@ -25,7 +29,24 @@ namespace ZeldaMario
         public List<Coin> _coin = new List<Coin>();
         public List<AnimatedSprite> _extra= new List<AnimatedSprite>();
         public bool bossdie = false;
+
+        //som
+        public  SoundEffect _coinSound;
+        public  SoundEffect _gameOverSound;
+        public  SoundEffect _gameWinSound;
+        public  SoundEffect _jumpSound;
+        public  SoundEffectInstance _jumpSoundInstance;
         
+        public  SoundEffect _playerAttackSound;
+        public SoundEffectInstance _playerAttackSoundInstance;
+        public  SoundEffect _plantatiroSound;
+        
+
+
+        private Song _ambienteSound;
+        private float _volume = 0.5f;
+
+
         public bool changeScene = false;
         private Texture2D _vida0, _vida1, _vida2, _vida3;
         private Texture2D _moedinha;
@@ -68,25 +89,47 @@ namespace ZeldaMario
             _vida2 = Content.Load<Texture2D>("2hearts");
             _vida3 = Content.Load<Texture2D>("3hearts");
             _moedinha = Content.Load<Texture2D>("moedinha");
-            backgroudMenu = Content.Load<Texture2D>("cave");
+            backgroudMenu = Content.Load<Texture2D>("cave_2.0");
 
+
+            _ambienteSound = Content.Load<Song>("music");
+            _coinSound = Content.Load<SoundEffect>("coin");
+            _gameOverSound = Content.Load<SoundEffect>("game_over");
+            _gameWinSound = Content.Load<SoundEffect>("game_win");
+            _jumpSound = Content.Load<SoundEffect>("jump");
+            _jumpSoundInstance = _jumpSound.CreateInstance();
+            _playerAttackSound = Content.Load<SoundEffect>("player_atack");
+            _playerAttackSoundInstance = _playerAttackSound.CreateInstance();
+            _plantatiroSound = Content.Load<SoundEffect>("planta_shot");
+
+            MediaPlayer.IsRepeating = true;
+            MediaPlayer.Volume = 0.25f;
+            MediaPlayer.Play(_ambienteSound);
         }
         protected override void Update(GameTime gameTime)
         {
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape))
                 Exit();
          
-                _world.Step((float)gameTime.ElapsedGameTime.TotalMilliseconds * 0.001f);
+             _world.Step((float)gameTime.ElapsedGameTime.TotalMilliseconds * 0.001f);
             if (Keyboard.GetState().IsKeyDown(Keys.R)) Initialize();
             _player.Update(gameTime);
+
+            //som
+            if (Keyboard.GetState().IsKeyDown(Keys.K)) _volume += 0.1f; //aumenta volume
+            if (Keyboard.GetState().IsKeyDown(Keys.J)) _volume -= 0.1f; //diminui volume
+            if (Keyboard.GetState().IsKeyDown(Keys.Space)) _jumpSoundInstance.Play(); //diminui volume
+            
+
+            _volume = (float)System.Math.Clamp(_volume, 0.0, 1.0);
+            MediaPlayer.Volume = _volume;
+
+            //carregar o boss e flag apenas na scene principal
             if (_scene.filename == "Content/scenes/MainScene.dt" && _boss !=null)
             {
-                
                 _boss.Update(gameTime);
                 _flag.Update(gameTime);
-
             }
-            
 
             foreach (Prantinha p in _prantinha.ToArray())
             {
@@ -116,7 +159,6 @@ namespace ZeldaMario
             else _spriteBatch.Draw(background, new Rectangle(0, 0, 1600, 800), Color.White);
 
             _player.Draw(_spriteBatch, gameTime);
-
             _scene.Draw(_spriteBatch, gameTime);
 
             //desenhar vidas e moeda 
@@ -143,11 +185,10 @@ namespace ZeldaMario
                             0, anchor, scale * 2f, 0, 0);
 
 
-
+                //texto das moedas
                 Vector2 posicaoMoeda = new Vector2(85, 660);
                 countMoeda = _player.countCoin;
                 this.drawCoinsText(posicaoMoeda, $"{countMoeda}");
-
                 _spriteBatch.Draw(_moedinha, _posicaoMoedinha, null, Color.White, 0, anchor, scale * 1.5f, 0, 0);
                 
             }
@@ -169,6 +210,7 @@ namespace ZeldaMario
 
             base.Draw(gameTime);
         }
+
         public void drawCoinsText(Vector2 _position, string _text)
         {
             _spriteBatch.DrawString(

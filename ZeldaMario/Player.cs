@@ -102,7 +102,7 @@ namespace ZeldaMario
                 KeysState.GoingDown,
                 () =>
                 {
-                    if (_game._scene.filename == "Content/scenes/MainScene.dt") //para nao saltar no menu inicial
+                        if (_game._scene.filename == "Content/scenes/MainScene.dt") //para nao saltar no menu inicial
                         if (extraJumps > 0) { Body.LinearVelocity = new Vector2(0, 2.5f); extraJumps -= 1; } //alcance do salto
                 });
             KeyboardManager.Register(
@@ -122,7 +122,7 @@ namespace ZeldaMario
                 Keys.D,
                 KeysState.GoingUp,
                 () => { Body.LinearVelocity = new Vector2(0, 0); });
-            KeyboardManager.Register(Keys.F, KeysState.Down, () => { attack = true; Attack(); });
+            KeyboardManager.Register(Keys.F, KeysState.Down, () => { attack = true; Attack(); _game._playerAttackSoundInstance.Play(); });
             KeyboardManager.Register(Keys.F, KeysState.Up, () => { AbortAttack(); });
 
         }
@@ -131,6 +131,7 @@ namespace ZeldaMario
             if (_direction == Direction.Right) direçãoPlayer = 1;
             else direçãoPlayer = -1;
             if (vidas == -1) resetar();
+            
 
             // Console.WriteLine(vidas);
             //Pular duas vezes
@@ -148,6 +149,8 @@ namespace ZeldaMario
                         {
                             if (temp.Position == coin.Position)
                             {
+                                Console.WriteLine(countCoin);
+                                _game._coinSound.Play();
                                 countCoin++;
                                 _game._coin.Remove(coin);
 
@@ -261,7 +264,7 @@ namespace ZeldaMario
         {
             base.Draw(spriteBatch, gameTime);
             foreach (ITempObject obj in _objects)
-                obj.Draw(spriteBatch, gameTime);
+            obj.Draw(spriteBatch, gameTime);
         }
 
         //Funções auxiliares

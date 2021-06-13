@@ -55,7 +55,6 @@ namespace ZeldaMario
 
         public override void Update(GameTime gameTime)
         {
-
             moverBala(gameTime, speed);
             CountDown(ref dieTimer, gameTime);
             if (dieTimer <= 0) morte = true;
@@ -72,21 +71,15 @@ namespace ZeldaMario
         {
             if (_direction == Direction.Left)  // A planta é com lado invertido, ou seja, quando estamos a olhar para a direita na verdade estamos a calcular pro lado esquerdo 
             {
-
                 Body.LinearVelocity = new Vector2(-speed, 0) * (float)gameTime.ElapsedGameTime.TotalSeconds;
             }
-            else
-            {
-                Body.LinearVelocity = new Vector2(speed, 0) * (float)gameTime.ElapsedGameTime.TotalSeconds;
+            else Body.LinearVelocity = new Vector2(speed, 0) * (float)gameTime.ElapsedGameTime.TotalSeconds;
 
-
-            }
         }
 
-    public override void Draw(SpriteBatch spriteBatch, GameTime gameTime)
-    {
-   
-            base.Draw(spriteBatch, gameTime);
+        public override void Draw(SpriteBatch spriteBatch, GameTime gameTime)
+        {
+                base.Draw(spriteBatch, gameTime);
+        }
     }
-}
 }

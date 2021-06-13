@@ -1172,7 +1172,7 @@
 /processorParam:TextureFormat=Color
 /build:boss_walk4.png
 
-#begin cave.png
+#begin cave_2.0.png
 /importer:TextureImporter
 /processor:TextureProcessor
 /processorParam:ColorKeyColor=255,0,255,255
@@ -1182,7 +1182,13 @@
 /processorParam:ResizeToPowerOfTwo=False
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
-/build:cave.png
+/build:cave_2.0.png
+
+#begin coin.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:coin.wav
 
 #begin flag0.png
 /importer:TextureImporter
@@ -1244,6 +1250,18 @@
 /processorParam:TextureFormat=Color
 /build:flag4.png
 
+#begin game_over.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:game_over.wav
+
+#begin game_win.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:game_win.wav
+
 #begin gumba-idle.png
 /importer:TextureImporter
 /processor:TextureProcessor
@@ -1304,6 +1322,12 @@
 /processorParam:TextureFormat=Color
 /build:gumba-walking-export4.png
 
+#begin jump.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:jump.wav
+
 #begin moedinha.png
 /importer:TextureImporter
 /processor:TextureProcessor
@@ -1316,6 +1340,12 @@
 /processorParam:TextureFormat=Color
 /build:moedinha.png
 
+#begin music.mp3
+/importer:Mp3Importer
+/processor:SongProcessor
+/processorParam:Quality=Best
+/build:music.mp3
+
 #begin p_tiro.png
 /importer:TextureImporter
 /processor:TextureProcessor
@@ -1327,6 +1357,12 @@
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:p_tiro.png
+
+#begin planta_shot.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:planta_shot.wav
 
 #begin planta-idle-export1.png
 /importer:TextureImporter
@@ -1351,6 +1387,12 @@
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:planta-idle-export2.png
+
+#begin player_atack.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:player_atack.wav
 
 #begin salto incio/preparas_para_saltar1.png
 /importer:TextureImporter

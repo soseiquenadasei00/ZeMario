@@ -93,12 +93,14 @@ namespace ZeldaMario
                     if (_direction == Direction.Right)
                     {
                         bala = new Bullet(_game, "p_tiro", this._position.X - 0.25f, this._position.Y + 0.1f, _direction);
+                        _game._plantatiroSound.Play();
                         tiro.Add(bala);
 
                     }
                     else
                     {
                         bala = new Bullet(_game, "p_tiro", this._position.X +0.25f, this._position.Y + 0.1f, _direction);
+                        _game._plantatiroSound.Play();
                         tiro.Add(bala);
                     }
                     timer = resetTimer;
