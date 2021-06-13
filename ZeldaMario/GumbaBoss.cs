@@ -27,6 +27,7 @@ namespace ZeldaMario
         public float speed = 15f;
         public int life = 500;
         public bool hit = false;
+       
         bool jump = false;
         private int patrolOffset = 5;
         private List<Texture2D> _puloInicial=new List<Texture2D>();
@@ -39,8 +40,8 @@ namespace ZeldaMario
         public GumbaBoss(Game1 game, float x = 0, float y = 0) :
            base("GumbaBoss",
                new Vector2(x, y),
-               Enumerable.Range(0, 1).Select<int, Texture2D>(
-                   n => game.Content.Load<Texture2D>("assets/orig/images/idle")).ToArray()
+               Enumerable.Range(1, 4).Select<int, Texture2D>(
+                   n => game.Content.Load<Texture2D>($"boss_walk{n}")).ToArray()
                )
         {
             timer = resetDoTempo;
@@ -71,12 +72,9 @@ namespace ZeldaMario
 
             sensor.IsSensor = true;
 
-          
-
             sensor.OnCollision = (a, b, contact) =>
             {
                _isGrounded = true;
-                if(_isGrounded)
                 walk = true;
             };
             sensor.OnSeparation = (a, b, contact) =>

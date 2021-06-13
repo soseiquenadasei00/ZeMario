@@ -34,7 +34,7 @@ namespace ZeldaMario
         public int direçãoPlayer = 1;
 
         int extraJumps;
-        int resetExtraJumps = 2;
+        int resetExtraJumps = 10000;
 
         private List<ITempObject> _objects;
         private List<Texture2D> _idleFrames = new List<Texture2D>();
@@ -171,9 +171,23 @@ namespace ZeldaMario
                         }
                         vidas -= 1;
                     }
-                    if (temp.Name == "gumba" && attack == false && toque == false || temp.Name == "GumbaBoss" && attack == false && toque == false)
+                    if (temp.Name == "gumba" && attack == false && toque == false  )
                     {
                         removerVida(gameTime);
+                    }
+                    if (temp.Name == "flag")
+                    {
+
+                        if (temp.Position == _game._flag.Position)
+                        {
+
+                            posicaoInicial = _game._flag.Position;
+                        }
+                    }
+                    if (temp.Name == "GumbaBoss" && attack == false && toque == false)
+                    {
+                        removerVida(gameTime);
+                        
                     }
 
                     if (temp.Name == "assets/orig/images/tile240" || temp.Name == "assets/orig/images/tile241")
@@ -198,7 +212,6 @@ namespace ZeldaMario
                             _game._world.RemoveBody(s.Body);
                         }
                         _game._scene._sprites.Clear();
-                        //_game._world.RemoveBody(Body);//remove body player
                         _game._player = null;
                         _game.changeScene = true;
                         _game._scene = new Scene(_game, "MainScene");
@@ -207,6 +220,7 @@ namespace ZeldaMario
                 }
             };
 
+            
 
             if (_status == Status.Idle && Body.LinearVelocity.LengthSquared() > 0.001f)
             {
@@ -264,6 +278,7 @@ namespace ZeldaMario
             morte = false;
 
         }
+      
 
         public void removerVida(GameTime gameTime)
         {
@@ -275,6 +290,7 @@ namespace ZeldaMario
 
             toque = false;
         }
+
 
         public void Attack()
         {
@@ -315,7 +331,6 @@ namespace ZeldaMario
                                     _game._gumba.Remove(g);
                                     break;
                                 }
-
                             }
                         }
                     }
@@ -334,23 +349,24 @@ namespace ZeldaMario
                     }
                     else if (temp.Name == "GumbaBoss")
                     {
-                        if (_game._boss.Position == temp.Position)
+                        if (_game._boss != null)
                         {
-                            if (_game._boss.life > 0)
+                            if (_game._boss.Position == temp.Position)
                             {
-                                _game._boss.hit = true;
-                                _game._boss.timerdaCor = _game._boss.resetACor;
-                                _game._boss.life--;
-                                
+                                if (_game._boss.life > 0)
+                                {
+                                    _game._boss.hit = true;
+                                    _game._boss.timerdaCor = _game._boss.resetACor;
+                                    _game._boss.life--;
 
+                                }
+                                else
+                                {
 
-                            }
-
-                            else
-                            {
-                                World world = _game.Services.GetService<World>();
-                                world.RemoveBody(_game._boss.Body);
-                                _game._boss = null;
+                                    World world = _game.Services.GetService<World>();
+                                    world.RemoveBody(_game._boss.Body);
+                                    _game._boss = null;
+                                }
                             }
                         }
 

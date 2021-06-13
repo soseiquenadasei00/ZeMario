@@ -18,10 +18,13 @@ namespace ZeldaMario
         public Texture2D background;
         private SpriteFont arial12;
         private int countMoeda = 0;
+        public Flag _flag;
 
         public List<Prantinha> _prantinha = new List<Prantinha>();
         public List<Gumba> _gumba = new List<Gumba>(); 
         public List<Coin> _coin = new List<Coin>();
+        public List<AnimatedSprite> _extra= new List<AnimatedSprite>();
+        public bool bossdie = false;
         
         public bool changeScene = false;
         private Texture2D _vida0, _vida1, _vida2, _vida3;
@@ -47,7 +50,7 @@ namespace ZeldaMario
 
             Debug.SetGraphicsDevice(GraphicsDevice);
 
-            new Camera(GraphicsDevice, height: 2.5f);//zoom da cam
+            new Camera(GraphicsDevice, height: 5f);//zoom da cam
             Camera.LookAt(Camera.WorldSize / 4f);
           
 
@@ -80,7 +83,10 @@ namespace ZeldaMario
             {
                 
                 _boss.Update(gameTime);
+                _flag.Update(gameTime);
+
             }
+            
 
             foreach (Prantinha p in _prantinha.ToArray())
             {
@@ -118,7 +124,8 @@ namespace ZeldaMario
             {
                if(_boss != null)
                 _boss.Draw(_spriteBatch, gameTime);
-                
+
+                _flag.Draw(_spriteBatch, gameTime);
                 Vector2 anchor = new Vector2(_vida3.Width / 32f, _vida3.Height / 16f);
                 Vector2 scale = Camera.Length2Pixels(_vida0.Bounds.Size.ToVector2() / 4048f);
                 scale.X = scale.X / 2f;
@@ -142,7 +149,7 @@ namespace ZeldaMario
                 this.drawCoinsText(posicaoMoeda, $"{countMoeda}");
 
                 _spriteBatch.Draw(_moedinha, _posicaoMoedinha, null, Color.White, 0, anchor, scale * 1.5f, 0, 0);
-
+                
             }
            
             foreach (Prantinha p in _prantinha)
