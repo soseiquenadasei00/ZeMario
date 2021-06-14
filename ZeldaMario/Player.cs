@@ -8,6 +8,7 @@ using IPCA.MonoGame;
 using System.Linq;
 using Genbox.VelcroPhysics.Dynamics;
 using Genbox.VelcroPhysics.Factories;
+using Microsoft.Xna.Framework.Media;
 
 namespace ZeldaMario
 {
@@ -26,7 +27,7 @@ namespace ZeldaMario
         public Vector2 offset = new Vector2(0, -0.05f);
         public bool morte = false;
         public bool toque = false;
-
+        public bool tocarBossMusic = false;
 
         private Vector2 posicaoInicial;
 
@@ -130,16 +131,20 @@ namespace ZeldaMario
         {
             if (_direction == Direction.Right) direçãoPlayer = 1;
             else direçãoPlayer = -1;
-            if (vidas == -1) resetar();
-            
+            if (vidas == -1)
+            {
+                resetar();
+            }
 
+            Sprite temp;
+           
             // Console.WriteLine(vidas);
             //Pular duas vezes
             if (_isGrounded) extraJumps = resetExtraJumps;
             //Verficação dos colliders com inimigos ou com a moeda 
             Body.OnCollision = (a, b, c) =>
             {
-                Sprite temp;
+                
                 temp = (Sprite)b.Body.UserData;
                 if (b.Body.UserData != null)
                 {
@@ -149,10 +154,12 @@ namespace ZeldaMario
                         {
                             if (temp.Position == coin.Position)
                             {
-                                Console.WriteLine(countCoin);
-                                _game._coinSound.Play();
                                 countCoin++;
+                               // Console.WriteLine(countCoin);
+                                World world = _game.Services.GetService<World>();
+                                world.RemoveBody(coin.Body);
                                 _game._coin.Remove(coin);
+                                _game._coinSound.Play();
 
                             }
                         }
@@ -165,6 +172,7 @@ namespace ZeldaMario
                             {
                                 if (bala.Position == temp.Position)
                                 {
+                                    _game._playerGetHitInstance.Play();
                                     World world = _game.Services.GetService<World>();
                                     world.RemoveBody(bala.Body);
                                     p.tiro.Remove(bala);
@@ -172,18 +180,18 @@ namespace ZeldaMario
                                 }
                             }
                         }
-                        vidas -= 1;
+                        vidas -= 1; Console.WriteLine(this.vidas);
                     }
-                    if (temp.Name == "gumba" && attack == false && toque == false  )
+                    if (temp.Name == "gumbagumba" && attack == false && toque == false)
                     {
                         removerVida(gameTime);
                     }
                     if (temp.Name == "flag")
                     {
-
                         if (temp.Position == _game._flag.Position)
                         {
-
+                            
+                            tocarBossMusic = true;
                             posicaoInicial = _game._flag.Position;
                         }
                     }
@@ -195,7 +203,7 @@ namespace ZeldaMario
 
                     if (temp.Name == "assets/orig/images/tile240" || temp.Name == "assets/orig/images/tile241")
                     {
-                        resetar();
+                       resetar();
                     }
 
                     if (temp.Name == "assets/orig/images/Exit")
@@ -205,7 +213,9 @@ namespace ZeldaMario
 
                     if (temp.Name == "assets/orig/images/banner")
                     {
-                        _game.Exit();
+                        _game._gameWinSoundInstance.Play();
+                        _game.win = true;
+                     //   _game.Exit();
                     }
 
                     if (temp.Name == "assets/orig/images/Start")
@@ -272,9 +282,17 @@ namespace ZeldaMario
         //Reseta o player para a posição inicial 
         public void resetar()
         {
-            Console.WriteLine(this.vidas);
-            if (vidas == -1) vidas = 3;
-            else vidas--;
+            Console.WriteLine(vidas);
+            if (vidas <= -1)
+            {
+                _game._gameOverSoundInstance.Play();
+                vidas = 3;
+            }
+            else 
+            { 
+                _game._playerGetHitInstance.Play();
+                vidas--;
+            }
 
             Body.Position = posicaoInicial;
             Body.LinearVelocity = Vector2.Zero;
@@ -285,10 +303,12 @@ namespace ZeldaMario
 
         public void removerVida(GameTime gameTime)
         {
-            Console.WriteLine(this.vidas);
+            Console.WriteLine(vidas);
+            _game._playerGetHitInstance.Play();
             if (_direction == Direction.Right) Body.LinearVelocity = new Vector2(-1f, 2.5f);
             else Body.LinearVelocity = new Vector2(1f, 2.5f);
 
+            
             if (vidas > -1) vidas--;
 
             toque = false;
@@ -322,6 +342,7 @@ namespace ZeldaMario
 
                                 if (g.life > 0)
                                 {
+                                   
                                     g.hit = true;
                                     g.timer = g.resetDoTempo;
                                     g.life--;
@@ -365,7 +386,6 @@ namespace ZeldaMario
                                 }
                                 else
                                 {
-
                                     World world = _game.Services.GetService<World>();
                                     world.RemoveBody(_game._boss.Body);
                                     _game._boss = null;

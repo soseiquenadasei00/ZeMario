@@ -67,7 +67,7 @@ namespace IPCA.MonoGame
             //                Vector2 center = Camera.Position2Pixels(
             //                    Body.Position + c.Position);
             //                float radius = Camera.Length2Pixels(new Vector2(c.Radius, 0)).X;
-            //                //debug.DrawCircle(spriteBatch, center, radius, Color.Blue);
+            //                debug.DrawCircle(spriteBatch, center, radius, Color.Blue);
             //                break;
             //        }
             //    }

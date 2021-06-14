@@ -27,7 +27,7 @@ namespace IPCA.MonoGame
             _texture = texture;
             _size = _texture.Bounds.Size.ToVector2() / 128f;  // TODO: HARDCODED!
             if (offset)
-                _position = position + new Vector2(_size.X, _size.Y) / 2f; // Anchor in the middle
+              _position = position + new Vector2(_size.X, _size.Y) / 2f; // Anchor in the middle
         }
 
 

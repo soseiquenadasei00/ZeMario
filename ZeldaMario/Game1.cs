@@ -21,29 +21,35 @@ namespace ZeldaMario
         public GumbaBoss _boss;
         public Texture2D background;
         private SpriteFont arial12;
-        private int countMoeda = 0;
         public Flag _flag;
+        public bool win = false;
 
         public List<Prantinha> _prantinha = new List<Prantinha>();
         public List<Gumba> _gumba = new List<Gumba>(); 
         public List<Coin> _coin = new List<Coin>();
         public List<AnimatedSprite> _extra= new List<AnimatedSprite>();
-        public bool bossdie = false;
 
         //som
         public  SoundEffect _coinSound;
         public  SoundEffect _gameOverSound;
+        public  SoundEffectInstance _gameOverSoundInstance;
         public  SoundEffect _gameWinSound;
+        public  SoundEffectInstance _gameWinSoundInstance;
         public  SoundEffect _jumpSound;
         public  SoundEffectInstance _jumpSoundInstance;
         
         public  SoundEffect _playerAttackSound;
-        public SoundEffectInstance _playerAttackSoundInstance;
+        public  SoundEffectInstance _playerAttackSoundInstance;
         public  SoundEffect _plantatiroSound;
-        
+
+        public SoundEffect _playerGetHit;
+        public SoundEffectInstance _playerGetHitInstance;
 
 
-        private Song _ambienteSound;
+        public Song _ambienteSound;
+        public Song _bossMusic;
+        public bool _sonido = true;
+
         private float _volume = 0.5f;
 
 
@@ -93,18 +99,26 @@ namespace ZeldaMario
 
 
             _ambienteSound = Content.Load<Song>("music");
+            _bossMusic = Content.Load<Song>("boss-music");
             _coinSound = Content.Load<SoundEffect>("coin");
             _gameOverSound = Content.Load<SoundEffect>("game_over");
+            _gameOverSoundInstance = _gameOverSound.CreateInstance();
             _gameWinSound = Content.Load<SoundEffect>("game_win");
+            _gameWinSoundInstance = _gameWinSound.CreateInstance();
             _jumpSound = Content.Load<SoundEffect>("jump");
             _jumpSoundInstance = _jumpSound.CreateInstance();
             _playerAttackSound = Content.Load<SoundEffect>("player_atack");
             _playerAttackSoundInstance = _playerAttackSound.CreateInstance();
+            _playerGetHit = Content.Load<SoundEffect>("player_atack");
+            _playerGetHitInstance = _playerGetHit.CreateInstance();
+
             _plantatiroSound = Content.Load<SoundEffect>("planta_shot");
 
             MediaPlayer.IsRepeating = true;
             MediaPlayer.Volume = 0.25f;
             MediaPlayer.Play(_ambienteSound);
+                 
+
         }
         protected override void Update(GameTime gameTime)
         {
@@ -112,17 +126,28 @@ namespace ZeldaMario
                 Exit();
          
              _world.Step((float)gameTime.ElapsedGameTime.TotalMilliseconds * 0.001f);
-            if (Keyboard.GetState().IsKeyDown(Keys.R)) Initialize();
             _player.Update(gameTime);
 
             //som
-            if (Keyboard.GetState().IsKeyDown(Keys.K)) _volume += 0.1f; //aumenta volume
-            if (Keyboard.GetState().IsKeyDown(Keys.J)) _volume -= 0.1f; //diminui volume
-            if (Keyboard.GetState().IsKeyDown(Keys.Space)) _jumpSoundInstance.Play(); //diminui volume
+            if (!win)
+            {
+                if (Keyboard.GetState().IsKeyDown(Keys.K)) _volume += 0.1f; //aumenta volume
+                if (Keyboard.GetState().IsKeyDown(Keys.J)) _volume -= 0.1f; //diminui volume
+                if (Keyboard.GetState().IsKeyDown(Keys.Space)) _jumpSoundInstance.Play(); //diminui volume
+            }
+                if (Keyboard.GetState().IsKeyDown(Keys.Escape)) Exit(); //sair do jogo
+          
+
             
+             // MediaPlayer.Play(_bossMusic);
 
             _volume = (float)System.Math.Clamp(_volume, 0.0, 1.0);
             MediaPlayer.Volume = _volume;
+            if (_player.tocarBossMusic)
+            {
+                MediaPlayer.Stop();
+                MediaPlayer.Play(_bossMusic);
+            }
 
             //carregar o boss e flag apenas na scene principal
             if (_scene.filename == "Content/scenes/MainScene.dt" && _boss !=null)
@@ -183,12 +208,32 @@ namespace ZeldaMario
                             0, anchor, scale * 2f, 0, 0);
                 if (_player.vidas == 3) _spriteBatch.Draw(_vida3, _posicaoVida, null, Color.White,
                             0, anchor, scale * 2f, 0, 0);
+                
+                if (this.win)
+                {
+                    Vector2 windowSize = new Vector2(
+                           _graphics.PreferredBackBufferWidth,
+                           _graphics.PreferredBackBufferHeight);
+                    // Transparent Layer
+                    Texture2D pixel = new Texture2D(GraphicsDevice, 1, 1);
+                    pixel.SetData(new[] { Color.White });
+                    _spriteBatch.Draw(pixel,
+                        new Rectangle(Point.Zero, windowSize.ToPoint()),
+                        new Color(Color.Green, 0.5f));
+
+                    // Draw Win Message
+                    string win = $" GANHAMOS!!!";
+                    Vector2 winMeasures = arial12.MeasureString(win) / 2f;
+                    Vector2 windowCenter = windowSize / 2f;
+                    Vector2 pos = windowCenter - winMeasures;
+                    _spriteBatch.DrawString(arial12, win, pos, Color.HotPink);
+                }
 
 
                 //texto das moedas
                 Vector2 posicaoMoeda = new Vector2(85, 660);
-                countMoeda = _player.countCoin;
-                this.drawCoinsText(posicaoMoeda, $"{countMoeda}");
+                
+                this.drawCoinsText(posicaoMoeda, $"{_player.countCoin}");
                 _spriteBatch.Draw(_moedinha, _posicaoMoedinha, null, Color.White, 0, anchor, scale * 1.5f, 0, 0);
                 
             }
@@ -214,10 +259,10 @@ namespace ZeldaMario
         public void drawCoinsText(Vector2 _position, string _text)
         {
             _spriteBatch.DrawString(
-                arial12,
-                 _text,
-                _position,
-                Color.White);
+            arial12,
+            _text,
+            _position,
+            Color.White);
         }
     }
 }

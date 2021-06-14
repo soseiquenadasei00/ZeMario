@@ -73,7 +73,8 @@ namespace ZeldaMario
             {
                 Body.LinearVelocity = new Vector2(-speed, 0) * (float)gameTime.ElapsedGameTime.TotalSeconds;
             }
-            else Body.LinearVelocity = new Vector2(speed, 0) * (float)gameTime.ElapsedGameTime.TotalSeconds;
+            else
+             Body.LinearVelocity = new Vector2(speed, 0) * (float)gameTime.ElapsedGameTime.TotalSeconds;
 
         }
 

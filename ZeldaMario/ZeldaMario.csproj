@@ -36,13 +36,16 @@
     <None Update="Content\assets\orig\images\idle.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="Content\boss-music.mp3">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="Content\moedinha.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="Content\scenes\MainScene.dt">
+    <None Update="Content\assets\orig\images\Start.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="Content\assets\orig\images\Start.png">
+    <None Update="Content\scenes\MainScene.dt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="Content\scenes\MenuScene.dt">
