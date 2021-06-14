@@ -46,7 +46,7 @@ namespace ZeldaMario
         public SoundEffectInstance _playerGetHitInstance;
 
 
-        public Song _ambienteSound;
+        public Song[] _ambienteSound = new Song[2];
         public Song _bossMusic;
         public bool _sonido = true;
 
@@ -97,9 +97,12 @@ namespace ZeldaMario
             _moedinha = Content.Load<Texture2D>("moedinha");
             backgroudMenu = Content.Load<Texture2D>("cave_2.0");
 
+            _ambienteSound[0] = Content.Load<Song>("music");
+            _ambienteSound[1] = Content.Load<Song>("boss-music");
 
-            _ambienteSound = Content.Load<Song>("music");
-            _bossMusic = Content.Load<Song>("boss-music");
+
+
+
             _coinSound = Content.Load<SoundEffect>("coin");
             _gameOverSound = Content.Load<SoundEffect>("game_over");
             _gameOverSoundInstance = _gameOverSound.CreateInstance();
@@ -116,7 +119,7 @@ namespace ZeldaMario
 
             MediaPlayer.IsRepeating = true;
             MediaPlayer.Volume = 0.25f;
-            MediaPlayer.Play(_ambienteSound);
+            MediaPlayer.Play(_ambienteSound[0]);
                  
 
         }
@@ -133,21 +136,14 @@ namespace ZeldaMario
             {
                 if (Keyboard.GetState().IsKeyDown(Keys.K)) _volume += 0.1f; //aumenta volume
                 if (Keyboard.GetState().IsKeyDown(Keys.J)) _volume -= 0.1f; //diminui volume
-                if (Keyboard.GetState().IsKeyDown(Keys.Space)) _jumpSoundInstance.Play(); //diminui volume
             }
                 if (Keyboard.GetState().IsKeyDown(Keys.Escape)) Exit(); //sair do jogo
-          
-
             
              // MediaPlayer.Play(_bossMusic);
 
             _volume = (float)System.Math.Clamp(_volume, 0.0, 1.0);
             MediaPlayer.Volume = _volume;
-            if (_player.tocarBossMusic)
-            {
-                MediaPlayer.Stop();
-                MediaPlayer.Play(_bossMusic);
-            }
+           
 
             //carregar o boss e flag apenas na scene principal
             if (_scene.filename == "Content/scenes/MainScene.dt" && _boss !=null)

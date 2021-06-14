@@ -42,36 +42,36 @@ namespace IPCA.MonoGame
 
         public virtual void Draw(SpriteBatch spriteBatch, GameTime gameTime)
         {
-            //if (Debug && Body != null)
-            //{
-            //    Debug debug = new Debug();
-            //    foreach (Fixture f in Body.FixtureList)
-            //    {
-            //        switch (f.Shape)
-            //        {
-            //            case PolygonShape p:
-            //                for (int i = 0; i < p.Vertices.Count; i++)
-            //                {
-            //                    Vector2 p1 = p.Vertices[i];
-            //                    Vector2 p2 = p.Vertices[(i + 1) % p.Vertices.Count];
+            if (Debug && Body != null)
+            {
+                Debug debug = new Debug();
+                foreach (Fixture f in Body.FixtureList)
+                {
+                    switch (f.Shape)
+                    {
+                        case PolygonShape p:
+                            for (int i = 0; i < p.Vertices.Count; i++)
+                            {
+                                Vector2 p1 = p.Vertices[i];
+                                Vector2 p2 = p.Vertices[(i + 1) % p.Vertices.Count];
 
-            //                    p1 = p1.Rotate(_rotation) + _position;
-            //                    p2 = p2.Rotate(_rotation) + _position;
+                                p1 = p1.Rotate(_rotation) + _position;
+                                p2 = p2.Rotate(_rotation) + _position;
 
-            //                    p1 = Camera.Position2Pixels(p1);
-            //                    p2 = Camera.Position2Pixels(p2);
-            //                    debug.DrawLine(spriteBatch, p1, p2, Color.Red);
-            //                }
-            //                break;
-            //            case CircleShape c:
-            //                Vector2 center = Camera.Position2Pixels(
-            //                    Body.Position + c.Position);
-            //                float radius = Camera.Length2Pixels(new Vector2(c.Radius, 0)).X;
-            //                debug.DrawCircle(spriteBatch, center, radius, Color.Blue);
-            //                break;
-            //        }
-            //    }
-            //}
+                                p1 = Camera.Position2Pixels(p1);
+                                p2 = Camera.Position2Pixels(p2);
+                                debug.DrawLine(spriteBatch, p1, p2, Color.Red);
+                            }
+                            break;
+                        case CircleShape c:
+                            Vector2 center = Camera.Position2Pixels(
+                                Body.Position + c.Position);
+                            float radius = Camera.Length2Pixels(new Vector2(c.Radius, 0)).X;
+                            debug.DrawCircle(spriteBatch, center, radius, Color.Blue);
+                            break;
+                    }
+                }
+            }
         }
 
         public void Translate(float x, float y)

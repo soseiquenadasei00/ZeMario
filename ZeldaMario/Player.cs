@@ -104,7 +104,9 @@ namespace ZeldaMario
                 () =>
                 {
                         if (_game._scene.filename == "Content/scenes/MainScene.dt") //para nao saltar no menu inicial
-                        if (extraJumps > 0) { Body.LinearVelocity = new Vector2(0, 2.5f); extraJumps -= 1; } //alcance do salto
+
+                        if (extraJumps > 0) { Body.LinearVelocity = new Vector2(0, 2.5f); extraJumps -= 1; //alcance do salto
+                        _game._jumpSoundInstance.Play(); } //som
                 });
             KeyboardManager.Register(
                 Keys.A,
@@ -190,8 +192,9 @@ namespace ZeldaMario
                     {
                         if (temp.Position == _game._flag.Position)
                         {
-                            
-                            tocarBossMusic = true;
+                            MediaPlayer.Stop();
+                            MediaPlayer.Play(_game._ambienteSound[1]);
+                            //tocarBossMusic = true;
                             posicaoInicial = _game._flag.Position;
                         }
                     }
@@ -203,7 +206,7 @@ namespace ZeldaMario
 
                     if (temp.Name == "assets/orig/images/tile240" || temp.Name == "assets/orig/images/tile241")
                     {
-                       resetar();
+                        resetar();
                     }
 
                     if (temp.Name == "assets/orig/images/Exit")
